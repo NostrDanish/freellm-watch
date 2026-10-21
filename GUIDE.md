@@ -88,6 +88,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 APInex (apinex.bond) gateway: ~18 free/free models, ~10M tokens/day allowance, Google sign-in only (no card)
 - ☠️ qwen3.8-27b:free left OpenRouter Oct 20 (still free on Groq + OVH, NOT Kilo — priced on gateway)
 - 🆕 Z.ai GLM-5.3-Flash (320B params, 18B active, natively multimodal) now free on NVIDIA NIM Oct 2026
+- 🆕 NVIDIA NIM: `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) free endpoint — dual-confirmed build.nvidia.com free_endpoint + freellm.net Verified
+- 🆕 NVIDIA NIM: `diffusiongemma-26b-a4b-it` (26B diffusion text-gen, parallel token gen) + `paligemma` (vision-language) now on build.nvidia.com free_endpoint filter
 - 🔄 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added Oct 17; 40 RPM / no daily cap
 - 🆕 Google lyria-3 clip+pro audio models free on OpenRouter ($0 pricing, no `:free` suffix)
 - 🔧 Ollama Cloud: no new free cloud tier (Oct probe); freellmapi = 34 providers / 635 endpoints, auto-failover

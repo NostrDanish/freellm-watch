@@ -70,3 +70,6 @@ BlockRun.ai,nvidia/llama-3.2-11b-vision,128K,No key / 429 per IP,No key needed,V
 uncloseai,turboderp/Qwen3.8-27B-exl3,64K,No key / 429 per IP,No key needed,Verified keyless Oct 21; single vllm endpoint
 LLM Tech,qwen3.8-27b,131K,2M tok/day per IP,Shared trial key `lt-trial-ba1ef28c6d32ed6980678d8d` at api.llmtech.eu/v1,Probe-verified by awesome-free-ai-coding; EU; no signup, no card
 LLMTR,agnes-3.0-flash,256K,Free on zero balance,https://llmtr.com/v1,Turkish gateway; agnes/motif/minimax free; ling-3.1-flash free only until Oct 22
+NVIDIA NIM,z-ai/glm-5.3,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3 non-flash; 753B text MoE; DeepSeek-style sparse attention; FP8 weights; 1M ctx; reasoning+tool-calling; free dev-program endpoint (no card)
+NVIDIA NIM,diffusiongemma-26b-a4b-it,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; 26B diffusion-based text-gen LLM; parallel token generation; free dev-program endpoint (no card)
+NVIDIA NIM,paligemma,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; vision-language model; free dev-program endpoint on NIM (no card)
