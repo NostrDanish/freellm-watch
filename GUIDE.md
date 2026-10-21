@@ -26,7 +26,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 ## 🧠 Google AI Studio (Gemini)
 - **Get key:** https://aistudio.google.com/app/apikey
-- **Limits:** Flash: ~15 RPM / 1,500 RPD. Pro: 5 RPM / 50 RPD. All 1M context.
+- **Limits:** Per-model limits no longer published (moved to per-project, console-gated in AI Studio since ~Oct 18). Flash / Pro / Flash-Lite all free; 1M context each.
 - **base_url:** `https://generativelanguage.googleapis.com/v1beta`
 - **Best:** `gemini-3.8-flash` (new), `gemini-2.5-pro` (best free reasoning)
 - **Catch:** prompts may be used for training (not in EU/UK/CH).
@@ -71,7 +71,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 2. → fallback `openrouter/free` (auto-router over 20 models, survives single-model outages)
 3. → fallback **NVIDIA NIM `nvidia/nemotron-3-super-120b-a12b`** (40 RPM, no daily cap)
 4. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
-5. → fallback **Gemini 3.8 Flash** (1,500 RPD, huge quota)
+5. → fallback **Gemini 3.8 Flash** (limits now console-gated / not published per-model since ~Oct 18)
 6. → fallback **APInex `free/deepseek-v4.1-flash`** (10M tokens/day, Google sign-in only; Oct 2026)
 7. → fallback **OpenCode Zen `glm-5.3-flash-free`** (free account key; promo, may log data)
 8. → emergency no-key: **Kilo Code** (200/hr, works even if all keys die)
@@ -105,3 +105,4 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 Freebuff (freebuff.com): ad-supported installable coding agent (CLI/desktop/web/cloud/chat), NO card; limited-mode daily credits — 6 1-hour sessions/day, ~30h/day in most regions (5h outside, 4h VPN), resets local midnight; free models mimo-v2.6-flash (default), glm-5.3-flash, deepseek-v4.1-flash, solar-pro-4, solar-mini-4; no pasteable /v1 endpoint (sign-in tool, not chain-callable). Verified live Oct 19; may train on data
 - 🆕 Impossibl (api.impossibl.com/v1): keyless POST sign-up funds $0.05 + $1 email (no card); prepaid at provider list prices; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b; credit budget, some models return 403 billing_required. Verified live Oct 19
 - 🆕 **FreeRideV3** — local OpenAI-compatible gateway routing free tiers (Claude Code/Codex/Gemini CLI), installable + chain-callable; compatible with Aider/Continue/Hermes/OpenClaw for free-tier failover where keys exist (Oct 2026)
+- 🔄 Google Gemini free-tier limits no longer published per-model (~Oct 18) — per-project, console-gated limits visible only inside AI Studio; `gemini-3.8-flash` / `gemini-2.5-pro` / `gemini-2.5-flash-lite` remain free (1M ctx) but RPM/RPD must be confirmed in-console (see `Google AI Studio` section)
