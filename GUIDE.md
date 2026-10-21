@@ -100,3 +100,5 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - ℹ️ Google stopped allowing ZDR (zero-data-retention) for Gemini routing via OpenRouter (Oct 18) — retention change affecting all OR+Gemini traffic, incl. free
 - 🔧 freellmapi v0.16.6 (Oct 20): adds ZCode provider + new /v1/usage endpoint
 - 🆕 Google Antigravity: agent-first IDE/CLI with $0 Individual plan serving Gemini + claude-opus/s + gpt-oss-120b
+- 🆕 Freebuff (freebuff.com): ad-supported installable coding agent (CLI/desktop/web/cloud/chat), NO card; limited-mode daily credits — 6 1-hour sessions/day, ~30h/day in most regions (5h outside, 4h VPN), resets local midnight; free models mimo-v2.6-flash (default), glm-5.3-flash, deepseek-v4.1-flash, solar-pro-4, solar-mini-4; no pasteable /v1 endpoint (sign-in tool, not chain-callable). Verified live Oct 19; may train on data
+- 🆕 Impossibl (api.impossibl.com/v1): keyless POST sign-up funds $0.05 + $1 email (NO card); prepaid at provider list prices; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b; credit budget, some models return 403 billing_required. Verified live Oct 19
