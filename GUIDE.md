@@ -100,7 +100,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 NVIDIA NIM: `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) free endpoint — dual-confirmed build.nvidia.com free_endpoint + freellm.net Verified
 - 🆕 NVIDIA NIM: `diffusiongemma-26b-a4b-it` (26B diffusion text-gen, parallel token gen) + `paligemma` (vision-language) now on build.nvidia.com free_endpoint filter
 - 🔄 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added Oct 17; 40 RPM / no daily cap
-- 🆕 BlockRun.ai: verified keyless, no signup, no card; **7 free NVIDIA-hosted models** incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K) + **nemotron-3.5-lightning** (1M) + **cohere/north-mini-code** (256K) + **poolside/laguna-xs-2.1** (262K) + **muse-glimmer-30b** (1M); auto-routes unlisted model names
+- 🆕 BlockRun.ai: verified keyless, no signup, no card; **9 free NVIDIA-hosted models** incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K) + **nemotron-3.5-lightning** (1M) + **cohere/north-mini-code** (256K) + **poolside/laguna-xs-2.1** (262K) + **muse-glimmer-30b** (1M) + **gpt-oss-20b** (128K) + **nemotron-super-49b** (131K, hidden callable by direct ID); auto-routes unlisted model names
 - 🆕 uncloseai: verified keyless Qwen3.8-27B-exl3 (64K) vllm endpoint live, no signup
 - 🆕 LLM Tech (llmtech.eu): shared trial key (no card, no signup), 2M tok/day, qwen3.8-27b; EU-hosted (probe-verified list)
 - 🆕 LLMTR (llmtr.com): Turkish keyless gateway, agnes-3.0-flash / motif / minimax free on zero balance; ☠ ling-3.1-flash DEAD Oct 13 (ended earlier than tracked Oct-22 estimate; absent from LLMTR 380-model catalog + OpenRouter/Kilo/Zen live probes)
