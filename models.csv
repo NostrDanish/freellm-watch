@@ -3,9 +3,9 @@ OpenRouter,nvidia/nemotron-3-ultra-550b-a55b:free,1M,20 RPM / 50 RPD,openrouter.
 OpenRouter,nvidia/nemotron-3-super-120b-a12b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Strong general/coding
 OpenRouter,nvidia/nemotron-3.5-lightning:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Fast + huge context
 OpenRouter,nvidia/nemotron-3.5-super-vl:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
-OpenRouter,minimax/minimax-m3.1-flash:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19
+OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19
 OpenRouter,xingchen-agi/xing4.0-29b-a4b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16; 262K ctx (prefix xingchen-agi)
-OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all free models
+OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 20 free models
 OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
 OpenRouter,cohere/north-mini-code:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
 OpenRouter,poolside/laguna-xs-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Laguna code model
@@ -13,14 +13,12 @@ OpenRouter,thinkingmachines/inkling:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,N
 OpenRouter,thinkingmachines/inkling-small:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Inkling
 OpenRouter,google/gemma-4-26b-a4b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4
 OpenRouter,google/gemma-4-31b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4
-OpenRouter,google/lyria-3-clip-preview,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; audio (no :free; pricing $0)
-OpenRouter,google/lyria-3-pro-preview,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; audio (pricing $0)
+OpenRouter,google/lyria-3-clip-preview,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; audio (pricing $0, no :free suffix)
+OpenRouter,google/lyria-3-pro-preview,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; audio (pricing $0, no :free suffix)
 OpenRouter,liquid/lfm-2.5-2.6b:free,66K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; MoE, 64K ctx
 OpenRouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; nano reasoning
 OpenRouter,nvidia/nemotron-3.5-content-safety:free,128K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; safety classifier
 OpenRouter,dots-studio/dots-3-note-preview:free,512K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; note-taking model
-OpenRouter,inclusionai/ling-3.0-flash-fin:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; finance MoE, 5.1B active/124B total; Aug 27
-OpenRouter,inclusionai/ling-3.0-flash-sante:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; healthcare MoE; Sep 4
 Google AI Studio,gemini-3.8-flash,1M,~15 RPM / 1500 RPD,aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google
 Google AI Studio,gemini-2.5-pro,1M,5 RPM / 50 RPD,aistudio.google.com/app/apikey,Best free reasoning
 Google AI Studio,gemini-2.5-flash-lite,1M,30 RPM / 1500 RPD,aistudio.google.com/app/apikey,High-volume cheap tasks
@@ -30,7 +28,7 @@ Groq,qwen/qwen3.8-27b,131K,30 RPM / 1000 RPD,console.groq.com/keys,Replaced 3.6 
 Mistral,mistral-large-3,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Free mode default; prompts may train Mistral (opt-out)
 Mistral,codestral,128K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Code model
 Mistral,mistral-small-4,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Vision+code
-NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,Dev program (free); 100+ models
+NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,Dev program (free); 83 models online
 NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvidia.com,Highest free RPD anywhere
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
 NVIDIA NIM,z-ai/glm-5.3-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3-Flash; first natively multimodal GLM-5; 320B params/18B active; vision
@@ -43,6 +41,8 @@ Ollama Cloud,deepseek-v4-flash,1M,Session (5h) + weekly caps,ollama.com/settings
 Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
 Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
+Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx
+Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx
 LLM7.io,gpt-oss:20b,128K,60 RPM / 100K tok per 24h,Anonymous or token.llm7.io,Limits CUT Oct 7 (was 500K-1M tok)
 LLM7.io,DeepSeek-V4-Flash-0731,400K,60 RPM / 100K tok per 24h,Anonymous or token.llm7.io,Catalog rotates often
 SambaNova,various OSS (Llama/DeepSeek),varies,20 RPM / 20 RPD / 200K tok per day per model,sambanova.ai,Standing free tier; catalog in console
@@ -55,7 +55,18 @@ Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story
 ModelScope,Qwen/Qwen3.5-35B-A3B,256K,2000 RPD total,modelscope.cn,Alibaba account + real-name
 APInex,free/gemini-3.8-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,NEW Oct 2026; Google sign-in+daily sign-in unlocks free allowance; Bearer sk-apx; base https://api.apinex.bond/v1
 APInex,free/deepseek-v4.1-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,Shared free pool; may be slow under load
-OpenCode Zen,big-pickle,200K,Free account key (no card),opencode.ai/auth,NEW Oct 21; promo/limited-time, may log data; base https://opencode.ai/zen/v1
-OpenCode Zen,nemotron-3-ultra-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
+OpenCode Zen,beam-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; natively multimodal beam model; promo/limited-time, may log data; base https://opencode.ai/zen/v1
+OpenCode Zen,mimo-v2.6-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; multimodal vision model; promo, may log data
+OpenCode Zen,jev-1.13-free,128K,Free account key (no card),opencode.ai/auth,NEW Oct 21; reasoning model; promo, may log data
+OpenCode Zen,longcat-2.5-preview-free,128K,Free account key (no card),opencode.ai/auth,NEW Oct 21; long-context preview; promo, may log data
+OpenCode Zen,deepseek-v4.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; DeepSeek 552B MoE 1M ctx; promo, may log data
+OpenCode Zen,glm-5.3-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; GLM-5.3 multimodal 1M ctx; promo, may log data
+OpenCode Zen,minimax-m3.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; minimax-m3.1 1M ctx; promo, may log data
 OpenCode Zen,nemotron-3.5-lightning-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
 OpenCode Zen,nemotron-3.5-super-vl-free,262K,Free account key (no card),opencode.ai/auth,Rotating promo free model; vision; may log data
+BlockRun.ai,nvidia/nemotron-3-ultra-550b,1M,No key / 429 per IP,No key needed,Verified keyless Oct 21; NVIDIA-hosted OS models; 1M ctx largest
+BlockRun.ai,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,256K,No key / 429 per IP,No key needed,Verified keyless Oct 21; multimodal reasoning MoE
+BlockRun.ai,nvidia/llama-3.2-11b-vision,128K,No key / 429 per IP,No key needed,Verified keyless Oct 21; vision input
+uncloseai,turboderp/Qwen3.8-27B-exl3,64K,No key / 429 per IP,No key needed,Verified keyless Oct 21; single vllm endpoint
+LLM Tech,qwen3.8-27b,131K,2M tok/day per IP,Shared trial key `lt-trial-ba1ef28c6d32ed6980678d8d` at api.llmtech.eu/v1,Probe-verified by awesome-free-ai-coding; EU; no signup, no card
+LLMTR,agnes-3.0-flash,256K,Free on zero balance,https://llmtr.com/v1,Turkish gateway; agnes/motif/minimax free; ling-3.1-flash free only until Oct 22
