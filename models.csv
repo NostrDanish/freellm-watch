@@ -1,0 +1,40 @@
+provider,model,context,free_limit,how_to_get_key,notes
+OpenRouter,nvidia/nemotron-3-ultra-550b-a55b:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Biggest free model; 1000 RPD after $10 lifetime credits
+OpenRouter,nvidia/nemotron-3-super-120b-a12b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Strong general/coding
+OpenRouter,nvidia/nemotron-3.5-lightning:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Fast + huge context
+OpenRouter,nvidia/nemotron-3.5-super-vl:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
+OpenRouter,minimax/minimax-m3.1-flash:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19
+OpenRouter,xingchen/xing4.0-29b-a4b:free,128K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16
+OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all free models
+OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
+OpenRouter,cohere/north-mini-code:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
+OpenRouter,qwen/qwen3.8-27b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Vision+video
+Google AI Studio,gemini-3.8-flash,1M,~15 RPM / 1500 RPD,aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google
+Google AI Studio,gemini-2.5-pro,1M,5 RPM / 50 RPD,aistudio.google.com/app/apikey,Best free reasoning
+Google AI Studio,gemini-2.5-flash-lite,1M,30 RPM / 1500 RPD,aistudio.google.com/app/apikey,High-volume cheap tasks
+Groq,openai/gpt-oss-120b,131K,30 RPM / 1000 RPD,console.groq.com/keys,Ultra-fast LPU
+Groq,openai/gpt-oss-20b,131K,30 RPM / 1000 RPD,console.groq.com/keys,Ultra-fast
+Groq,qwen/qwen3.8-27b,131K,30 RPM / 1000 RPD,console.groq.com/keys,Replaced 3.6 Sept 2026
+Mistral,mistral-large-3,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Free mode default; prompts may train Mistral (opt-out)
+Mistral,codestral,128K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Code model
+Mistral,mistral-small-4,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Vision+code
+NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / 10000 RPD,build.nvidia.com,Dev program (free); 100+ models
+NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / 10000 RPD,build.nvidia.com,Highest free RPD anywhere
+Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.com/api-keys,Non-commercial only
+Cerebras,llama-3.3-70b,128K,~30 RPM free,cerebras.ai,Payment method required now
+Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
+Cloudflare Workers AI,@cf/openai/gpt-oss-120b,128K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,
+Ollama Cloud,gpt-oss:120b,128K,Session (5h) + weekly caps,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
+Ollama Cloud,deepseek-v4-flash,1M,Session (5h) + weekly caps,ollama.com/settings/keys,16 cloud families
+Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
+Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
+Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
+LLM7.io,gpt-oss:20b,128K,60 RPM / 250 req-hr,Anonymous or token.llm7.io,No key for turbo tier
+LLM7.io,DeepSeek-V4-Flash-0731,400K,60 RPM / 250 req-hr,Anonymous or token.llm7.io,Catalog rotates often
+OVHcloud,gpt-oss-120b,128K,2 RPM per IP,NO KEY / NO SIGNUP,oai.endpoints.kepler.ai.cloud.ovh.net/v1; EU-hosted
+OVHcloud,Qwen3.5-397B-A17B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Biggest no-key model
+Z AI,GLM-4.7-Flash,200K,1 concurrent,open.bigmodel.cn/usercenter/apikeys,Also api.z.ai intl endpoint
+Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit,huggingface.co/settings/tokens,router.huggingface.co/v1
+SiliconFlow,Qwen/Qwen3-8B,128K,1000 RPM / 50K TPM,cloud.siliconflow.cn/account/ak,Real-name verification required
+Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story niche
+ModelScope,Qwen/Qwen3.5-35B-A3B,256K,2000 RPD total,modelscope.cn,Alibaba account + real-name
