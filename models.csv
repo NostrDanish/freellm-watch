@@ -19,6 +19,8 @@ OpenRouter,liquid/lfm-2.5-2.6b:free,66K,20 RPM / 50 RPD,openrouter.ai/keys,NEW O
 OpenRouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; nano reasoning
 OpenRouter,nvidia/nemotron-3.5-content-safety:free,128K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; safety classifier
 OpenRouter,dots-studio/dots-3-note-preview:free,512K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; note-taking model
+OpenRouter,inclusionai/ling-3.0-flash-fin:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; finance MoE, 5.1B active/124B total; Aug 27
+OpenRouter,inclusionai/ling-3.0-flash-sante:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; healthcare MoE; Sep 4
 Google AI Studio,gemini-3.8-flash,1M,~15 RPM / 1500 RPD,aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google
 Google AI Studio,gemini-2.5-pro,1M,5 RPM / 50 RPD,aistudio.google.com/app/apikey,Best free reasoning
 Google AI Studio,gemini-2.5-flash-lite,1M,30 RPM / 1500 RPD,aistudio.google.com/app/apikey,High-volume cheap tasks
@@ -31,6 +33,7 @@ Mistral,mistral-small-4,256K,~1 RPS / $10 per month credits,console.mistral.ai/a
 NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,Dev program (free); 100+ models
 NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvidia.com,Highest free RPD anywhere
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
+NVIDIA NIM,z-ai/glm-5.3-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3-Flash; first natively multimodal GLM-5; 320B params/18B active; vision
 Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.com/api-keys,Non-commercial only
 Cerebras,llama-3.3-70b,128K,~30 RPM free,cerebras.ai,Payment method required now
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
@@ -52,3 +55,7 @@ Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story
 ModelScope,Qwen/Qwen3.5-35B-A3B,256K,2000 RPD total,modelscope.cn,Alibaba account + real-name
 APInex,free/gemini-3.8-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,NEW Oct 2026; Google sign-in+daily sign-in unlocks free allowance; Bearer sk-apx; base https://api.apinex.bond/v1
 APInex,free/deepseek-v4.1-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,Shared free pool; may be slow under load
+OpenCode Zen,big-pickle,200K,Free account key (no card),opencode.ai/auth,NEW Oct 21; promo/limited-time, may log data; base https://opencode.ai/zen/v1
+OpenCode Zen,nemotron-3-ultra-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
+OpenCode Zen,nemotron-3.5-lightning-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
+OpenCode Zen,nemotron-3.5-super-vl-free,262K,Free account key (no card),opencode.ai/auth,Rotating promo free model; vision; may log data

@@ -9,8 +9,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Get key:** https://openrouter.ai/keys (Google login, 30 sec)
 - **Limits:** 20 RPM, **50 req/day per free model** → jumps to **1,000/day** after a one-time $10 credit buy
 - **base_url:** `https://openrouter.ai/api/v1`
-- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning)
-- **Trick:** model = `openrouter/free` auto-routes across all 20 free models. Or pass a `models: [...]` array for built-in fallback.
+- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `inclusionai/ling-3.0-flash-fin:free` (finance MoE), `inclusionai/ling-3.0-flash-sante:free` (healthcare MoE)
+- **Trick:** model = `openrouter/free` auto-routes across all 22 free models. Or pass a `models: [...]` array for built-in fallback.
 
 ## 🚪 No-key options (zero signup)
 | Provider | base_url | Limit | Catch |
@@ -44,7 +44,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Get key:** https://build.nvidia.com (free dev program: sign up, verify phone, no card needed)
 - **Limits:** 40 RPM, **no daily cap** per model; 77 free models online
 - **base_url:** `https://integrate.api.nvidia.com/v1`
-- **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `deepseek-ai/deepseek-v4.1-flash` (NEW Oct 17; 552B MoE, 1M ctx)
+- **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `deepseek-ai/deepseek-v4.1-flash` (NEW Oct 17; 552B MoE, 1M ctx), `z-ai/glm-5.3-flash` (NEW Oct 21; first natively multimodal GLM-5, 320B params, 1M ctx)
 - ⚠️ Oct 3: they killed nemotron-3-nano, llama-3.3-70b, gpt-oss-120b… free list rotates — check build.nvidia.com/models.
 
 ## Others worth a key (details in models.csv)
@@ -56,23 +56,29 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
 - **Hugging Face router** — $0.10/mo credit: `https://router.huggingface.co/v1`
 - ❌ **GitHub Models — RETIRED July 2026.** Don't bother.
+- **OpenCode Zen** (opencode.ai/zen/v1) — NEW Oct 21; free account key (no card), OpenAI-compatible; free models rotate (big-pickle, nemotron-3-ultra-free, nemotron-3.5-lightning-free). ⚠️ promo/limited-time, data may be logged, direct API fingerprint-gated.
 
 ---
 
 ## 🏆 Recommended stack (coding/agent use)
 1. **OpenRouter `nvidia/nemotron-3-ultra-550b-a55b:free`** — biggest brain, 1M ctx
-2. → fallback `openrouter/free` (auto-router, survives single-model outages)
-3. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
-4. → fallback **Gemini 3.8 Flash** (1,500 RPD, huge quota)
-5. → fallback **APInex `free/deepseek-v4.1-flash`** (10M tokens/day, Google sign-in only; Oct 2026)
-6. → emergency no-key: **Kilo Code** (200/hr, works even if all keys die)
+2. → fallback `openrouter/free` (auto-router over 22 models, survives single-model outages)
+3. → fallback **NVIDIA NIM `nvidia/nemotron-3-super-120b-a12b`** (40 RPM, no daily cap)
+4. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
+5. → fallback **Gemini 3.8 Flash** (1,500 RPD, huge quota)
+6. → fallback **APInex `free/deepseek-v4.1-flash`** (10M tokens/day, Google sign-in only; Oct 2026)
+7. → fallback **OpenCode Zen `big-pickle`** (free account key; promo, may log data)
+8. → emergency no-key: **Kilo Code** (200/hr, works even if all keys die)
 
 **One-time power move:** buy $10 OpenRouter credits once → all free models jump from 50 → 1,000 RPD forever.
 
 ## 📰 Recent news (Oct 19–21, 2026)
-- 🆕 OpenRouter free pool holds **20 models** but churned Oct 20: added gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free; retired qwen/qwen3.8-27b:free (still free on Groq/Kilo/OVH)
+- 🆕 OpenRouter free pool holds **22 models** but churned Oct 20: added gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, ling-3.0-flash-fin:free, ling-3.0-flash-sante:free (Oct 21); retired qwen/qwen3.8-27b:free (still free on Groq/Kilo/OVH)
 - 🆕 Google lyria-3 clip+pro audio models now free on OpenRouter (pricing $0, no `:free` suffix)
 - 🆕 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added to free catalog Oct 17; 40 RPM / no daily cap
 - 🆕 APInex (apinex.bond) gateway: ~18 free/free models, ~10M tokens/day allowance, Google sign-in only (no card)
 - ☠️ qwen3.8-27b:free left OpenRouter Oct 20 (free elsewhere)
+- 🆕 Z.ai GLM-5.3-Flash (320B params, 18B active, natively multimodal) now free on NVIDIA NIM Oct 2026
+- 🆕 InclusionAI Ling 3.0 Flash Fin (finance MoE) + Sante (healthcare MoE), 262K ctx, free on OpenRouter (Aug 27/Sep 4)
+- 🆕 OpenCode Zen gateway (opencode.ai/zen/v1) — free rotating models via free account key; promo/limited-time, may log data
 - 🔧 Ollama Cloud: no new free cloud tier (Oct probe); freellmapi = 34 providers / 635 endpoints, auto-failover
