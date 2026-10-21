@@ -52,7 +52,7 @@ Z AI,GLM-4.7-Flash,200K,1 concurrent,open.bigmodel.cn/usercenter/apikeys,Also ap
 Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit,huggingface.co/settings/tokens,router.huggingface.co/v1
 SiliconFlow,Qwen/Qwen3-8B,128K,1000 RPM / 50K TPM,cloud.siliconflow.cn/account/ak,Real-name verification required
 Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story niche
-ModelScope,Qwen/Qwen3.5-35B-A3B,256K,2000 RPD total,modelscope.cn,Alibaba account + real-name
+ModelScope,Qwen/Qwen3.5-35B-A3B,256K,~100 RPD (magic-grain 魔粹 metering; was 1800),modelscope.cn,Alibaba account + real-name; quota moved to 魔粹 Aug 2026 (~250 魔粹/day at ~2 魔粹 per request ≈ 125 req/day, capped 100 with margin)
 APInex,free/gemini-3.8-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,NEW Oct 2026; Google sign-in+daily sign-in unlocks free allowance; Bearer sk-apx; base https://api.apinex.bond/v1
 APInex,free/deepseek-v4.1-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,Shared free pool; may be slow under load
 OpenCode Zen,beam-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; natively multimodal beam model; promo/limited-time, may log data; base https://opencode.ai/zen/v1
@@ -83,5 +83,6 @@ Impossibl,deepseek/deepseek-v4.1-flash,—,"$1.05 startup credit (no card); prep
 Impossibl,qwen/qwen3.8-27b,—,"$1.05 startup credit (no card); prepaid list-prices; credit budget — may 403 billing_required",api.impossibl.com/v1,"NEW Oct 2026; keyless POST sign-up; credit budget across catalog"
 xKiro,"openai/gpt-5.6-sol (and 40+ free models)",128K,"500K tok/day per IP","xkiro.com/dashboard/api/keys","Free forever plan (Oct 2026); base https://api.xkiro.com/v1; OpenAI + Anthropic SDK compatible"
 KeylessAI,"openai-fast+grok-4.1-mini:free+step-3.5-flash:free+gemma3-270m:free (keyless pool)",4K,"No key / no signup / no card","https://keylessai.thryx.workers.dev/v1; npm keylessai v0.4.0","NEW Oct 21 v0.4.0; aggregates Pollinations + ApiAirforce; OpenAI-compatible; works with Aider/Cline/Continue/Codex/Claude Code"
-AnyAPI,400+ models incl. permanent free tier,~15 free credits monthly,no card,"keyless/free acct at dash.anyapi.ai; https://api.anyapi.ai/v1","NEW Oct 2026; OpenAI-compatible gateway; free tier permanent no credit card; added to freellmapi as provider"
+AnyAPI,400+ models incl. permanent free tier,100K tokens/day,no card,"keyless/free acct at dash.anyapi.ai; https://api.anyapi.ai/v1","NEW Oct 2026; OpenAI-compatible gateway; permanent free tier (100K tokens/day @ $0; corrected from 15 monthly credits); added to freellmapi as provider"
 freellmpool,pool of 22 provider free tiers (Groq/NVIDIA/OpenRouter/Gemini/Cloudflare/Mistral/etc),varies,"keyless start via Pollinations/OVH/Kilo + free keys","pip install freellmpool; localhost:8080/v1","NEW Oct 2026 v0.13.0; OpenAI-compatible CLI/library/proxy/MCP; auto-failover; per-day quota tracking"
+onomeo,free models via signed catalog,varies,"30 calls/5h per account (1500 site-wide shared window; 1 call per 50K chars for long requests)","onomeo.com/dashboard; Bearer API-key","NEW Oct 21 provider in freellmapi v0.16.7; OpenAI-compatible gateway onomeo.com/v1; free models catalog-gated (Premium now, Free after 30-day gate); free answers branded — via onomeo.com (adapter strips); 403/429 are quota/throttle on valid key, not auth failure"
