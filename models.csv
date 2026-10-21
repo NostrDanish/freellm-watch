@@ -2,7 +2,7 @@ provider,model,context,free_limit,how_to_get_key,notes
 OpenRouter,nvidia/nemotron-3-ultra-550b-a55b:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Biggest free model; 1000 RPD after $10 lifetime credits
 OpenRouter,nvidia/nemotron-3-super-120b-a12b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Strong general/coding
 OpenRouter,nvidia/nemotron-3.5-lightning:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Fast + huge context
-OpenRouter,nvidia/nemotron-3.5-super-vl:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
+OpenRouter,nvidia/nemotron-3.5-super-vl:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
 OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19
 OpenRouter,xingchen-agi/xing4.0-29b-a4b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16; 262K ctx (prefix xingchen-agi)
 OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 20 free models
@@ -81,4 +81,7 @@ Freebuff,solar-mini-4,128K,"6 1-hour sessions/day; limited mode (shared daily ho
 Impossibl,zai/glm-5.3-flash,1M,"$1.05 startup credit ($0.05 + $1 email), no card; prepaid list-prices; credit budget — may 403 billing_required on some models",api.impossibl.com/v1,"NEW Oct 2026 reconciled; keyless POST sign-up at impossibl.com/dashboard; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b"
 Impossibl,deepseek/deepseek-v4.1-flash,—,"$1.05 startup credit (no card); prepaid list-prices; credit budget — may 403 billing_required",api.impossibl.com/v1,"NEW Oct 2026; keyless POST sign-up; not a fixed free quota — credit budget across catalog"
 Impossibl,qwen/qwen3.8-27b,—,"$1.05 startup credit (no card); prepaid list-prices; credit budget — may 403 billing_required",api.impossibl.com/v1,"NEW Oct 2026; keyless POST sign-up; credit budget across catalog"
-xKiro,"openai/gpt-5.6-sol (and 40+ free models)",128K,"500K tok/day; no card required","xkiro.com/dashboard/api/keys","Free forever plan (Oct 2026); base https://api.xkiro.com/v1; OpenAI + Anthropic SDK compatible"
+xKiro,"openai/gpt-5.6-sol (and 40+ free models)",128K,"500K tok/day per IP","xkiro.com/dashboard/api/keys","Free forever plan (Oct 2026); base https://api.xkiro.com/v1; OpenAI + Anthropic SDK compatible"
+KeylessAI,"openai-fast+grok-4.1-mini:free+step-3.5-flash:free+gemma3-270m:free (keyless pool)",4K,"No key / no signup / no card","https://keylessai.thryx.workers.dev/v1; npm keylessai v0.4.0","NEW Oct 21 v0.4.0; aggregates Pollinations + ApiAirforce; OpenAI-compatible; works with Aider/Cline/Continue/Codex/Claude Code"
+AnyAPI,400+ models incl. permanent free tier,~15 free credits monthly,no card,"keyless/free acct at dash.anyapi.ai; https://api.anyapi.ai/v1","NEW Oct 2026; OpenAI-compatible gateway; free tier permanent no credit card; added to freellmapi as provider"
+freellmpool,pool of 22 provider free tiers (Groq/NVIDIA/OpenRouter/Gemini/Cloudflare/Mistral/etc),varies,"keyless start via Pollinations/OVH/Kilo + free keys","pip install freellmpool; localhost:8080/v1","NEW Oct 2026 v0.13.0; OpenAI-compatible CLI/library/proxy/MCP; auto-failover; per-day quota tracking"

@@ -22,7 +22,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 || **BlockRun.ai** | `https://blockrun.ai/api/v1` | 429 per IP; keyless | Verified Oct 21; 7 NVIDIA-hosted OS free models: nemotron-3-ultra-550b (1M), nano-omni-30b-a3b-reasoning (256K), llama-3.2-11b-vision (128K) |
 || **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
 || **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
-|| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OR/Kilo/Zen probes) |
+||| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OR/Kilo/Zen live probes) |
+||| **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | No key / no signup / no card | NEW Oct 21 v0.4.0; aggregates Pollinations + ApiAirforce; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
 
 ## 🧠 Google AI Studio (Gemini)
 - **Get key:** https://aistudio.google.com/app/apikey
@@ -59,6 +60,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **APInex** (apinex.bond) — NEW Oct 2026 gateway; ~18 `:free` models at $0, ~10M tokens/day shared allowance, Google sign-in + daily sign-in; OpenAI-compatible base `https://api.apinex.bond/v1`
 - **xKiro** (xkiro.com) — NEW Oct 2026; free-forever plan (no card), ~40+ models at $0, 500K tokens/day; OpenAI + Anthropic SDK compatible. base_url `https://api.xkiro.com/v1`; key `sk-xt-…` from [dashboard](https://xkiro.com/dashboard/api/keys). High-volume no-card alternative to OpenRouter
 - **freelm** — installable free-only LLM gateway (LiteLLM alternative), pip/npm, auto-failover across OpenRouter/Groq/Gemini/Ollama free tiers (no card); github shihabshahrier/freelm (June 2026 tool, newly tracked Oct 21)
+- **freellmpool** — installable free-only LLM gateway, pip/npm, auto-failover across 22 provider free tiers (Groq/NVIDIA/OpenRouter/Gemini/Cloudflare/Mistral/Cohere/.../LLM7); keyless start via Pollinations/OVH/Kilo/LLM7 (no card); local OpenAI-compatible proxy/CLI/library/MCP with per-day quota tracking; github 0xzr/freellmpool (NEW Oct 2026 v0.13.0)
+- **AnyAPI** — NEW Oct 2026 gateway (`https://api.anyapi.ai/v1`), 400+ models, OpenAI-compatible, permanent free tier (~15 free monthly credits, no credit card); added to freellmapi as a provider; key at dash.anyapi.ai
 - **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
 - **Hugging Face router** — $0.10/mo credit: `https://router.huggingface.co/v1`
 - ❌ **GitHub Models — RETIRED July 2026.** Don't bother.
@@ -81,7 +84,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 ## 📰 Recent news (Oct 19–21, 2026)
 - 🔄 OpenRouter free pool now **20 models** (17 `:free` + 3 `$0` non-`:free` — lyria-3-pro-clip-preview, lyria-3-pro-preview, openrouter/free): gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20)
 - ☠️ OpenRouter: `inclusionai/ling-3.0-flash-fin:free` + `ling-3.0-flash-sante:free` DEAD — not found on OpenRouter API or Kilo gateway (Oct 21)
-- 🆕 Kilo Code: `reflection/beam-free` (1M ctx) + `stealth/glyph-cluster` (256K ctx) now free, no key needed (Oct 21)
+- 🆕 Kilo Code: `reflection/beam-free` (1M ctx) + `stealth/glyph-cluster` (256K ctx) + `kilo-auto/free` (256K ctx, auto-router over free pool) now free, no key needed (Oct 21)
 - ☠️ Kilo Code: `stepfun/step-3.7-flash:free`, `tencent/hy3:free`, `apinex/apodex-1.1-mini:free` DEAD — 404 or priced on Kilo gateway
 - 🆕 OpenCode Zen: 7 new `-free` models (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free); `big-pickle` + `nemotron-3-ultra-free` removed from free tier
 - 🔄 NVIDIA NIM model count: 83 models (was 77); `deepseek-ai/deepseek-v4.1-flash` + `z-ai/glm-5.3-flash` confirmed in catalog
@@ -106,3 +109,6 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 Impossibl (api.impossibl.com/v1): keyless POST sign-up funds $0.05 + $1 email (no card); prepaid at provider list prices; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b; credit budget, some models return 403 billing_required. Verified live Oct 19
 - 🆕 **FreeRideV3** — local OpenAI-compatible gateway routing free tiers (Claude Code/Codex/Gemini CLI), installable + chain-callable; compatible with Aider/Continue/Hermes/OpenClaw for free-tier failover where keys exist (Oct 2026)
 - 🔄 Google Gemini free-tier limits no longer published per-model (~Oct 18) — per-project, console-gated limits visible only inside AI Studio; `gemini-3.8-flash` / `gemini-2.5-pro` / `gemini-2.5-flash-lite` remain free (1M ctx) but RPM/RPD must be confirmed in-console (see `Google AI Studio` section)
+- 🆕 **KeylessAI** (v0.4.0) — keyless OpenAI-compatible gateway `https://keylessai.thryx.workers.dev/v1` aggregating Pollinations + ApiAirforce; no API key, no signup, no card; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code (NEW Oct 21)
+- 🆕 **freellmpool** (v0.13.0) — pip-installable OpenAI-compatible gateway pooling 22 provider free tiers; keyless start via Pollinations/OVH/Kilo/LLM7; auto-failover + per-day quota tracking; CLI/library/proxy/MCP, incl. Hermes profile (NEW Oct 2026)
+- 🆕 **AnyAPI** (`api.anyapi.ai/v1`) — 400+ model gateway with a permanent free tier (~15 free monthly credits), no credit card; OpenAI-compatible; added to the freellmapi provider list (NEW Oct 2026)
