@@ -1,4 +1,4 @@
-# Free LLM API Guide — updated 2026-10-21
+# Free LLM API Guide — updated 2026-10-22
 
 Every provider below is OpenAI-SDK-compatible. Point any tool at `base_url` + key and go.
 Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-watch` cron agent.
@@ -67,6 +67,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - ❌ **GitHub Models — RETIRED July 2026.** Don't bother.
 - **OpenCode Zen** (opencode.ai/zen/v1) — NEW Oct 2026; free account key (no card), OpenAI-compatible; **10 free `-free` models confirmed** (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free, nemotron-3.5-lightning-free, nemotron-3.5-super-vl-free, flint-40b-free). ⚠️ promo/limited-time, data may be logged, direct API fingerprint-gated.
 
+- 🆕 **Inception Labs** — `mercury-3`: 1M-ctx diffusion LLM; free 100M tokens one-time (no card, no payment method); reasoning + tool calling; OpenAI-compatible `https://api.inceptionlabs.ai/v1`; ~1,068 tok/sec; also on OpenRouter / Baseten / Vercel
+- 🆕 **Baseten** — Mammoth-1 (27B) + Elephant-1 (9B): free on Vercel AI Gateway thru Oct 27; #1 Jev Decision Index (Mammoth) / tied-#1 Artificial Analysis Decision Index (Elephant); 16K ctx; classify / route / score (tool, not chat); `vercel.com/ai-gateway/models`
 ---
 
 ## 🏆 Recommended stack (coding/agent use)
@@ -81,7 +83,9 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 **One-time power move:** buy $10 OpenRouter credits once → all free models jump from 50 → 1,000 RPD forever.
 
-## 📰 Recent news (Oct 19–21, 2026)
+## 📰 Recent news (Oct 19–22, 2026)
+- 🆕 **Inception Labs Mercury 3** (`mercury-3`): NEW Oct 20; free 100M tokens (one-time, no card); 1M-ctx diffusion LLM; reasoning + tool calling; OpenAI-compatible `https://api.inceptionlabs.ai/v1`; ~1,068 tok/sec; also on OpenRouter/Baseten/Vercel
+- 🆕 **Baseten Mammoth-1 (27B) + Elephant-1 (9B)**: NEW Oct 20; free on Vercel AI Gateway thru Oct 27; #1 Jev Decision Index / tied-#1 AA Decision Index; 16K ctx; classify/route/score (tool, not chat); `vercel.com/ai-gateway/models`
 - 🔄 OpenRouter free pool now **21 models** (18 `:free` + 3 `$0` non-`:free` — lyria-3-pro-clip-preview, lyria-3-pro-preview, openrouter/free): + `recursive/flint-v1.0:free` (262K ctx) (Oct 21); gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20)
 - ☠️ OpenRouter: `inclusionai/ling-3.0-flash-fin:free` + `ling-3.0-flash-sante:free` DEAD — not found on OpenRouter API or Kilo gateway (Oct 21)
 - 🆕 Kilo Code: `reflection/beam-free` (1M ctx) + `stealth/glyph-cluster` (256K ctx) + `kilo-auto/free` (256K ctx, auto-router over free pool) now free, no key needed (Oct 21)
