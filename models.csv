@@ -19,6 +19,7 @@ OpenRouter,liquid/lfm-2.5-2.6b:free,66K,20 RPM / 50 RPD,openrouter.ai/keys,NEW O
 OpenRouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; nano reasoning
 OpenRouter,nvidia/nemotron-3.5-content-safety:free,128K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; safety classifier
 OpenRouter,dots-studio/dots-3-note-preview:free,512K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; note-taking model
+OpenRouter,recursive/flint-v1.0:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; 262K ctx
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
 Google AI Studio,gemini-2.5-pro,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Best free reasoning; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
@@ -33,7 +34,7 @@ NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvid
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
 NVIDIA NIM,z-ai/glm-5.3-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3-Flash; first natively multimodal GLM-5; 320B params/18B active; vision
 Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.com/api-keys,Non-commercial only
-Cerebras,llama-3.3-70b,128K,~30 RPM free,cerebras.ai,Payment method required now
+Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,cerebras.ai,$5/30-day trial credit (card required); FAQ 'no permanent free tier'; free trial models gpt-oss-120b + Qwen3-235B + Qwen3.8-27B; was ~30 RPM dev tier w/ llama-3.3-70b
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
 Cloudflare Workers AI,@cf/openai/gpt-oss-120b,128K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,
 Ollama Cloud,gpt-oss:120b,128K,Session (5h) + weekly caps,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
@@ -43,11 +44,17 @@ Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free poo
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
 Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx
 Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx
-LLM7.io,gpt-oss:20b,128K,60 RPM / 100K tok per 24h,Anonymous or token.llm7.io,Limits CUT Oct 7 (was 500K-1M tok)
-LLM7.io,DeepSeek-V4-Flash-0731,400K,60 RPM / 100K tok per 24h,Anonymous or token.llm7.io,Catalog rotates often
-SambaNova,various OSS (Llama/DeepSeek),varies,20 RPM / 20 RPD / 200K tok per day per model,sambanova.ai,Card required since Aug 14 2026 — free tier no longer keyless (sgit Oct 18 live test); some Oct-2 catalogs still list a no-card Free Tier (disputed)
+SambaNova,various OSS (Llama/DeepSeek),varies,20 RPM / 20 RPD / 200K tok per day per model,sambanova.ai,"FREE tier active (Oct 21); NO card required — free applies until payment method linked; 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview); reverses Aug-14 paid claim"
 OVHcloud,gpt-oss-120b,128K,2 RPM per IP,NO KEY / NO SIGNUP,oai.endpoints.kepler.ai.cloud.ovh.net/v1; EU-hosted
 OVHcloud,Qwen3.5-397B-A17B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Biggest no-key model
+OVHcloud,Qwen3.8-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Flagship Qwen3 27B; no key
+OVHcloud,gpt-oss-20b,131K,2 RPM per IP,NO KEY / NO SIGNUP,Small fast GPT-OSS; no key
+OVHcloud,Meta-Llama-3_3-70B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Llama 3.3 70B; no key
+OVHcloud,Mistral-Small-3.2-24B-Instruct-2506,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Small 3.2 24B; no key
+OVHcloud,Mistral-Nemo-Instruct-2407,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Nemo 12B; no key
+OVHcloud,Qwen2.5-VL-72B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Vision model 72B; no key
+OVHcloud,Qwen3.5-9B,128K,2 RPM per IP,NO KEY / NO SIGNUP,Small Qwen3 9B; no key
+OVHcloud,Qwen3.6-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Qwen3.6 27B; no key
 Z AI,GLM-4.7-Flash,200K,1 concurrent,open.bigmodel.cn/usercenter/apikeys,Also api.z.ai intl endpoint
 Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit,huggingface.co/settings/tokens,router.huggingface.co/v1
 SiliconFlow,Qwen/Qwen3-8B,128K,1000 RPM / 50K TPM,cloud.siliconflow.cn/account/ak,Real-name verification required
@@ -64,9 +71,20 @@ OpenCode Zen,glm-5.3-flash-free,1M,Free account key (no card),opencode.ai/auth,N
 OpenCode Zen,minimax-m3.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; minimax-m3.1 1M ctx; promo, may log data
 OpenCode Zen,nemotron-3.5-lightning-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
 OpenCode Zen,nemotron-3.5-super-vl-free,262K,Free account key (no card),opencode.ai/auth,Rotating promo free model; vision; may log data
+OpenCode Zen,flint-40b-free,262K,Free account key (no card),opencode.ai/auth,NEW Oct 21; recursive/flint-v1.0 free variant; promo, may log data
 BlockRun.ai,nvidia/nemotron-3-ultra-550b,1M,No key / 429 per IP,No key needed,Verified keyless Oct 21; NVIDIA-hosted OS models; 1M ctx largest
 BlockRun.ai,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,256K,No key / 429 per IP,No key needed,Verified keyless Oct 21; multimodal reasoning MoE
 BlockRun.ai,nvidia/llama-3.2-11b-vision,128K,No key / 429 per IP,No key needed,Verified keyless Oct 21; vision input
+BlockRun.ai,nvidia/nemotron-3.5-lightning,1M,No key / 429 per IP,No key needed,NEW Oct 21; free NVIDIA fast model
+BlockRun.ai,cohere/north-mini-code,256K,No key / 429 per IP,No key needed,NEW Oct 21; code-specialized free
+BlockRun.ai,poolside/laguna-xs-2.1,262K,No key / 429 per IP,No key needed,NEW Oct 21; smaller Laguna code model
+BlockRun.ai,nvidia/muse-glimmer-30b,1M,No key / 429 per IP,No key needed,NEW Oct 21; NVIDIA creative model
+BazaarLink,qwen/qwen3.7-flash,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; free aggregator bazaarlink.ai; OpenAI-compatible https://api.bazaarlink.ai/v1; Qwen3.7"
+BazaarLink,reflection/beam,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; Reflection Beam 1.0 — 501B MoE agentic coder; also free as reflection/beam-free on Kilo/OpenCode Zen"
+BazaarLink,reflection/beam-free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; Reflection Beam free variant"
+BazaarLink,nvidia/nemotron-3.5-lightning-free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; NVIDIA Nemotron 3.5 Lightning free variant; 1M ctx"
+BazaarLink,stealth/glyph-cluster,256K,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; 256K ctx clustering/embedding; also on Kilo (stealth/glyph-cluster)"
+BazaarLink,deepseek/deepseek-v4-flash-0731free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; DeepSeek V4 Flash 1M ctx; 0731 snapshot"
 uncloseai,turboderp/Qwen3.8-27B-exl3,64K,No key / 429 per IP,No key needed,Verified keyless Oct 21; single vllm endpoint
 LLM Tech,qwen3.8-27b,131K,2M tok/day per IP,Shared trial key `lt-trial-ba1ef28c6d32ed6980678d8d` at api.llmtech.eu/v1,Probe-verified by awesome-free-ai-coding; EU; no signup, no card
 LLMTR,agnes-3.0-flash,256K,Free on zero balance,https://llmtr.com/v1,Turkish gateway; agnes/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OpenRouter/Kilo/Zen live probes)
@@ -81,7 +99,12 @@ Freebuff,solar-mini-4,128K,"6 1-hour sessions/day; limited mode (shared daily ho
 Impossibl,zai/glm-5.3-flash,1M,"$1.05 startup credit ($0.05 + $1 email), no card; prepaid list-prices; credit budget — may 403 billing_required on some models",api.impossibl.com/v1,"NEW Oct 2026 reconciled; keyless POST sign-up at impossibl.com/dashboard; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b"
 Impossibl,deepseek/deepseek-v4.1-flash,—,"$1.05 startup credit (no card); prepaid list-prices; credit budget — may 403 billing_required",api.impossibl.com/v1,"NEW Oct 2026; keyless POST sign-up; not a fixed free quota — credit budget across catalog"
 Impossibl,qwen/qwen3.8-27b,—,"$1.05 startup credit (no card); prepaid list-prices; credit budget — may 403 billing_required",api.impossibl.com/v1,"NEW Oct 2026; keyless POST sign-up; credit budget across catalog"
-xKiro,"openai/gpt-5.6-sol (and 40+ free models)",128K,"500K tok/day per IP","xkiro.com/dashboard/api/keys","Free forever plan (Oct 2026); base https://api.xkiro.com/v1; OpenAI + Anthropic SDK compatible"
+xKiro,qwen/qwen3.8-27b:free,262K,"500K tok/day per IP","xkiro.com/dashboard/api/keys",Free forever plan; base https://api.xkiro.com/v1; top free model
+xKiro,stealth/llama-3.1-70b:free,128K,"500K tok/day per IP","xkiro.com/dashboard/api/keys",Free forever plan; no key via dashboard; Llama 3.1 70B
+xKiro,longcat-2.5-preview:free,262K,"500K tok/day per IP","xkiro.com/dashboard/api/keys",Free forever plan; long-context model
+xKiro,nemotron-3.5-super-vl:free,262K,"500K tok/day per IP","xkiro.com/dashboard/api/keys",Free forever plan; vision model
+xKiro,qwen/qwen3-32b:free,262K,"500K tok/day per IP","xkiro.com/dashboard/api/keys",Free forever plan; Qwen3 32B
+xKiro,qwen/qwen2.5-72b:free,128K,"500K tok/day per IP","xkiro.com/dashboard/api/keys",Free forever plan; Qwen2.5 72B
 KeylessAI,"openai-fast+grok-4.1-mini:free+step-3.5-flash:free+gemma3-270m:free (keyless pool)",4K,"No key / no signup / no card","https://keylessai.thryx.workers.dev/v1; npm keylessai v0.4.0","NEW Oct 21 v0.4.0; aggregates Pollinations + ApiAirforce; OpenAI-compatible; works with Aider/Cline/Continue/Codex/Claude Code"
 AnyAPI,400+ models incl. permanent free tier,100K tokens/day,no card,"keyless/free acct at dash.anyapi.ai; https://api.anyapi.ai/v1","NEW Oct 2026; OpenAI-compatible gateway; permanent free tier (100K tokens/day @ $0; corrected from 15 monthly credits); added to freellmapi as provider"
 freellmpool,pool of 22 provider free tiers (Groq/NVIDIA/OpenRouter/Gemini/Cloudflare/Mistral/etc),varies,"keyless start via Pollinations/OVH/Kilo + free keys","pip install freellmpool; localhost:8080/v1","NEW Oct 2026 v0.13.0; OpenAI-compatible CLI/library/proxy/MCP; auto-failover; per-day quota tracking"

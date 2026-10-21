@@ -9,21 +9,19 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Get key:** https://openrouter.ai/keys (Google login, 30 sec)
 - **Limits:** 20 RPM, **50 req/day per free model** → jumps to **1,000/day** after a one-time $10 credit buy
 - **base_url:** `https://openrouter.ai/api/v1`
-- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0)
-- **Trick:** model = `openrouter/free` auto-routes across all 20 free models. Or pass a `models: [...]` array for built-in fallback.
+- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0), `recursive/flint-v1.0:free` (262K ctx)
+- **Trick:** model = `openrouter/free` auto-routes across all 21 free models. Or pass a `models: [...]` array for built-in fallback.
 
 ## 🚪 No-key options (zero signup)
 | Provider | base_url | Limit | Catch |
 |---|---|---|---|
 | **Kilo Code** | `https://api.kilo.ai/api/gateway` | 200 req/hr per IP | Logs prompts; has nemotron-ultra 1M free |
 | **OVHcloud** | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | 2 RPM per IP/model | EU-hosted, slow trickle |
-|| **LLM7.io** | `https://api.llm7.io/v1` | 60 RPM / 100K tok per 24h | ⚠️ limits CUT Oct 7 (was 1M tok) |
-|| **SambaNova** | `https://api.sambanova.ai/v1` | 20 RPM / 20 RPD / 200K tok-day | ⚠️ Card required since Aug 14 2026 (sgit Oct 18 live test); free tier no longer keyless — some Oct-2 catalogs still list a no-card Free Tier (disputed) |
-|| **BlockRun.ai** | `https://blockrun.ai/api/v1` | 429 per IP; keyless | Verified Oct 21; 7 NVIDIA-hosted OS free models: nemotron-3-ultra-550b (1M), nano-omni-30b-a3b-reasoning (256K), llama-3.2-11b-vision (128K) |
-|| **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
-|| **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
-||| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OR/Kilo/Zen live probes) |
-||| **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | No key / no signup / no card | NEW Oct 21 v0.4.0; aggregates Pollinations + ApiAirforce; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
+| **BlockRun.ai** | `https://blockrun.ai/api/v1` | 429 per IP; keyless | Verified Oct 21; 7 NVIDIA-hosted OS free models: nemotron-3-ultra-550b (1M), nano-omni-30b-a3b-reasoning (256K), llama-3.2-11b-vision (128K), nemotron-3.5-lightning (1M), cohere/north-mini-code (256K), poolside/laguna-xs-2.1 (262K), muse-glimmer-30b (1M) |
+| **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
+| **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
+|| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OR/Kilo/Zen live probes) |
+|| **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | No key / no signup / no card | NEW Oct 21 v0.4.0; aggregates Pollinations + ApiAirforce; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
 
 ## 🧠 Google AI Studio (Gemini)
 - **Get key:** https://aistudio.google.com/app/apikey
@@ -53,26 +51,27 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - ⚠️ Oct 3: they killed nemotron-3-nano, llama-3.3-70b, gpt-oss-120b… free list rotates — check build.nvidia.com/models.
 
 ## Others worth a key (details in models.csv)
-- **Cerebras** https://cerebras.ai — needs payment method on file now
+- **Cerebras** https://cerebras.ai — $5/30-day trial credit (card required; FAQ "no permanent free tier"); 5 RPM / 30K uncached tok/min / 1M tok/day per model; free trial models: gpt-oss-120b, Qwen3-235B, Qwen3.8-27B
 - **Cohere** — 1,000 calls/month, non-commercial only
 - **Cloudflare Workers AI** — 10K neurons/day, 60+ models
 - **Ollama Cloud** — session (5h) + weekly caps, `https://ollama.com/v1`
 - **APInex** (apinex.bond) — NEW Oct 2026 gateway; ~18 `:free` models at $0, ~10M tokens/day shared allowance, Google sign-in + daily sign-in; OpenAI-compatible base `https://api.apinex.bond/v1`
-- **xKiro** (xkiro.com) — NEW Oct 2026; free-forever plan (no card), ~40+ models at $0, 500K tokens/day; OpenAI + Anthropic SDK compatible. base_url `https://api.xkiro.com/v1`; key `sk-xt-…` from [dashboard](https://xkiro.com/dashboard/api/keys). High-volume no-card alternative to OpenRouter
+- **xKiro** (xkiro.com) — NEW Oct 2026; free-forever plan (no card), **49 models** at $0, 500K tokens/day; OpenAI + Anthropic SDK compatible. base_url `https://api.xkiro.com/v1`; key `sk-xt-…` from [dashboard](https://xkiro.com/dashboard/api/keys). Top free: `qwen/qwen3.8-27b:free` (262K), `stealth/llama-3.1-70b:free` (128K), `longcat-2.5-preview:free` (262K), `nemotron-3.5-super-vl:free` (262K), `qwen/qwen3-32b:free` (262K), `qwen/qwen2.5-72b:free` (128K). High-volume no-card alternative to OpenRouter
 - **freelm** — installable free-only LLM gateway (LiteLLM alternative), pip/npm, auto-failover across OpenRouter/Groq/Gemini/Ollama free tiers (no card); github shihabshahrier/freelm (June 2026 tool, newly tracked Oct 21)
 - **freellmpool** — installable free-only LLM gateway, pip/npm, auto-failover across 22 provider free tiers (Groq/NVIDIA/OpenRouter/Gemini/Cloudflare/Mistral/Cohere/.../LLM7); keyless start via Pollinations/OVH/Kilo/LLM7 (no card); local OpenAI-compatible proxy/CLI/library/MCP with per-day quota tracking; github 0xzr/freellmpool (NEW Oct 2026 v0.13.0)
 - **AnyAPI** — NEW Oct 2026 gateway (`https://api.anyapi.ai/v1`), 400+ models, OpenAI-compatible, permanent free tier (100K tokens/day free, no credit card); added to freellmapi as provider; key at dash.anyapi.ai
 - **onomeo** — NEW Oct 21; OpenAI-compatible gateway (`https://onomeo.com/v1`), Bearer API-key; free models share 30 calls/5h per account (1,500 site-wide shared window); long requests count as 1 call per 50K chars; models delivered via signed catalog (Premium now, Free after 30-day gate); free answers branded "— via onomeo.com" (freellmapi adapter strips this); 403/429 = quota/throttle on valid key, not auth failure
-- **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
-- **Hugging Face router** — $0.10/mo credit: `https://router.huggingface.co/v1`
+| - **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
+| - **BazaarLink** (bazaarlink.ai) — NEW Oct 21; free no-card API key (`bazaarlink.ai/keys`); OpenAI-compatible `https://api.bazaarlink.ai/v1`; shared free pool: 10 RPM / 60 wu-day (no card) or 20 RPM / 120 wu-day (credit); 20 RPM site cap, 2 concurrent, resets 00:00 UTC; 6 free models: qwen/qwen3.7-flash, reflection/beam (501B MoE agentic coder), reflection/beam-free, nvidia/nemotron-3.5-lightning-free, stealth/glyph-cluster, deepseek/deepseek-v4-flash-0731free; hourly probes Oct 21 ~96-100% success
+| - **Hugging Face router** — $0.10/mo credit: `https://router.huggingface.co/v1`
 - ❌ **GitHub Models — RETIRED July 2026.** Don't bother.
-- **OpenCode Zen** (opencode.ai/zen/v1) — NEW Oct 2026; free account key (no card), OpenAI-compatible; 9 free `-free` models confirmed (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free, nemotron-3.5-lightning-free, nemotron-3.5-super-vl-free). ⚠️ promo/limited-time, data may be logged, direct API fingerprint-gated.
+- **OpenCode Zen** (opencode.ai/zen/v1) — NEW Oct 2026; free account key (no card), OpenAI-compatible; **10 free `-free` models confirmed** (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free, nemotron-3.5-lightning-free, nemotron-3.5-super-vl-free, flint-40b-free). ⚠️ promo/limited-time, data may be logged, direct API fingerprint-gated.
 
 ---
 
 ## 🏆 Recommended stack (coding/agent use)
 1. **OpenRouter `nvidia/nemotron-3-ultra-550b-a55b:free`** — biggest brain, 1M ctx
-2. → fallback `openrouter/free` (auto-router over 20 models, survives single-model outages)
+2. → fallback `openrouter/free` (auto-router over 21 models, survives single-model outages)
 3. → fallback **NVIDIA NIM `nvidia/nemotron-3-super-120b-a12b`** (40 RPM, no daily cap)
 4. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
 5. → fallback **Gemini 3.8 Flash** (limits now console-gated / not published per-model since ~Oct 18)
@@ -83,11 +82,11 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 **One-time power move:** buy $10 OpenRouter credits once → all free models jump from 50 → 1,000 RPD forever.
 
 ## 📰 Recent news (Oct 19–21, 2026)
-- 🔄 OpenRouter free pool now **20 models** (17 `:free` + 3 `$0` non-`:free` — lyria-3-pro-clip-preview, lyria-3-pro-preview, openrouter/free): gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20)
+- 🔄 OpenRouter free pool now **21 models** (18 `:free` + 3 `$0` non-`:free` — lyria-3-pro-clip-preview, lyria-3-pro-preview, openrouter/free): + `recursive/flint-v1.0:free` (262K ctx) (Oct 21); gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20)
 - ☠️ OpenRouter: `inclusionai/ling-3.0-flash-fin:free` + `ling-3.0-flash-sante:free` DEAD — not found on OpenRouter API or Kilo gateway (Oct 21)
 - 🆕 Kilo Code: `reflection/beam-free` (1M ctx) + `stealth/glyph-cluster` (256K ctx) + `kilo-auto/free` (256K ctx, auto-router over free pool) now free, no key needed (Oct 21)
 - ☠️ Kilo Code: `stepfun/step-3.7-flash:free`, `tencent/hy3:free`, `apinex/apodex-1.1-mini:free` DEAD — 404 or priced on Kilo gateway
-- 🆕 OpenCode Zen: 7 new `-free` models (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free); `big-pickle` + `nemotron-3-ultra-free` removed from free tier
+- 🆕 OpenCode Zen: **10 `-free` models** (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free, nemotron-3.5-lightning-free, nemotron-3.5-super-vl-free, **flint-40b-free**); `big-pickle` + `nemotron-3-ultra-free` removed from free tier
 - 🔄 NVIDIA NIM model count: 83 models (was 77); `deepseek-ai/deepseek-v4.1-flash` + `z-ai/glm-5.3-flash` confirmed in catalog
 - 🆕 Google lyria-3 clip+pro audio models now free on OpenRouter (pricing $0, no `:free` suffix)
 - 🆕 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added to free catalog Oct 17; 40 RPM / no daily cap
@@ -97,21 +96,14 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 NVIDIA NIM: `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) free endpoint — dual-confirmed build.nvidia.com free_endpoint + freellm.net Verified
 - 🆕 NVIDIA NIM: `diffusiongemma-26b-a4b-it` (26B diffusion text-gen, parallel token gen) + `paligemma` (vision-language) now on build.nvidia.com free_endpoint filter
 - 🔄 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added Oct 17; 40 RPM / no daily cap
-- 🆕 Google lyria-3 clip+pro audio models free on OpenRouter ($0 pricing, no `:free` suffix)
-- 🔧 Ollama Cloud: no new free cloud tier (Oct probe); freellmapi = 34 providers / 635 endpoints, auto-failover
-- 🆕 BlockRun.ai: verified keyless, no signup, no card; 7 free NVIDIA-hosted models incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K); auto-routes unlisted model names
+- 🆕 BlockRun.ai: verified keyless, no signup, no card; **7 free NVIDIA-hosted models** incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K) + **nemotron-3.5-lightning** (1M) + **cohere/north-mini-code** (256K) + **poolside/laguna-xs-2.1** (262K) + **muse-glimmer-30b** (1M); auto-routes unlisted model names
 - 🆕 uncloseai: verified keyless Qwen3.8-27B-exl3 (64K) vllm endpoint live, no signup
 - 🆕 LLM Tech (llmtech.eu): shared trial key (no card, no signup), 2M tok/day, qwen3.8-27b; EU-hosted (probe-verified list)
 - 🆕 LLMTR (llmtr.com): Turkish keyless gateway, agnes-3.0-flash / motif / minimax free on zero balance; ☠ ling-3.1-flash DEAD Oct 13 (ended earlier than tracked Oct-22 estimate; absent from LLMTR 380-model catalog + OpenRouter/Kilo/Zen live probes)
-- ℹ️ Google stopped allowing ZDR (zero-data-retention) for Gemini routing via OpenRouter (Oct 18) — retention change affecting all OR+Gemini traffic, incl. free
-- 🔧 freellmapi v0.16.6 (Oct 20): adds ZCode provider + new /v1/usage endpoint
-- 🆕 **onomeo** — new free OpenAI-compatible gateway provider added in freellmapi v0.16.7 (#1460); 30 calls/5h per account (1,500 site-wide), signed catalog-gated models (Premium now / Free after 30d gate); 401 bad_key = invalid, 403/429 = valid-but-quota
-- 🔧 freellmapi v0.16.7 (Oct 21): adds onomeo provider (#1460), GET /v1/models/:id endpoint (OpenAI models.retrieve), POST /health/probe-models (manual model probe trigger), new PROXY_REQUIRED_PLATFORMS + MODEL_PROBE_ENABLED config options; ModelScope daily cap cut 1800→100 (magic-grain 魔粹 metering); SerpSearch never sends empty validation probes (#1599 fixes key revocation); FreeAI skips credential validation; rerank+moderation now enforce monthly budget caps + mark keys healthy on success + rerank logs to requests table
-- 🆕 Google Antigravity: agent-first IDE/CLI with $0 Individual plan serving Gemini + claude-opus/s + gpt-oss-120b
-- 🆕 Freebuff (freebuff.com): ad-supported installable coding agent (CLI/desktop/web/cloud/chat), NO card; limited-mode daily credits — 6 1-hour sessions/day, ~30h/day in most regions (5h outside, 4h VPN), resets local midnight; free models mimo-v2.6-flash (default), glm-5.3-flash, deepseek-v4.1-flash, solar-pro-4, solar-mini-4; no pasteable /v1 endpoint (sign-in tool, not chain-callable). Verified live Oct 19; may train on data
-- 🆕 Impossibl (api.impossibl.com/v1): keyless POST sign-up funds $0.05 + $1 email (no card); prepaid at provider list prices; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b; credit budget, some models return 403 billing_required. Verified live Oct 19
-- 🆕 **FreeRideV3** — local OpenAI-compatible gateway routing free tiers (Claude Code/Codex/Gemini CLI), installable + chain-callable; compatible with Aider/Continue/Hermes/OpenClaw for free-tier failover where keys exist (Oct 2026)
-- 🔄 Google Gemini free-tier limits no longer published per-model (~Oct 18) — per-project, console-gated limits visible only inside AI Studio; `gemini-3.8-flash` / `gemini-2.5-pro` / `gemini-2.5-flash-lite` remain free (1M ctx) but RPM/RPD must be confirmed in-console (see `Google AI Studio` section)
-- 🆕 **KeylessAI** (v0.4.0) — keyless OpenAI-compatible gateway `https://keylessai.thryx.workers.dev/v1` aggregating Pollinations + ApiAirforce; no API key, no signup, no card; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code (NEW Oct 21)
-- 🆕 **freellmpool** (v0.13.0) — pip-installable OpenAI-compatible gateway pooling 22 provider free tiers; keyless start via Pollinations/OVH/Kilo/LLM7; auto-failover + per-day quota tracking; CLI/library/proxy/MCP, incl. Hermes profile (NEW Oct 2026)
-- 🆕 **AnyAPI** (`api.anyapi.ai/v1`) — 400+ model gateway with a permanent free tier (100K tokens/day free), no credit card; OpenAI-compatible; added to the freellmapi provider list (NEW Oct 2026)
+- ☠️ **LLM7.io: both cataloged models PAID** (`gpt-oss:20b` turbo tier, `deepseek-v4-flash-0731` pro tier) — removed from free tracking Oct 21
+- 🔄 **SambaNova free tier REACTIVATED** (Oct 21 Gravity + vava-nessa Oct 17): no card required (free applies until payment method linked); 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview)
+- 🆕 **OVHcloud: 11 free chat models** no key/no signup (EU-hosted): Qwen3.5-397B (262K), Qwen3.8-27B (262K), gpt-oss-20b (131K), gpt-oss-120b (128K), Llama-3.3-70B (128K), Mistral-Small-3.2-24B (128K), Mistral-Nemo (128K), Qwen2.5-VL-72B (128K), Qwen3.5-9B (128K), Qwen3.6-27B (262K), Qwen3Guard variants
+- 🆕 **xKiro: 49 free models** (500K tok/day per IP, dashboard API key); top: qwen3.8-27b:free (262K), stealth/llama-3.1-70b:free (128K), longcat-2.5-preview:free (262K), nemotron-3.5-super-vl:free (262K), qwen3-32b:free (262K), qwen2.5-72b:free (128K); OpenAI/Anthropic SDK compatible
+- 🆕 **BazaarLink** (bazaarlink.ai): NEW Oct 21 free-aggregator, no card; 6 free models — qwen/qwen3.7-flash, reflection/beam (501B MoE agentic coder), reflection/beam-free, nvidia/nemotron-3.5-lightning-free, stealth/glyph-cluster, deepseek/deepseek-v4-flash-0731free; 10 RPM/60 wu-day (no card) or 20/120 (credit); OpenAI-compatible https://api.bazaarlink.ai/v1; hourly probes ~96-100% (Oct 21 17:46)
+- 🔄 **SambaNova free tier REACTIVATED** (Oct 21 Gravity + vava-nessa Oct 17): was "all paid / card required since Aug 14"; now free tier live, NO card needed (free applies until payment method linked); 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview)
+- 🔄 **Cerebras reclassified**: was "~30 RPM dev tier, llama-3.3-70b, payment method required"; now $5/30-day trial credit (card required; FAQ "no permanent free tier"); limit 5 RPM / 30K tok/min / 1M tok/day per model; free trial models gpt-oss-120b + Qwen3-235B (+Qwen3.8-27B)
