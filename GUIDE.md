@@ -22,7 +22,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 || **BlockRun.ai** | `https://blockrun.ai/api/v1` | 429 per IP; keyless | Verified Oct 21; 7 NVIDIA-hosted OS free models: nemotron-3-ultra-550b (1M), nano-omni-30b-a3b-reasoning (256K), llama-3.2-11b-vision (128K) |
 || **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
 || **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
-|| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash free only until Oct 22 |
+|| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OR/Kilo/Zen probes) |
 
 ## 🧠 Google AI Studio (Gemini)
 - **Get key:** https://aistudio.google.com/app/apikey
@@ -98,7 +98,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 BlockRun.ai: verified keyless, no signup, no card; 7 free NVIDIA-hosted models incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K); auto-routes unlisted model names
 - 🆕 uncloseai: verified keyless Qwen3.8-27B-exl3 (64K) vllm endpoint live, no signup
 - 🆕 LLM Tech (llmtech.eu): shared trial key (no card, no signup), 2M tok/day, qwen3.8-27b; EU-hosted (probe-verified list)
-- 🆕 LLMTR (llmtr.com): Turkish keyless gateway, agnes-3.0-flash / motif / minimax free on zero balance; ⚠ ling-3.1-flash free only until Oct 22
+- 🆕 LLMTR (llmtr.com): Turkish keyless gateway, agnes-3.0-flash / motif / minimax free on zero balance; ☠ ling-3.1-flash DEAD Oct 13 (ended earlier than tracked Oct-22 estimate; absent from LLMTR 380-model catalog + OpenRouter/Kilo/Zen live probes)
 - ℹ️ Google stopped allowing ZDR (zero-data-retention) for Gemini routing via OpenRouter (Oct 18) — retention change affecting all OR+Gemini traffic, incl. free
 - 🔧 freellmapi v0.16.6 (Oct 20): adds ZCode provider + new /v1/usage endpoint
 - 🆕 Google Antigravity: agent-first IDE/CLI with $0 Individual plan serving Gemini + claude-opus/s + gpt-oss-120b
