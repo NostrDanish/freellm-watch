@@ -18,7 +18,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 | **Kilo Code** | `https://api.kilo.ai/api/gateway` | 200 req/hr per IP | Logs prompts; has nemotron-ultra 1M free |
 | **OVHcloud** | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | 2 RPM per IP/model | EU-hosted, slow trickle |
 || **LLM7.io** | `https://api.llm7.io/v1` | 60 RPM / 100K tok per 24h | ⚠️ limits CUT Oct 7 (was 1M tok) |
-|| **SambaNova** | `https://api.sambanova.ai/v1` | 20 RPM / 20 RPD / 200K tok-day | New find Oct 21; standing free tier |
+|| **SambaNova** | `https://api.sambanova.ai/v1` | 20 RPM / 20 RPD / 200K tok-day | ⚠️ Card required since Aug 14 2026 (sgit Oct 18 live test); free tier no longer keyless — some Oct-2 catalogs still list a no-card Free Tier (disputed) |
 || **BlockRun.ai** | `https://blockrun.ai/api/v1` | 429 per IP; keyless | Verified Oct 21; 7 NVIDIA-hosted OS free models: nemotron-3-ultra-550b (1M), nano-omni-30b-a3b-reasoning (256K), llama-3.2-11b-vision (128K) |
 || **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
 || **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
@@ -57,6 +57,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Cloudflare Workers AI** — 10K neurons/day, 60+ models
 - **Ollama Cloud** — session (5h) + weekly caps, `https://ollama.com/v1`
 - **APInex** (apinex.bond) — NEW Oct 2026 gateway; ~18 `:free` models at $0, ~10M tokens/day shared allowance, Google sign-in + daily sign-in; OpenAI-compatible base `https://api.apinex.bond/v1`
+- **xKiro** (xkiro.com) — NEW Oct 2026; free-forever plan (no card), ~40+ models at $0, 500K tokens/day; OpenAI + Anthropic SDK compatible. base_url `https://api.xkiro.com/v1`; key `sk-xt-…` from [dashboard](https://xkiro.com/dashboard/api/keys). High-volume no-card alternative to OpenRouter
+- **freelm** — installable free-only LLM gateway (LiteLLM alternative), pip/npm, auto-failover across OpenRouter/Groq/Gemini/Ollama free tiers (no card); github shihabshahrier/freelm (June 2026 tool, newly tracked Oct 21)
 - **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
 - **Hugging Face router** — $0.10/mo credit: `https://router.huggingface.co/v1`
 - ❌ **GitHub Models — RETIRED July 2026.** Don't bother.
@@ -101,4 +103,5 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🔧 freellmapi v0.16.6 (Oct 20): adds ZCode provider + new /v1/usage endpoint
 - 🆕 Google Antigravity: agent-first IDE/CLI with $0 Individual plan serving Gemini + claude-opus/s + gpt-oss-120b
 - 🆕 Freebuff (freebuff.com): ad-supported installable coding agent (CLI/desktop/web/cloud/chat), NO card; limited-mode daily credits — 6 1-hour sessions/day, ~30h/day in most regions (5h outside, 4h VPN), resets local midnight; free models mimo-v2.6-flash (default), glm-5.3-flash, deepseek-v4.1-flash, solar-pro-4, solar-mini-4; no pasteable /v1 endpoint (sign-in tool, not chain-callable). Verified live Oct 19; may train on data
-- 🆕 Impossibl (api.impossibl.com/v1): keyless POST sign-up funds $0.05 + $1 email (NO card); prepaid at provider list prices; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b; credit budget, some models return 403 billing_required. Verified live Oct 19
+- 🆕 Impossibl (api.impossibl.com/v1): keyless POST sign-up funds $0.05 + $1 email (no card); prepaid at provider list prices; free callable ids zai/glm-5.3-flash, deepseek/deepseek-v4.1-flash, qwen/qwen3.8-27b; credit budget, some models return 403 billing_required. Verified live Oct 19
+- 🆕 **FreeRideV3** — local OpenAI-compatible gateway routing free tiers (Claude Code/Codex/Gemini CLI), installable + chain-callable; compatible with Aider/Continue/Hermes/OpenClaw for free-tier failover where keys exist (Oct 2026)
