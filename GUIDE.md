@@ -49,6 +49,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Limits:** 40 RPM, **no daily cap** per model; 91 models online (free dev program)
 - **base_url:** `https://integrate.api.nvidia.com/v1`
 - **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `deepseek-ai/deepseek-v4.1-flash` (NEW Oct 17; 552B MoE, 1M ctx), `z-ai/glm-5.3-flash` (NEW Oct 21; first natively multimodal GLM-5, 320B params, 1M ctx), `nvidia/nemotron-3.5-super-vl-120b-a12b` (NEW Oct 22; vision, 1M ctx), `stepfun-ai/step-5-preview` (NEW Oct 22; multimodal reasoning, 1M ctx), `meta/llama-4-maverick-17b-128e-instruct` (NEW Oct 22; 128-expert MoE), `qwen/qwen3-coder-480b-a35b-instruct` (NEW Oct 22; 480B coding MoE), `moonshotai/kimi-k2.6` (NEW Oct 22; 262K ctx, ⚠️ Unavailable on free-model.com), `01-ai/yi-large` (NEW Oct 22; ctx unknown), `openai/gpt-oss-20b` (NEW Oct 22; 128K ctx)
+- **Free embedding/reranking:** `nvidia/nemotron-3.5-embed-1b` (1B, 32K ctx), `nvidia/nemotron-3.5-embed-8b` (8B, 32K ctx), `nvidia/nemotron-3.5-rerank-8b` (8B, 32K ctx) — NEW Oct 20; free on build.nvidia.com
 - ⚠️ Oct 3: they killed nemotron-3-nano, llama-3.3-70b, gpt-oss-120b… free list rotates — check build.nvidia.com/models.
 
 ## Others worth a key (details in models.csv)
@@ -66,7 +67,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **AnyAPI** — NEW Oct 2026 gateway (`https://api.anyapi.ai/v1`), 400+ models, OpenAI-compatible, permanent free tier (100K tokens/day free, no credit card); added to freellmapi as provider; key at dash.anyapi.ai
 |- **IteraCompute** — 🆕 NEW Oct 22; OpenAI-compatible (`https://api.iteracompute.com/v1`); **1 model truly free** — `qwen/qwen3.8-27b` (262K ctx, 128K free tier); **30M tok/month** (signup key, no card); 160K TPM; key validation OFF; 120s timeout (queues at peak); ⚠️ `moonshotai/kimi-k3-free` ($0 pricing) requires $10 recharge — excluded from chain; 30 of 32 catalog models paid; key via iteracompute.com/signup
 - **onomeo** — NEW Oct 21; OpenAI-compatible gateway (`https://onomeo.com/v1`), Bearer API-key; free models share 30 calls/5h per account (1,500 site-wide shared window); long requests count as 1 call per 50K chars; models delivered via signed catalog (Premium now, Free after 30-day gate); free answers branded "— via onomeo.com" (freellmapi adapter strips this); 403/429 = quota/throttle on valid key, not auth failure
-| - **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
+| - **Z AI** (GLM-4.7-Flash, 200K ctx; GLM-4.6V-Flash NEW Oct 23, free vision; GLM-4.5-Flash DEAD Oct 22) — https://api.z.ai/api/paas/v1 intl endpoint
 | - **BazaarLink** (bazaarlink.ai) — NEW Oct 21; free no-card API key (`bazaarlink.ai/keys`); OpenAI-compatible `https://api.bazaarlink.ai/v1`; shared free pool: 10 RPM / 60 wu-day (no card) or 20 RPM / 120 wu-day (credit); 20 RPM site cap, 2 concurrent, resets 00:00 UTC; 6 free models: qwen/qwen3.7-flash, reflection/beam (501B MoE agentic coder), reflection/beam-free, nvidia/nemotron-3.5-lightning-free, stealth/glyph-cluster, deepseek/deepseek-v4-flash-0731free; hourly probes Oct 21 ~96-100% success
 | - **Hugging Face router** — $0.10/mo credit: `https://router.huggingface.co/v1`
 - ❌ **GitHub Models — RETIRED July 2026.** Don't bother.

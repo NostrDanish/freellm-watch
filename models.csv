@@ -49,6 +49,9 @@ NVIDIA NIM,qwen/qwen3-coder-480b-a35b-instruct,1M,40 RPM / no daily cap,build.nv
 NVIDIA NIM,minimaxai/minimax-m2.7,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 230B MoE; free per ASSERT-KTH list (absent from /v1 Oct 22)
 NVIDIA NIM,bytedance/seed-oss-36b-instruct,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; reasoning; free per ASSERT-KTH list (absent from /v1 Oct 22)
 NVIDIA NIM,stepfun-ai/step-3.5-flash,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 200B sparse-MoE reasoning; free per ASSERT-KTH list (absent from /v1 Oct 22)
+NVIDIA NIM,nvidia/nemotron-3.5-embed-1b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 1B param text+image embedding; RAG retrieval
+NVIDIA NIM,nvidia/nemotron-3.5-embed-8b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 8B param text+image embedding; RAG retrieval
+NVIDIA NIM,nvidia/nemotron-3.5-rerank-8b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 8B param reranking; cross-encoder
 Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.com/api-keys,Non-commercial only
 Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,cerebras.ai,$5/30-day trial credit (card required); FAQ 'no permanent free tier'; free trial models gpt-oss-120b + Qwen3-235B + Qwen3.8-27B; was ~30 RPM dev tier w/ llama-3.3-70b
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
@@ -87,6 +90,7 @@ OVHcloud,Qwen2.5-VL-72B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Vision mod
 OVHcloud,Qwen3.5-9B,128K,2 RPM per IP,NO KEY / NO SIGNUP,Small Qwen3 9B; no key
 OVHcloud,Qwen3.6-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Qwen3.6 27B; no key
 Z AI,GLM-4.7-Flash,200K,1 concurrent,open.bigmodel.cn/usercenter/apikeys,Also api.z.ai intl endpoint
+Z AI,GLM-4.6V-Flash,varies,Not published,open.bigmodel.cn/usercenter/apikeys,NEW Oct 23; free vision model (aifree.dev verified Oct 12); GLM-4.5-Flash DEAD Oct 22 (stopped answering)
 Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit,huggingface.co/settings/tokens,router.huggingface.co/v1
 SiliconFlow,Qwen/Qwen3-8B,128K,1000 RPM / 50K TPM,cloud.siliconflow.cn/account/ak,Real-name verification required
 Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story niche
