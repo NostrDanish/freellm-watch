@@ -77,7 +77,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 1. **OpenRouter `nvidia/nemotron-3-ultra-550b-a55b:free`** — biggest brain, 1M ctx
 2. → fallback `openrouter/free` (auto-router over 21 models, survives single-model outages)
 3. → fallback **NVIDIA NIM `nvidia/nemotron-3-super-120b-a12b`** (40 RPM, no daily cap)
-4. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
+4. → fallback **Groq `openai/gpt-oss-120b`** (14,400 RPD, instant)
 5. → fallback **Gemini 3.8 Flash** (limits now console-gated / not published per-model since ~Oct 18)
 6. → fallback **APInex `free/deepseek-v4.1-flash`** (10M tokens/day, Google sign-in only; Oct 2026)
 7. → fallback **OpenCode Zen `glm-5.3-flash-free`** (free account key; promo, may log data)
