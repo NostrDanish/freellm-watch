@@ -35,7 +35,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Limits:** 30 RPM / **1,000 RPD**
 - **base_url:** `https://api.groq.com/openai/v1`
 - **Best:** `openai/gpt-oss-120b`, `qwen/qwen3.8-27b`
-- **Free models (no card, 13 total):** `openai/gpt-oss-120b`, `openai/gpt-oss-20b`, `openai/gpt-oss-safeguard-20b` (safety), `qwen/qwen3.8-27b`, `groq/compound` (agentic w/ web search + code exec), `groq/compound-mini`, `whisper-large-v3` (STT), `whisper-large-v3-turbo` (STT), `meta-llama/llama-prompt-guard-2-22m` (safety), `canopylabs/orpheus-v1-english` (TTS), `canopylabs/orpheus-v1-arabic-saudi` (TTS)
+- **Free models (no card, 11 total):** `openai/gpt-oss-120b`, `openai/gpt-oss-20b`, `openai/gpt-oss-safeguard-20b` (safety), `qwen/qwen3.8-27b`, `whisper-large-v3` (STT), `whisper-large-v3-turbo` (STT), `meta-llama/llama-prompt-guard-2-22m` (safety), `canopylabs/orpheus-v1-english` (TTS), `canopylabs/orpheus-v1-arabic-saudi` (TTS)
 
 ## 🟠 Mistral
 - **Get key:** https://console.mistral.ai/api-keys (free mode on by default)
@@ -121,4 +121,5 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 **Oct 22**: **UnoRouter** (api.unorouter.com/v1) — free-aggregator with **190+ free models** from 18 providers at $0; free key via registration (no card); ~1 req/min per model; newly tracked models: `mistral-large-4:free`, `deepseek-v4.1-flash-1017:free`.
 - 🪦 **Oct 22 probe update**: Kilo Code no-key gateway **5→20 free** (15 added: flint-v1.0:free, xing4.0-29b-a4b:free, dots-3-note-preview:free, lfm-2.5-2.6b:free, nemotron-3.5-lightning:free, laguna-xs-2.1:free, cohere/north-mini-code:free, nemotron-3.5-content-safety:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, nemotron-3-super-120b-a12b:free, minimax-m3.1-flash:free, nemotron-3.5-super-vl:free, lyria-3-pro-preview, lyria-3-clip-preview, openrouter/free); new ids use `:free` suffix (mirrors full OpenRouter free pool).
 - 🪦 **Oct 22 probe update**: OpenCode Zen `longcat-2.5-preview-free` **DEAD** (absent from `/zen/v1/models` keyless listing; grep `longcat` → False); 9 other `-free` models intact.
+- 🪦 **Oct 22 probe update**: Groq `groq/compound` & `groq/compound-mini` **DEAD** (shut down Sept 21 2026 per Groq deprecations — `https://console.groq.com/docs/deprecations`, confirmed via live fetch; aifree.dev's Groq page returns HTTP 404, so the earlier "verified aifree.dev" stamp was stale). Groq's published table now lists only `openai/gpt-oss-120b`, `openai/gpt-oss-20b`, `qwen/qwen3.8-27b`; compound/compound-mini had no announced replacement.
 - 🪦 **Oct 22 probe update**: BazaarLink **6→7 unique free**; `auto:free` router NEW; bare `qwen/qwen3.7-flash` now PRICED — free id is `qwen/qwen3.7-flash:free`.
