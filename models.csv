@@ -60,6 +60,21 @@ Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free poo
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
 Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx
 Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx
+Kilo Code,recursive/flint-v1.0:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free on Kilo gateway; :free suffix
+Kilo Code,xingchen-agi/xing4.0-29b-a4b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,dots-studio/dots-3-note-preview:free,512K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,liquid/lfm-2.5-2.6b:free,64K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,nvidia/nemotron-3.5-lightning:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,poolside/laguna-xs-2.1:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,cohere/north-mini-code:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,nvidia/nemotron-3.5-content-safety:free,128K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,nvidia/nemotron-3-super-120b-a12b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,minimax/minimax-m3.1-flash:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,nvidia/nemotron-3.5-super-vl:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,google/lyria-3-pro-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (no :free suffix on Kilo)
+Kilo Code,google/lyria-3-clip-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (clip preview)
+Kilo Code,openrouter/free,200K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless auto-router over free pool (OpenRouter passthrough)
 SambaNova,various OSS (Llama/DeepSeek),varies,20 RPM / 20 RPD / 200K tok per day per model,sambanova.ai,"FREE tier active (Oct 21); NO card required — free applies until payment method linked; 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview); reverses Aug-14 paid claim"
 OVHcloud,gpt-oss-120b,128K,2 RPM per IP,NO KEY / NO SIGNUP,oai.endpoints.kepler.ai.cloud.ovh.net/v1; EU-hosted
 OVHcloud,Qwen3.5-397B-A17B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Biggest no-key model
@@ -81,7 +96,7 @@ APInex,free/deepseek-v4.1-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,Share
 OpenCode Zen,beam-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; natively multimodal beam model; promo/limited-time, may log data; base https://opencode.ai/zen/v1
 OpenCode Zen,mimo-v2.6-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; multimodal vision model; promo, may log data
 OpenCode Zen,jev-1.13-free,128K,Free account key (no card),opencode.ai/auth,NEW Oct 21; reasoning model; promo, may log data
-OpenCode Zen,longcat-2.5-preview-free,128K,Free account key (no card),opencode.ai/auth,NEW Oct 21; long-context preview; promo, may log data
+OpenCode Zen,longcat-2.5-preview-free,128K,Free account key (no card),opencode.ai/auth,DEAD Oct 22; removed from /zen/v1/models free listing (grep 'longcat' False); 9 other -free Zen models still live; was long-context preview; promo, may log data
 OpenCode Zen,deepseek-v4.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; DeepSeek 552B MoE 1M ctx; promo, may log data
 OpenCode Zen,glm-5.3-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; GLM-5.3 multimodal 1M ctx; promo, may log data
 OpenCode Zen,minimax-m3.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; minimax-m3.1 1M ctx; promo, may log data
@@ -97,12 +112,13 @@ BlockRun.ai,poolside/laguna-xs-2.1,262K,No key / 429 per IP,No key needed,NEW Oc
 BlockRun.ai,nvidia/muse-glimmer-30b,1M,No key / 429 per IP,No key needed,NEW Oct 21; NVIDIA creative model
 BlockRun.ai,nvidia/gpt-oss-20b,128K,No key / 429 per IP,No key needed,NEW Oct 22; OpenAI GPT-OSS 20B; 128K ctx
 BlockRun.ai,nvidia/nemotron-super-49b,131K,No key / 429 per IP,No key needed,NEW Oct 22; ⚠ returns 200 via live probe but REMAPS to nvidia/nemotron-3-super-120b (not served as distinct model); 131K ctx textual reasoning+code
-BazaarLink,qwen/qwen3.7-flash,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; free aggregator bazaarlink.ai; OpenAI-compatible https://api.bazaarlink.ai/v1; Qwen3.7"
+BazaarLink,qwen/qwen3.7-flash:free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; free aggregator bazaarlink.ai; OpenAI-compatible https://api.bazaarlink.ai/v1; Qwen3.7; Oct 22: bare qwen/qwen3.7-flash now PRICED — free id is qwen/qwen3.7-flash:free"
 BazaarLink,reflection/beam,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; Reflection Beam 1.0 — 501B MoE agentic coder; also free as reflection/beam-free on Kilo/OpenCode Zen"
 BazaarLink,reflection/beam-free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; Reflection Beam free variant"
 BazaarLink,nvidia/nemotron-3.5-lightning-free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; NVIDIA Nemotron 3.5 Lightning free variant; 1M ctx"
 BazaarLink,stealth/glyph-cluster,256K,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; 256K ctx clustering/embedding; also on Kilo (stealth/glyph-cluster)"
 BazaarLink,deepseek/deepseek-v4-flash-0731free,1M,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 21; DeepSeek V4 Flash 1M ctx; 0731 snapshot"
+BazaarLink,auto:free,varies,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 22; auto:free router over BazaarLink free pool; 0/0 pricing; OpenAI-compatible https://api.bazaarlink.ai/v1"
 uncloseai,turboderp/Qwen3.8-27B-exl3,64K,No key / 429 per IP,No key needed,Verified keyless Oct 21; single vllm endpoint
 LLM Tech,qwen3.8-27b,131K,2M tok/day per IP,Shared trial key `lt-trial-ba1ef28c6d32ed6980678d8d` at api.llmtech.eu/v1,Probe-verified by awesome-free-ai-coding; EU; no signup, no card
 LLMTR,agnes-3.0-flash,256K,Free on zero balance,https://llmtr.com/v1,Turkish gateway; agnes/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OpenRouter/Kilo/Zen live probes)
