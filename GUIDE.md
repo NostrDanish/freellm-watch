@@ -45,9 +45,9 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 ## 🟢 NVIDIA NIM — highest free daily volume
 - **Get key:** https://build.nvidia.com (free dev program: sign up, verify phone, no card needed)
-- **Limits:** 40 RPM, **no daily cap** per model; 83 models online (free dev program)
+- **Limits:** 40 RPM, **no daily cap** per model; 91 models online (free dev program)
 - **base_url:** `https://integrate.api.nvidia.com/v1`
-- **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `deepseek-ai/deepseek-v4.1-flash` (NEW Oct 17; 552B MoE, 1M ctx), `z-ai/glm-5.3-flash` (NEW Oct 21; first natively multimodal GLM-5, 320B params, 1M ctx)
+- **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `deepseek-ai/deepseek-v4.1-flash` (NEW Oct 17; 552B MoE, 1M ctx), `z-ai/glm-5.3-flash` (NEW Oct 21; first natively multimodal GLM-5, 320B params, 1M ctx), `nvidia/nemotron-3.5-super-vl-120b-a12b` (NEW Oct 22; vision, 1M ctx), `stepfun-ai/step-5-preview` (NEW Oct 22; multimodal reasoning, 1M ctx), `meta/llama-4-maverick-17b-128e-instruct` (NEW Oct 22; 128-expert MoE), `qwen/qwen3-coder-480b-a35b-instruct` (NEW Oct 22; 480B coding MoE)
 - ⚠️ Oct 3: they killed nemotron-3-nano, llama-3.3-70b, gpt-oss-120b… free list rotates — check build.nvidia.com/models.
 
 ## Others worth a key (details in models.csv)
@@ -93,7 +93,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 Kilo Code: `reflection/beam-free` (1M ctx) + `stealth/glyph-cluster` (256K ctx) + `kilo-auto/free` (256K ctx, auto-router over free pool) now free, no key needed (Oct 21)
 - ☠️ Kilo Code: `stepfun/step-3.7-flash:free`, `tencent/hy3:free`, `apinex/apodex-1.1-mini:free` DEAD — 404 or priced on Kilo gateway
 - 🆕 OpenCode Zen: **10 `-free` models** (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, minimax-m3.1-flash-free, nemotron-3.5-lightning-free, nemotron-3.5-super-vl-free, **flint-40b-free**); `big-pickle` + `nemotron-3-ultra-free` removed from free tier
-- 🔄 NVIDIA NIM model count: 83 models (was 77); `deepseek-ai/deepseek-v4.1-flash` + `z-ai/glm-5.3-flash` confirmed in catalog
+- 🔄 NVIDIA NIM free catalog expanded to 91 models (was 83); `deepseek-ai/deepseek-v4.1-flash` + `z-ai/glm-5.3-flash` confirmed in catalog; +8 Oct 22 vision/reasoning/coding (nemotron-3.5-super-vl-120b, step-5-preview, llama-4-maverick-17b-128e, qwen3-coder-480b, minimax-m2.7, mistral-nemotron reinstated, seed-oss-36b, step-3.5-flash)
 - 🆕 Google lyria-3 clip+pro audio models now free on OpenRouter (pricing $0, no `:free` suffix)
 - 🆕 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added to free catalog Oct 17; 40 RPM / no daily cap
 - 🆕 APInex (apinex.bond) gateway: ~18 free/free models, ~10M tokens/day allowance, Google sign-in only (no card)
@@ -109,7 +109,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - ☠️ **LLM7.io: both cataloged models PAID** (`gpt-oss:20b` turbo tier, `deepseek-v4-flash-0731` pro tier) — removed from free tracking Oct 21
 - 🔄 **SambaNova free tier REACTIVATED** (Oct 21 Gravity + vava-nessa Oct 17): no card required (free applies until payment method linked); 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview)
 - 🆕 **OVHcloud: 11 free chat models** no key/no signup (EU-hosted): Qwen3.5-397B (262K), Qwen3.8-27B (262K), gpt-oss-20b (131K), gpt-oss-120b (128K), Llama-3.3-70B (128K), Mistral-Small-3.2-24B (128K), Mistral-Nemo (128K), Qwen2.5-VL-72B (128K), Qwen3.5-9B (128K), Qwen3.6-27B (262K), Qwen3Guard variants
-- 🆕 **xKiro: 21 free models** (500K tok/day per IP, dashboard API key); top: longcat-2.5-preview:free (262K), qwen/qwen3.7-flash:free (262K), qwen/qwen3-max:free (262K), qwen/qwen3.8-max:free (262K), qwen/qwen3.7-max:free; OpenAI/Anthropic SDK compatible — ⚠️ 5 Oct-21 free models dropped (qwen3.8-27b, stealth/llama-3.1-70b, nemotron-3.5-super-vl, qwen3-32b, qwen2.5-72b)
+- 🆕 **xKiro: 21 free models** (500K tok/day per IP, dashboard API key); top: longcat-2.5-preview:free (262K), qwen/qwen3.7-flash:free (262K), qwen/qwen3.8-27b:free, qwen/qwen3.8-max:free (262K), qwen/qwen3.7-max:free; OpenAI/Anthropic SDK compatible — ⚠️ 5 Oct-21 free models dropped (qwen3.8-27b, stealth/llama-3.1-70b, nemotron-3.5-super-vl, qwen3-32b, qwen2.5-72b)
+- 🆕 **NVIDIA NIM: +8 free models Oct 22** (build.nvidia.com Free Endpoint, 40 RPM no daily cap): `nvidia/nemotron-3.5-super-vl-120b-a12b` (vision, Oct 15), `stepfun-ai/step-5-preview` (multimodal reasoning, Oct 14), `meta/llama-4-maverick-17b-128e-instruct` (128-expert MoE), `qwen/qwen3-coder-480b-a35b-instruct` (480B coding MoE), `minimaxai/minimax-m2.7` (230B MoE), `mistralai/mistral-nemotron` (reinstated after Oct 3 rotation), `bytedance/seed-oss-36b-instruct`, `stepfun-ai/step-3.5-flash`; dual-confirmed build.nvidia.com Free Endpoint + ASSERT-KTH/nvidia-free-endpoints programmatic list; added to models.csv + chain.json fallback routing
 - 🆕 **BazaarLink** (bazaarlink.ai): NEW Oct 21 free-aggregator, no card; 6 free models — qwen/qwen3.7-flash, reflection/beam (501B MoE agentic coder), reflection/beam-free, nvidia/nemotron-3.5-lightning-free, stealth/glyph-cluster, deepseek/deepseek-v4-flash-0731free; 10 RPM/60 wu-day (no card) or 20/120 (credit); OpenAI-compatible https://api.bazaarlink.ai/v1; hourly probes ~96-100% (Oct 21 17:46)
 - 🔄 **SambaNova free tier REACTIVATED** (Oct 21 Gravity + vava-nessa Oct 17): was "all paid / card required since Aug 14"; now free tier live, NO card needed (free applies until payment method linked); 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview)
 - 🔄 **Cerebras reclassified**: was "~30 RPM dev tier, llama-3.3-70b, payment method required"; now $5/30-day trial credit (card required; FAQ "no permanent free tier"); limit 5 RPM / 30K tok/min / 1M tok/day per model; free trial models gpt-oss-120b + Qwen3-235B (+Qwen3.8-27B)

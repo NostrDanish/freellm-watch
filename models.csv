@@ -33,6 +33,14 @@ NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvid
 NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvidia.com,Highest free RPD anywhere
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
 NVIDIA NIM,z-ai/glm-5.3-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3-Flash; first natively multimodal GLM-5; 320B params/18B active; vision
+NVIDIA NIM,nvidia/nemotron-3.5-super-vl-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; vision 120B-VL; Free Endpoint badge on build.nvidia.com (Oct 15)
+NVIDIA NIM,stepfun-ai/step-5-preview,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; multimodal reasoning MoE; docs.api.nvidia.com reference (Oct 14)
+NVIDIA NIM,meta/llama-4-maverick-17b-128e-instruct,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 128-expert MoE vision/language; free per ASSERT-KTH/nvidia-free-endpoints programmatic list
+NVIDIA NIM,mistralai/mistral-nemotron,128K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; agentic coding; reinstated on NIM free list after Oct 3 rotation (per ASSERT-KTH)
+NVIDIA NIM,qwen/qwen3-coder-480b-a35b-instruct,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 480B coding MoE; free per ASSERT-KTH list
+NVIDIA NIM,minimaxai/minimax-m2.7,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 230B MoE; free per ASSERT-KTH list
+NVIDIA NIM,bytedance/seed-oss-36b-instruct,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; reasoning; free per ASSERT-KTH list
+NVIDIA NIM,stepfun-ai/step-3.5-flash,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 200B sparse-MoE reasoning; free per ASSERT-KTH list
 Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.com/api-keys,Non-commercial only
 Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,cerebras.ai,$5/30-day trial credit (card required); FAQ 'no permanent free tier'; free trial models gpt-oss-120b + Qwen3-235B + Qwen3.8-27B; was ~30 RPM dev tier w/ llama-3.3-70b
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
