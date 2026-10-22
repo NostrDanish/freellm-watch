@@ -39,10 +39,10 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 ## 🟠 Mistral
 - **Get key:** https://console.mistral.ai/api-keys (free mode on by default)
-- **Limits:** ~1 RPS, **$10/month free credits**
+- **Limits:** ~1 RPS; Free mode — allowance **unpublished/console-gated** (`$10/month free credits` removed Oct 7 2026; docs still promise included usage); no card — SMS/verify required
 - **base_url:** `https://api.mistral.ai/v1`
 - **Best:** `mistral-large-3`, `codestral` (code), `mistral-small-4` (vision)
-- **Catch:** trains on your prompts unless you opt out.
+- **Catch:** trains on your prompts unless you opt out; Moderation 2 + Shieldstral 1.0 free outright; Large 4 (preview) not surfaced in Free mode (Oct 2026 tests)
 
 ## 🟢 NVIDIA NIM — highest free daily volume
 - **Get key:** https://build.nvidia.com (free dev program: sign up, verify phone, no card needed)
@@ -64,6 +64,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **omniroute** — 🆕 NEW Oct 2026 installable free AI gateway (MIT, GitHub `dbegineer/omniroute`, default branch `release/v3.8.49`): `npm install -g omniroute` then point any tool at `http://localhost:20128/v1`; **one endpoint routes across 290 providers / 90+ free tiers (40+ free forever, $0 no card)** — keyless out-of-box via wired-in OpenCode Free + Felo (a fresh install answers with no signup/config); pooled **~1.53B free tokens/mo** (up to ~2.15B first month w/ signup credits); auto-fallback circuit breakers, 19 routing strategies, RTK+Caveman compression, MCP+A2A+CLI, OpenAI↔Claude↔Gemini compat; built-in free-forever providers include Qoder (unlimited), Pollinations (no key), Kiro (~50 credits/mo), NVIDIA NIM, Z.AI GLM-Flash, SiliconFlow, Kilo, OpenCode Zen, Baidu; **15 ToS-flagged providers require explicit opt-in**; live budget at `/dashboard/free-tiers`
 - **FreeTheAI** — 🆕 NEW Oct 2026 free OpenAI-compatible API (`https://api.freetheai.org/v1`; the old `api.freetheai.xyz` is dead): 50+ models, IDs `fta/<provider>/<model>` (e.g. `fta/zai/glm-5.3`); **no card** — free account (email/Discord confirm) + [daily check-in](https://freetheai.org/checkin) unlocks free models until 00:00 UTC; **50 requests/day** on free models (resets 00:00 UTC, failed requests don't count); streaming, tool calling, web search, image/video gen; MIT, GitHub `Free-The-Ai/free-ai` (35★); model list at `freetheai.org/models`
 - **AnyAPI** — NEW Oct 2026 gateway (`https://api.anyapi.ai/v1`), 400+ models, OpenAI-compatible, permanent free tier (100K tokens/day free, no credit card); added to freellmapi as provider; key at dash.anyapi.ai
+- **IteraCompute** — 🆕 NEW Oct 22; OpenAI-compatible (`https://api.iteracompute.com/v1`); **2 models priced $0** live-probed — `qwen/qwen3.8-27b` (262K ctx) + `moonshotai/kimi-k3-free` (1M ctx); **30M free tokens/month** (signup key, no card); 30 of 32 catalog models paid; key via iteracompute.com/signup
 - **onomeo** — NEW Oct 21; OpenAI-compatible gateway (`https://onomeo.com/v1`), Bearer API-key; free models share 30 calls/5h per account (1,500 site-wide shared window); long requests count as 1 call per 50K chars; models delivered via signed catalog (Premium now, Free after 30-day gate); free answers branded "— via onomeo.com" (freellmapi adapter strips this); 403/429 = quota/throttle on valid key, not auth failure
 | - **Z AI** (GLM-4.7-Flash, 200K ctx) — https://api.z.ai/api/paas/v1 intl endpoint
 | - **BazaarLink** (bazaarlink.ai) — NEW Oct 21; free no-card API key (`bazaarlink.ai/keys`); OpenAI-compatible `https://api.bazaarlink.ai/v1`; shared free pool: 10 RPM / 60 wu-day (no card) or 20 RPM / 120 wu-day (credit); 20 RPM site cap, 2 concurrent, resets 00:00 UTC; 6 free models: qwen/qwen3.7-flash, reflection/beam (501B MoE agentic coder), reflection/beam-free, nvidia/nemotron-3.5-lightning-free, stealth/glyph-cluster, deepseek/deepseek-v4-flash-0731free; hourly probes Oct 21 ~96-100% success

@@ -34,9 +34,9 @@ Groq,whisper-large-v3,—,"20 RPM / 2K RPD / 7.2K audio sec/hr / 28.8K audio sec
 Groq,whisper-large-v3-turbo,—,"20 RPM / 2K RPD",console.groq.com/keys,NEW Oct 22; speech-to-text; verified aifree.dev
 Groq,canopylabs/orpheus-v1-english,—,"10 RPM / 100 RPD / 1.2K TPM / 3.6K TPD",console.groq.com/keys,NEW Oct 22; text-to-speech; verified aifree.dev
 Groq,canopylabs/orpheus-v1-arabic-saudi,—,"10 RPM / 100 RPD / 1.2K TPM / 3.6K TPD",console.groq.com/keys,NEW Oct 22; text-to-speech; verified aifree.dev
-Mistral,mistral-large-3,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Free mode default; prompts may train Mistral (opt-out)
-Mistral,codestral,128K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Code model
-Mistral,mistral-small-4,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Vision+code
+Mistral,mistral-large-3,256K,"~1 RPS; Free mode; allowance unpublished (was $10/month free credits until removed Oct 7 2026); no card — SMS/verify required",console.mistral.ai/api-keys,Free mode default; prompts may train Mistral (opt-out)
+Mistral,codestral,128K,"~1 RPS; Free mode (Oct 7 2026 removed $10/mo free credits; allowance unpublished); no card — SMS/verify required",console.mistral.ai/api-keys,Code model
+Mistral,mistral-small-4,256K,"~1 RPS; Free mode (Oct 7 2026 removed $10/mo free credits; allowance unpublished); no card — SMS/verify required",console.mistral.ai/api-keys,Vision+code
 NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,Dev program (free); 83 models online
 NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvidia.com,Highest free RPD anywhere
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
@@ -153,3 +153,5 @@ NVIDIA NIM,01-ai/yi-large,unknown,40 RPM / no daily cap,build.nvidia.com,NEW Oct
 NVIDIA NIM,openai/gpt-oss-20b,128K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; free pricing verified via NIM models API (no pricing key); also tracked on Groq + BlockRun.ai
 UnoRouter,mistral-large-4:free,256K,~1 req/min,https://unorouter.com/en/register,NEW Oct 22; OpenAI-compatible aggregator, 190+ free models from 18 providers; free key via registration (no card); base https://api.unorouter.com/v1
 UnoRouter,deepseek-v4.1-flash-1017:free,128K,~1 req/min,https://unorouter.com/en/register,NEW Oct 21; DeepSeek V4.1 flash variant on UnoRouter aggregator; base https://api.unorouter.com/v1
+IteraCompute,qwen/qwen3.8-27b,262144 (262K),"30M tok/month free tier (signup key, no card); $0 pricing (input=0/output=0); 2 free models; no published RPM","iteracompute.com/signup → free key; base https://api.iteracompute.com/v1","NEW Oct 22; live-probed https://api.iteracompute.com/v1/models (HTTP 200, 32 models); only qwen/qwen3.8-27b + moonshotai/kimi-k3-free return $0 pricing (input=0/output=0); other 30 catalog models paid; OpenAI-compatible"
+IteraCompute,moonshotai/kimi-k3-free,1048576 (1M),"30M tok/month free tier (signup key, no card); $0 pricing; no published RPM","iteracompute.com/signup → free key; base https://api.iteracompute.com/v1","NEW Oct 22; live-probed /v1/models confirms pricing input=0/output=0; 1,048,576 ctx; OpenAI-compatible"
