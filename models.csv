@@ -23,9 +23,17 @@ OpenRouter,recursive/flint-v1.0:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
 Google AI Studio,gemini-2.5-pro,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Best free reasoning; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
-Groq,openai/gpt-oss-120b,131K,30 RPM / 14,400 RPD,console.groq.com/keys,Ultra-fast LPU
-Groq,openai/gpt-oss-20b,131K,30 RPM / 14,400 RPD,console.groq.com/keys,Ultra-fast
-Groq,qwen/qwen3.8-27b,131K,30 RPM / 14,400 RPD,console.groq.com/keys,Replaced 3.6 Sept 2026
+Groq,openai/gpt-oss-120b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Ultra-fast LPU; verified aifree.dev Oct 2026
+Groq,openai/gpt-oss-20b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Ultra-fast; verified aifree.dev Oct 2026
+Groq,qwen/qwen3.8-27b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Replaced 3.6 Sept 2026; verified aifree.dev Oct 2026
+Groq,groq/compound,131K,"30 RPM / 250 RPD / 70K TPM",console.groq.com/keys,NEW Oct 22; agentic w/ web search + code execution; verified aifree.dev
+Groq,groq/compound-mini,131K,"30 RPM / 250 RPD / 70K TPM",console.groq.com/keys,NEW Oct 22; smaller agentic model; verified aifree.dev
+Groq,openai/gpt-oss-safeguard-20b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev
+Groq,meta-llama/llama-prompt-guard-2-22m,—,"30 RPM / 14,400 RPD / 15K TPM / 500K TPD",console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev
+Groq,whisper-large-v3,—,"20 RPM / 2K RPD / 7.2K audio sec/hr / 28.8K audio sec/day",console.groq.com/keys,NEW Oct 22; speech-to-text; verified aifree.dev
+Groq,whisper-large-v3-turbo,—,"20 RPM / 2K RPD",console.groq.com/keys,NEW Oct 22; speech-to-text; verified aifree.dev
+Groq,canopylabs/orpheus-v1-english,—,"10 RPM / 100 RPD / 1.2K TPM / 3.6K TPD",console.groq.com/keys,NEW Oct 22; text-to-speech; verified aifree.dev
+Groq,canopylabs/orpheus-v1-arabic-saudi,—,"10 RPM / 100 RPD / 1.2K TPM / 3.6K TPD",console.groq.com/keys,NEW Oct 22; text-to-speech; verified aifree.dev
 Mistral,mistral-large-3,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Free mode default; prompts may train Mistral (opt-out)
 Mistral,codestral,128K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Code model
 Mistral,mistral-small-4,256K,~1 RPS / $10 per month credits,console.mistral.ai/api-keys,Vision+code
