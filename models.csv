@@ -3,7 +3,7 @@ OpenRouter,nvidia/nemotron-3-ultra-550b-a55b:free,1M,20 RPM / 50 RPD,openrouter.
 OpenRouter,nvidia/nemotron-3-super-120b-a12b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Strong general/coding
 OpenRouter,nvidia/nemotron-3.5-lightning:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Fast + huge context
 OpenRouter,nvidia/nemotron-3.5-super-vl:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
-OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19
+OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19; DEAD Oct 23 (removed from OpenRouter free tier; confirmed by live probe)
 OpenRouter,xingchen-agi/xing4.0-29b-a4b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16; 262K ctx (prefix xingchen-agi)
 OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 20 free models
 OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
@@ -61,8 +61,8 @@ Ollama Cloud,deepseek-v4-flash,1M,Session (5h) + weekly caps,ollama.com/settings
 Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
 Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
-Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx
-Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx
+Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
+Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
 Kilo Code,recursive/flint-v1.0:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free on Kilo gateway; :free suffix
 Kilo Code,xingchen-agi/xing4.0-29b-a4b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,dots-studio/dots-3-note-preview:free,512K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
@@ -73,7 +73,7 @@ Kilo Code,cohere/north-mini-code:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; 
 Kilo Code,nvidia/nemotron-3.5-content-safety:free,128K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,nvidia/nemotron-3-super-120b-a12b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
-Kilo Code,minimax/minimax-m3.1-flash:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,minimax/minimax-m3.1-flash:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
 Kilo Code,nvidia/nemotron-3.5-super-vl:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,google/lyria-3-pro-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (no :free suffix on Kilo)
 Kilo Code,google/lyria-3-clip-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (clip preview)
@@ -103,7 +103,7 @@ OpenCode Zen,jev-1.13-free,128K,Free account key (no card),opencode.ai/auth,NEW 
 OpenCode Zen,longcat-2.5-preview-free,128K,Free account key (no card),opencode.ai/auth,DEAD Oct 22; removed from /zen/v1/models free listing (grep 'longcat' False); 9 other -free Zen models still live; was long-context preview; promo, may log data
 OpenCode Zen,deepseek-v4.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; DeepSeek 552B MoE 1M ctx; promo, may log data
 OpenCode Zen,glm-5.3-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; GLM-5.3 multimodal 1M ctx; promo, may log data
-OpenCode Zen,minimax-m3.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; minimax-m3.1 1M ctx; promo, may log data
+OpenCode Zen,minimax-m3.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; minimax-m3.1 1M ctx; promo, may log data; DEAD Oct 23 (absent from /v1/models)
 OpenCode Zen,nemotron-3.5-lightning-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
 OpenCode Zen,nemotron-3.5-super-vl-free,262K,Free account key (no card),opencode.ai/auth,Rotating promo free model; vision; may log data
 OpenCode Zen,flint-40b-free,262K,Free account key (no card),opencode.ai/auth,NEW Oct 21; recursive/flint-v1.0 free variant; promo, may log data
@@ -125,7 +125,33 @@ BazaarLink,deepseek/deepseek-v4-flash-0731free,1M,"10 RPM / 60 wu/day (no card);
 BazaarLink,auto:free,varies,"10 RPM / 60 wu/day (no card); 20 RPM / 120 wu/day (credit); shared pool; 20 RPM site cap; 2 concurrent; 00:00 UTC reset","BAZARONLINK_API_KEY (bazaarlink.ai/keys)","NEW Oct 22; auto:free router over BazaarLink free pool; 0/0 pricing; OpenAI-compatible https://api.bazaarlink.ai/v1"
 uncloseai,turboderp/Qwen3.8-27B-exl3,64K,No key / 429 per IP,No key needed,Verified keyless Oct 21; single vllm endpoint
 LLM Tech,qwen3.8-27b,131K,2M tok/day per IP,Shared trial key `lt-trial-ba1ef28c6d32ed6980678d8d` at api.llmtech.eu/v1,Probe-verified by awesome-free-ai-coding; EU; no signup, no card
-LLMTR,agnes-3.0-flash,256K,Free on zero balance,https://llmtr.com/v1,Turkish gateway; agnes/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OpenRouter/Kilo/Zen live probes)
+LLMTR,agnes/agnes-3.0-flash,512K,Free on zero balance,https://llmtr.com/v1,Turkish keyless gateway; 27 free models Oct 23 across agnes-evren-heabsy-ifm-internlm-liquid-minimax-nace-nvidia-openai-poolside-qwen-voltropy; motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13
+LLMTR,agnes/agnes-2.5-flash,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; agnes sub-provider; 524288 ctx
+LLMTR,evren/deepseek-v4-flash-tr,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 1000000 ctx
+LLMTR,evren/deepseek-v4.1-flash-tr,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 1048576 ctx
+LLMTR,evren/gemma-4-31b,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 256000 ctx
+LLMTR,evren/glm-5.3-fp8,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 512000 ctx
+LLMTR,evren/mimo-v2.6-pro-tr,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 1048576 ctx
+LLMTR,evren/qwen3-vl-30b,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 256000 ctx
+LLMTR,evren/qwen3.8-flash-next,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 256000 ctx
+LLMTR,heabsy/qwen3.8-27b-heabsy-free,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; heabsy sub-provider; 262144 ctx
+LLMTR,ifm/jais-3-mova-36b-a4b,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; IFM sub-provider (UAE); 524288 ctx
+LLMTR,ifm/k2-horizon-375b-a23b,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; IFM sub-provider (UAE); 524288 ctx
+LLMTR,internlm/agents-a1-free,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; InternLM sub-provider; 262144 ctx
+LLMTR,internlm/atria-dawn-free,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; InternLM sub-provider; 524288 ctx
+LLMTR,internlm/atria-dawn-preview-free,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; InternLM sub-provider; 524288 ctx
+LLMTR,internlm/intern-s2-free,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; InternLM sub-provider; 262144 ctx
+LLMTR,internlm/sage-a1.5-free,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; InternLM sub-provider; 262144 ctx
+LLMTR,liquid/lfm-2.5-embedding-350m-free,512,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Liquid embedding model; 512 ctx
+LLMTR,minimax/minimax-m3.1-flash-free,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Minimax free on LLMTR only (DEAD on OR/KC/Zen); 1000000 ctx
+LLMTR,nace/drex-max-free,128K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Nace sub-provider; 131072 ctx
+LLMTR,nvidia/nemotron-3-super-120b-a12b,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; via LLMTR gateway; 262144 ctx
+LLMTR,nvidia/nemotron-3-ultra-550b-a55b,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; via LLMTR gateway; 1000000 ctx
+LLMTR,nvidia/nemotron-3.5-super-vl-free,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; via LLMTR gateway; 1000000 ctx
+LLMTR,openai/gpt-oss-safeguard-20b,128K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; OpenAI safeguard-20b; 131072 ctx
+LLMTR,poolside/laguna-xs-2.1,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; via LLMTR gateway; 262144 ctx
+LLMTR,qwen/qwen3.8-27b-free,128K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Qwen sub-provider; 131042 ctx
+LLMTR,voltropy/vast-10m-flash-free,10M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Voltropy sub-provider; 10119296 ctx
 NVIDIA NIM,z-ai/glm-5.3,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3 non-flash; 753B text MoE; DeepSeek-style sparse attention; FP8 weights; 1M ctx; reasoning+tool-calling; free dev-program endpoint (no card)
 NVIDIA NIM,diffusiongemma-26b-a4b-it,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; 26B diffusion-based text-gen LLM; parallel token generation; free dev-program endpoint (no card)
 NVIDIA NIM,paligemma,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; vision-language model; free dev-program endpoint on NIM (no card)

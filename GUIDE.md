@@ -20,7 +20,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 | **BlockRun.ai** | `https://blockrun.ai/api/v1` | 429 per IP; keyless | Verified Oct 21; 7 NVIDIA-hosted OS free models: nemotron-3-ultra-550b (1M), nano-omni-30b-a3b-reasoning (256K), llama-3.2-11b-vision (128K), nemotron-3.5-lightning (1M), cohere/north-mini-code (256K), poolside/laguna-xs-2.1 (262K), muse-glimmer-30b (1M) |
 | **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
 | **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
-|| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish gateway; agnes-3.0-flash/motif/minimax free; ling-3.1-flash DEAD Oct 13 (absent LLMTR/OR/Kilo/Zen live probes) |
+|| **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish keyless gateway; 27 free models Oct 23 across agnes-evren-heabsy-ifm-internlm-liquid-minimax-nace-nvidia-openai-poolside-qwen-voltropy; motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13 |
 || **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | ☠️ DEAD Oct 22 2026 | ~~NEW Oct 21 v0.4.0;~~ DNS NXDOMAIN (Cloudflare DoH Status:3) + GitHub repo 404; aggregates Pollinations + ApiAirforce; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
 
 ## 🧠 Google AI Studio (Gemini)
@@ -109,7 +109,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 BlockRun.ai: verified keyless, no signup, no card; **9 free NVIDIA-hosted models** incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K) + **nemotron-3.5-lightning** (1M) + **cohere/north-mini-code** (256K) + **poolside/laguna-xs-2.1** (262K) + **muse-glimmer-30b** (1M) + **gpt-oss-20b** (128K, keyless by direct ID) + **nemotron-super-49b** (131K, ⚠️ returns 200 but remaps to nemotron-3-super-120b, not a distinct free model); auto-routes unlisted model names
 - 🆕 uncloseai: verified keyless Qwen3.8-27B-exl3 (64K) vllm endpoint live, no signup
 - 🆕 LLM Tech (llmtech.eu): shared trial key (no card, no signup), 2M tok/day, qwen3.8-27b; EU-hosted (probe-verified list)
-- 🆕 LLMTR (llmtr.com): Turkish keyless gateway, agnes-3.0-flash / motif / minimax free on zero balance; ☠ ling-3.1-flash DEAD Oct 13 (ended earlier than tracked Oct-22 estimate; absent from LLMTR 380-model catalog + OpenRouter/Kilo/Zen live probes)
+- 🆕 LLMTR (llmtr.com): Turkish keyless gateway, 27 free models Oct 23 across agnes-evren-heabsy-ifm-internlm-liquid-minimax-nace-nvidia-openai-poolside-qwen-voltropy; ☠ motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13
 - ☠️ **LLM7.io: both cataloged models PAID** (`gpt-oss:20b` turbo tier, `deepseek-v4-flash-0731` pro tier) — removed from free tracking Oct 21
 - 🔄 **SambaNova free tier REACTIVATED** (Oct 21 Gravity + vava-nessa Oct 17): no card required (free applies until payment method linked); 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview)
 - 🆕 **OVHcloud: 11 free chat models** no key/no signup (EU-hosted): Qwen3.5-397B (262K), Qwen3.8-27B (262K), gpt-oss-20b (131K), gpt-oss-120b (128K), Llama-3.3-70B (128K), Mistral-Small-3.2-24B (128K), Mistral-Nemo (128K), Qwen2.5-VL-72B (128K), Qwen3.5-9B (128K), Qwen3.6-27B (262K), Qwen3Guard variants
