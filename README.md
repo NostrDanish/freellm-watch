@@ -8,5 +8,6 @@ then keeps these files current:
 - `models.csv` — every free model: provider, context, daily limits, how to get a key
 - `chain.json` — ordered fallback chain when a free model dies
 - `monitor.sh` — git-pulls the watched repos, restarts the local freellmapi gateway on change
+- `skills/freellmapi/SKILL.md` — ops skill for the local gateway: credential split, reset-code trap, quota savers, catalog reality, Hermes wiring
 
 No keys, no secrets. Updated by cron, pushed by hand.
