@@ -10,7 +10,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Limits:** 20 RPM, **50 req/day per free model** → jumps to **1,000/day** after a one-time $10 credit buy
 - **base_url:** `https://openrouter.ai/api/v1`
 - **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0), `recursive/flint-v1.0:free` (262K ctx)
-- **Trick:** model = `openrouter/free` auto-routes across all 21 free models. Or pass a `models: [...]` array for built-in fallback.
+- **Trick:** model = `openrouter/free` auto-routes across all 22 free models. Or pass a `models: [...]` array for built-in fallback.
 
 ## 🚪 No-key options (zero signup)
 | Provider | base_url | Limit | Catch |
@@ -82,7 +82,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 ## 🏆 Recommended stack (coding/agent use)
 1. **OpenRouter `nvidia/nemotron-3-ultra-550b-a55b:free`** — biggest brain, 1M ctx
-2. → fallback `openrouter/free` (auto-router over 21 models, survives single-model outages)
+2. → fallback `openrouter/free` (auto-router over 22 models, survives single-model outages)
 3. → fallback **NVIDIA NIM `nvidia/nemotron-3-super-120b-a12b`** (40 RPM, no daily cap)
 4. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
 5. → fallback **Gemini 3.8 Flash** (limits now console-gated / not published per-model since ~Oct 18)
@@ -95,9 +95,10 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 ## 📰 Recent news (Oct 19–23, 2026)
 ||- 🆕 **Oct 23**: **FreeRide** (api.free-ride.xyz) — v0.4.0a26 installable free-only LLM gateway; pip install freeride-gateway / curl -sSL https://api.free-ride.xyz/install.sh | sh / Docker; local proxy http://localhost:11343/v1; 290+ providers/90+ free tiers (~1.53B tok/mo pooled, up to 2.15B first month w/ credits); routes OpenRouter/Groq/Gemini/NVIDIA NIM/Cloudflare/HuggingFace/Z.ai/xKiro/Ollama Cloud/Kilo/OpenCode Zen/OVHcloud/BlockRun + 17 more; keyless start via Qoder (unlimited)/Pollinations/Kiro (~50 credits/mo)/OVHcloud anonymous (2 RPM)/BlockRun anonymous (30 req/min); no paid fallback; github Shaivpidadi/FreeRideV3 (Oct 23)
 ||- 🆕 **Oct 23**: **FreeAI** (free.ai) — OpenAI-compatible gateway https://api.free.ai/v1; EU-hosted; free tier 30K tok/day + 1000 req/month + 60 RPM, no card (free applies until payment method linked); 588 models via BYOK; keyless on 9 of 513 models verified Oct 2026; api key sk-free-… from free.ai/api (Oct 23)
+||- 🔄 **Oct 23**: OpenRouter free pool grows to **22 models** — `scaledown/summarize` (1M ctx, abstractive text+image+file summarization, $0 completion, max 4K output) + `scaledown/extract` (1M ctx, description-driven entity extraction, $0 completion, max 900K output). Live on `/v1/models` API (verified); `minimax/m3.1-flash:free` confirmed DEAD (absent from API).
 - 🆕 **Inception Labs Mercury 3** (`mercury-3`): NEW Oct 20; free 100M tokens (one-time, no card); 1M-ctx diffusion LLM; reasoning + tool calling; OpenAI-compatible `https://api.inceptionlabs.ai/v1`; ~1,068 tok/sec; also on OpenRouter/Baseten/Vercel
 - 🆕 **Baseten Mammoth-1 (27B) + Elephant-1 (9B)**: NEW Oct 20; free on Vercel AI Gateway thru Oct 27; #1 Jev Decision Index / tied-#1 AA Decision Index; 16K ctx; classify/route/score (tool, not chat); `vercel.com/ai-gateway/models`
-- 🔄 OpenRouter free pool now **21 models** (18 `:free` + 3 `$0` non-`:free` — lyria-3-clip-preview, lyria-3-pro-preview, openrouter/free): + `recursive/flint-v1.0:free` (262K ctx) (Oct 21); gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20)
+- 🔄 OpenRouter free pool now **22 models** (17 `:free` + 5 `$0` non-`:free` — scaledown/summarize, scaledown/extract, lyria-3-clip-preview, lyria-3-pro-preview, openrouter/free): `recursive/flint-v1.0:free` (262K ctx) (Oct 21); gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20); scaledown/summarize + scaledown/extract (1M ctx, $0 completion, Oct 23)
 - ☠️ OpenRouter: `inclusionai/ling-3.0-flash-fin:free` + `ling-3.0-flash-sante:free` DEAD — not found on OpenRouter API or Kilo gateway (Oct 21)
 - 🆕 Kilo Code: `reflection/beam-free` (1M ctx) + `stealth/glyph-cluster` (256K ctx) + `kilo-auto/free` (256K ctx, auto-router over free pool) now free, no key needed (Oct 21)
 - ☠️ Kilo Code: `stepfun/step-3.7-flash:free`, `tencent/hy3:free`, `apinex/apodex-1.1-mini:free` DEAD — 404 or priced on Kilo gateway

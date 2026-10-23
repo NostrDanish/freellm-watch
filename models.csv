@@ -5,7 +5,7 @@ OpenRouter,nvidia/nemotron-3.5-lightning:free,1M,20 RPM / 50 RPD,openrouter.ai/k
 OpenRouter,nvidia/nemotron-3.5-super-vl:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
 OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19; DEAD Oct 23 (removed from OpenRouter free tier; confirmed by live probe)
 OpenRouter,xingchen-agi/xing4.0-29b-a4b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16; 262K ctx (prefix xingchen-agi)
-OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 20 free models
+OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 22 free models
 OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
 OpenRouter,cohere/north-mini-code:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
 OpenRouter,poolside/laguna-xs-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Laguna code model
@@ -20,6 +20,8 @@ OpenRouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,20 RPM / 50 R
 OpenRouter,nvidia/nemotron-3.5-content-safety:free,128K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; safety classifier
 OpenRouter,dots-studio/dots-3-note-preview:free,512K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; note-taking model
 OpenRouter,recursive/flint-v1.0:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; 262K ctx
+OpenRouter,scaledown/summarize,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; abstractive text+image+file summarization; $0 completion; max 4K output
+OpenRouter,scaledown/extract,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; description-driven entity extraction; $0 completion; max 900K output
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
 Google AI Studio,gemini-2.5-pro,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Best free reasoning; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
