@@ -46,7 +46,8 @@ NVIDIA NIM,stepfun-ai/step-5-preview,1M,40 RPM / no daily cap,build.nvidia.com,N
 NVIDIA NIM,meta/llama-4-maverick-17b-128e-instruct,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 128-expert MoE vision/language; free per ASSERT-KTH/nvidia-free-endpoints list (absent from /v1 Oct 22)
 NVIDIA NIM,mistralai/mistral-nemotron,128K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; agentic coding; reinstated on NIM free list after Oct 3 rotation (per ASSERT-KTH); absent from /v1 Oct 22
 NVIDIA NIM,qwen/qwen3-coder-480b-a35b-instruct,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 480B coding MoE; free per ASSERT-KTH list (absent from /v1 Oct 22)
-NVIDIA NIM,minimaxai/minimax-m2.7,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 230B MoE; free per ASSERT-KTH list (absent from /v1 Oct 22)
+NVIDIA NIM,minimaxai/minimax-m2.7,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 230B MoE; free per ASSERT-KTH list (absent from /v1 Oct 22); Oct 23 live /v1 probe: m2.7 still absent from /v1, replaced in /v1 by minimxai/minimax-m3.1-flash (NEW Oct 23)
+NVIDIA NIM,minimaxai/minimax-m3.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 23; 265B dense; MiniMax M3.1 Flash, 1M ctx; live-verified on integrate.api.nvidia.com/v1/models Oct 23 (first MiniMax model on NIM free /v1)
 NVIDIA NIM,bytedance/seed-oss-36b-instruct,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; reasoning; free per ASSERT-KTH list (absent from /v1 Oct 22)
 NVIDIA NIM,stepfun-ai/step-3.5-flash,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 200B sparse-MoE reasoning; free per ASSERT-KTH list (absent from /v1 Oct 22)
 NVIDIA NIM,nvidia/nemotron-3.5-embed-1b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 1B param text+image embedding; RAG retrieval
