@@ -131,3 +131,47 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🪦 **Oct 22 probe update**: BazaarLink **6→7 unique free**; `auto:free` router NEW; bare `qwen/qwen3.7-flash` now PRICED — free id is `qwen/qwen3.7-flash:free`.
 |- 🆕 **Oct 23**: **FreeLLMAPI** (tashfeenahmed/freellmapi) v0.16.7 — installable free-only LLM gateway; **34 providers / 635 endpoints / 7.4B tok/mo**; **NEW Anthropic `/v1/messages`** API support (Claude Code + Anthropic SDKs run against free pool); MCP server at `/mcp`; image/video/speech generation; tool calling + structured outputs; self-updating signed catalog; `npx freellmapi` or Docker `ghcr.io/tashfeenahmed/freellmapi` → http://localhost:3001; setup CLI for Claude Code/Codex/Aider/Cline/Roo/Continue/Cursor; custom local provider support (Ollama/vLLM/llama.cpp); 9 new free providers not tracked individually: SEA-LION, NavyAI, NaraRouter, Aion, Requesty, AI Horde, Routeway, AINative
 |- 🆕 **Oct 22**: **FreeLLM-API-KeyHub** (guihuashaoxiang/FreeLLM-API-KeyHub) — curated reference list tracking **22 Chinese LLM providers (178 routes / 431 models)** incl. SiliconFlow, Volcengine Ark, ZhiPu AI, Meituan LongCat, Alibaba BaiLian, Baidu QianFan; 277 stars, updated Oct 22; keyless start when available; not a direct API (monitoring source only)
+
+## 🔑 keyless-llm-api (nafigamer0) — deploy-your-own keyless proxy
+- **Get:** `npx wrangler deploy` from [nafigamer0/Keyless-LLM-API](https://github.com/nafigamer0/Keyless-LLM-API) (Cloudflare Worker, single file, NEW Oct 23)
+- **base_url:** `https://keyless-llm.nafimods.workers.dev/v1` (verified HTTP 200)
+- **Pools 5 keyless gateways:** Kilo Code (nemotron-ultra, poolside, cohere, reflection, flint), VLM Run (qwen3.8-27b/3.5-0.8b/diffusiongemma), OVHcloud (gpt-oss-120b, Qwen3.5-397b, Llama-3.3-70b), DeepAI (deepseek-v3.2, gemma-4, gemini-2.5-flash-lite), Pollinations (gpt-oss-20b)
+- **Catch:** auto-failover across upstreams; deploy your own to control rate limits; ~600 req/h pooled
+
+## 🌐 VLM Run — keyless vision+text
+- **base_url:** `https://gateway.vlm.run/v1/openai` (verified HTTP 200)
+- **Limits:** 10 req/min, 30 req/hour, 100 req/day per IP
+- **Models (live list):** `google/gemini-3.5-flash-lite`, `google/gemini-3.7-flash`, `meta/muse-spark-1.2`, `qwen/qwen3.8-27b`, `diffusiongemma`
+- **Catch:** truly keyless (no signup); Google-Vertex Gemini models served keyless; verify with `curl gateway.vlm.run/v1/openai/models`
+
+## 🤖 DeepAI — deepseek + gemma keyless
+- **base_url:** `https://api.deepai.org` (verified HTTP 200)
+- **Limits:** no observed throttle
+- **Models:** `deepseek-v3.2`, `gemma-4`, `gemini-2.5-flash-lite`, `online`, `standard`
+- **How to get key:** self-mint a Try-it key (no account needed)
+
+## 🇹🇭 Typhoon (SCB 10X) — free Thai LLM/OCR/ASR
+- **Get key:** https://opentyphoon.ai (free API key, no card/no phone)
+- **base_url:** `https://api.opentyphoon.ai/v1`
+- **Limits:** typhoon-asr-realtime: 100 req/min; LLM/OCR: no published quotas (beta)
+- **Models:** `typhoon-v2.5-30b-a3b-instruct`, `typhoon-ocr` family, `typhoon-asr-realtime`, `typhoon-isan-asr-realtime`
+- **Catch:** all Typhoon models at $0; OpenAI-compatible incl. audio transcriptions; beta, no formal support; SCB claims no rights in outputs
+
+## 🎤 AssemblyAI — $50 free speech credit
+- **Get:** https://assemblyai.com (free $50 credit on signup, no card/no phone)
+- **base_url:** `https://api.assemblyai.com/v2`
+- **Limits:** 5 parallel transcriptions; streaming 5 new streams/min; global 20k requests / 5 min
+- **Models:** `universal-2` (STT), Speech Understanding, LLM Gateway (25+ models)
+- **Catch:** one-time credit, not renewing; only LLM Gateway is OpenAI-compatible
+
+## 🖼️ Runware — $2 free image credit
+- **Get:** https://runware.ai (free $2 credit for new users, business email, no card)
+- **base_url:** `https://api.runware.ai/v1`
+- **Limits:** $2 free credit
+- **Models:** Flux, Kontext, FLUX.1, Krea (image/video/audio/LLM/3D via Sonic Inference Engine)
+- **Catch:** $2 requires business email signup; commercial use OK
+
+## 📊 pacocartones/free-llm-api-hub + freellmapihub.com — verified free API dataset
+- **Repo:** https://github.com/pacocartones/free-llm-api-hub (108+ stars, updated Oct 23)
+- **Hub:** https://freellmapihub.com (curated site with no-phone and commercial-use collections)
+- **Catch:** continuously-verified JSON dataset of free LLM APIs with no-phone/no-credit-card filters; commercial-use collection verified against provider ToS
