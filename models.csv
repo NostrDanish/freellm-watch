@@ -97,16 +97,18 @@ Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story
 ModelScope,Qwen/Qwen3.5-35B-A3B,256K,~100 RPD (magic-grain 魔粹 metering; was 1800),modelscope.cn,Alibaba account + real-name; quota moved to 魔粹 Aug 2026 (~250 魔粹/day at ~2 魔粹 per request ≈ 125 req/day, capped 100 with margin)
 APInex,free/gemini-3.8-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,NEW Oct 2026; Google sign-in+daily sign-in unlocks free allowance; Bearer sk-apx; base https://api.apinex.bond/v1
 APInex,free/deepseek-v4.1-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,Shared free pool; may be slow under load
+OpenCode Zen,big-pickle,200K,Free account key (no card),opencode.ai/auth,NEW Oct 23; stealth model, $0 on all tiers, 200K ctx/32K output; promo/limited-time, may log data; base https://opencode.ai/zen/v1
 OpenCode Zen,beam-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; natively multimodal beam model; promo/limited-time, may log data; base https://opencode.ai/zen/v1
 OpenCode Zen,mimo-v2.6-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; multimodal vision model; promo, may log data
 OpenCode Zen,jev-1.13-free,128K,Free account key (no card),opencode.ai/auth,NEW Oct 21; reasoning model; promo, may log data
-OpenCode Zen,longcat-2.5-preview-free,128K,Free account key (no card),opencode.ai/auth,DEAD Oct 22; removed from /zen/v1/models free listing (grep 'longcat' False); 9 other -free Zen models still live; was long-context preview; promo, may log data
+OpenCode Zen,longcat-2.5-preview-free,1M,Free account key (no card),opencode.ai/auth,REVIVED Oct 23 (was DEAD Oct 22 — absent from /zen/v1/models keyless listing); FreeTierError keyless /zen/v1/chat/completions probe confirms active free tier (app-only, OpenCode); corroborated in Zen docs catalog; long-context preview; promo, may log data
 OpenCode Zen,deepseek-v4.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; DeepSeek 552B MoE 1M ctx; promo, may log data
 OpenCode Zen,glm-5.3-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; GLM-5.3 multimodal 1M ctx; promo, may log data
 OpenCode Zen,minimax-m3.1-flash-free,1M,Free account key (no card),opencode.ai/auth,NEW Oct 21; minimax-m3.1 1M ctx; promo, may log data; DEAD Oct 23 (absent from /v1/models)
 OpenCode Zen,nemotron-3.5-lightning-free,1M,Free account key (no card),opencode.ai/auth,Rotating promo free model; may log data
 OpenCode Zen,nemotron-3.5-super-vl-free,262K,Free account key (no card),opencode.ai/auth,Rotating promo free model; vision; may log data
 OpenCode Zen,flint-40b-free,262K,Free account key (no card),opencode.ai/auth,NEW Oct 21; recursive/flint-v1.0 free variant; promo, may log data
+OpenCode Zen,nemotron-3-ultra-free,1M,Free account key (no card),opencode.ai/auth,REVIVED Oct 23 (was removed Oct 21 — absent from /zen/v1/models); FreeTierError keyless /zen/v1/chat/completions probe confirms active free tier (app-only, OpenCode); 1M ctx/128K output; promo, may log data
 BlockRun.ai,nvidia/nemotron-3-ultra-550b,1M,No key / 429 per IP,No key needed,Verified keyless Oct 21; NVIDIA-hosted OS models; 1M ctx largest
 BlockRun.ai,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,256K,No key / 429 per IP,No key needed,Verified keyless Oct 21; multimodal reasoning MoE
 BlockRun.ai,nvidia/llama-3.2-11b-vision,128K,No key / 429 per IP,No key needed,Verified keyless Oct 21; vision input
