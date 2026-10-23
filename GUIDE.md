@@ -1,4 +1,4 @@
-# Free LLM API Guide — updated 2026-10-22
+# Free LLM API Guide — updated 2026-10-23
 
 Every provider below is OpenAI-SDK-compatible. Point any tool at `base_url` + key and go.
 Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-watch` cron agent.
@@ -74,7 +74,9 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **OpenCode Zen** (opencode.ai/zen/v1) — NEW Oct 2026; free account key (no card), OpenAI-compatible; **11 free `-free` models confirmed** (beam-free, mimo-v2.6-flash-free, jev-1.13-free, longcat-2.5-preview-free, deepseek-v4.1-flash-free, glm-5.3-flash-free, nemotron-3.5-lightning-free, nemotron-3.5-super-vl-free, flint-40b-free, **big-pickle**, **nemotron-3-ultra-free**). ⚠️ promo/limited-time, data may be logged, direct API fingerprint-gated.
 |- **FreeLLMAPI** (tashfeenahmed/freellmapi) — 🆕 NEW Oct 2026 v0.16.7 installable free-only LLM gateway (pip/npm/Docker `ghcr.io/tashfeenahmed/freellmapi`); **34 free LLM providers / 635 endpoints / 474 model families / 7.4B tok/mo** pooled; OpenAI + **Anthropic `/v1/messages`** compat (Claude Code + Anthropic SDKs run against free pool); MCP server at `/mcp`; image/video/speech gen; tool calling + structured outputs; self-updating signed catalog; setup CLI for Claude Code/Codex/Aider/Cline/Roo/Continue/Cursor; custom provider support (local Ollama/vLLM/llama.cpp); `npx freellmapi` → http://localhost:3001; 34 free providers incl. 9 not tracked individually: SEA-LION, NavyAI, NaraRouter, Aion, Requesty, AI Horde, Routeway, AINative (BazaarLink + onomeo tracked separately)
 
-- 🆕 **Inception Labs** — `mercury-3`: 1M-ctx diffusion LLM; free 100M tokens one-time (no card, no payment method); reasoning + tool calling; OpenAI-compatible `https://api.inceptionlabs.ai/v1`; ~1,068 tok/sec; also on OpenRouter / Baseten / Vercel
+||- **FreeRide** (api.free-ride.xyz) — installable free-only LLM gateway; local OpenAI-compatible proxy at `http://localhost:11343/v1`; 290+ providers/90+ free tiers (~1.53B tok/mo pooled, up to ~2.15B first month w/ signup credits); routes OpenRouter/Groq/Gemini/NVIDIA NIM/Cloudflare/HuggingFace/Z.ai/xKiro/Ollama Cloud/Kilo/OpenCode Zen/OVHcloud/BlockRun + 17 more; keyless start via Qoder (unlimited)/Pollinations/Kiro (~50 credits/mo)/Kilo/OVHcloud anonymous (2 RPM)/BlockRun anonymous (30 req/min); OpenAI+Anthropic SDK + CLI + MCP; works with Aider/Continue.dev/Codex/Claude Code; no paid fallback; github Shaivpidadi/FreeRideV3
+||- **FreeAI** (free.ai) — OpenAI-compatible API gateway at `https://api.free.ai/v1`; EU-hosted; free tier 30K tok/day + 1000 req/month + 60 RPM, no card required (free applies until payment method linked); 588 models via BYOK; keyless start on some models (9 of 513 verified Oct 2026); api key `sk-free-…` from [free.ai/api](https://free.ai/api/)
+|- 🆕 **Inception Labs** — `mercury-3`: 1M-ctx diffusion LLM; free 100M tokens one-time (no card, no payment method); reasoning + tool calling; OpenAI-compatible `https://api.inceptionlabs.ai/v1`; ~1,068 tok/sec; also on OpenRouter / Baseten / Vercel
 - 🆕 **Baseten** — Mammoth-1 (27B) + Elephant-1 (9B): free on Vercel AI Gateway thru Oct 27; #1 Jev Decision Index (Mammoth) / tied-#1 Artificial Analysis Decision Index (Elephant); 16K ctx; classify / route / score (tool, not chat); `vercel.com/ai-gateway/models`
 ---
 
@@ -90,7 +92,9 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 **One-time power move:** buy $10 OpenRouter credits once → all free models jump from 50 → 1,000 RPD forever.
 
-## 📰 Recent news (Oct 19–22, 2026)
+## 📰 Recent news (Oct 19–23, 2026)
+||- 🆕 **Oct 23**: **FreeRide** (api.free-ride.xyz) — v0.4.0a26 installable free-only LLM gateway; pip install freeride-gateway / curl -sSL https://api.free-ride.xyz/install.sh | sh / Docker; local proxy http://localhost:11343/v1; 290+ providers/90+ free tiers (~1.53B tok/mo pooled, up to 2.15B first month w/ credits); routes OpenRouter/Groq/Gemini/NVIDIA NIM/Cloudflare/HuggingFace/Z.ai/xKiro/Ollama Cloud/Kilo/OpenCode Zen/OVHcloud/BlockRun + 17 more; keyless start via Qoder (unlimited)/Pollinations/Kiro (~50 credits/mo)/OVHcloud anonymous (2 RPM)/BlockRun anonymous (30 req/min); no paid fallback; github Shaivpidadi/FreeRideV3 (Oct 23)
+||- 🆕 **Oct 23**: **FreeAI** (free.ai) — OpenAI-compatible gateway https://api.free.ai/v1; EU-hosted; free tier 30K tok/day + 1000 req/month + 60 RPM, no card (free applies until payment method linked); 588 models via BYOK; keyless on 9 of 513 models verified Oct 2026; api key sk-free-… from free.ai/api (Oct 23)
 - 🆕 **Inception Labs Mercury 3** (`mercury-3`): NEW Oct 20; free 100M tokens (one-time, no card); 1M-ctx diffusion LLM; reasoning + tool calling; OpenAI-compatible `https://api.inceptionlabs.ai/v1`; ~1,068 tok/sec; also on OpenRouter/Baseten/Vercel
 - 🆕 **Baseten Mammoth-1 (27B) + Elephant-1 (9B)**: NEW Oct 20; free on Vercel AI Gateway thru Oct 27; #1 Jev Decision Index / tied-#1 AA Decision Index; 16K ctx; classify/route/score (tool, not chat); `vercel.com/ai-gateway/models`
 - 🔄 OpenRouter free pool now **21 models** (18 `:free` + 3 `$0` non-`:free` — lyria-3-clip-preview, lyria-3-pro-preview, openrouter/free): + `recursive/flint-v1.0:free` (262K ctx) (Oct 21); gemma-4-26b-a4b-it:free, gemma-4-31b-it:free, inkling:free + inkling-small:free, laguna-xs-2.1:free, lfm-2.5-2.6b:free, nemotron-3-nano-omni-30b-a3b-reasoning:free, content-safety:free, dots-3-note-preview:free, lyria-3 audio (clip+pro, $0) (Oct 20)
