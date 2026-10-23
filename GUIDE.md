@@ -23,6 +23,13 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 || **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish keyless gateway; 27 free models Oct 23 across agnes-evren-heabsy-ifm-internlm-liquid-minimax-nace-nvidia-openai-poolside-qwen-voltropy; motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13 |
 || **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | ☠️ DEAD Oct 22 2026 | ~~NEW Oct 21 v0.4.0;~~ DNS NXDOMAIN (Cloudflare DoH Status:3) + GitHub repo 404; aggregates Pollinations + ApiAirforce; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
 
+## 🗺️ stillworks (Dobby) — live keyless endpoint selector (NEW Oct 23)
+
+- **Get:** `curl https://stillworks.supercapybara.com/api/llm/up` — no key, no signup
+- **Returns:** ranked OpenAI-compatible no-auth endpoints (`auth_mode: none`, `last_ok`, `latency_ms`, `capabilities`) — currently FreeAI `qwen-coder`, OVHcloud `Qwen3Guard`, etc.
+- **One-liner:** `curl https://stillworks.supercapybara.com/api/llm/up?format=env` → outputs `OPENAI_BASE_URL` / `OPENAI_API_KEY=not-needed` / `OPENAI_MODEL` for the current top pick
+- **Catch (important):** this is a **discovery/routing head**, not a distinct model provider — it walks the keyless backends already tracked in this guide (Kilo Code / OVHcloud / LLM7 / FreeAI / VLM Run). Try it first for zero-signup calls, then fall through to a concrete provider if you need a specific model. Source: `github.com/bon5co/stillworks`
+
 ## 🧠 Google AI Studio (Gemini)
 - **Get key:** https://aistudio.google.com/app/apikey
 - **Limits:** Per-model limits no longer published (moved to per-project, console-gated in AI Studio since ~Oct 18). Flash / Pro / Flash-Lite all free; 1M context each.
