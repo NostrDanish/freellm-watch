@@ -22,12 +22,13 @@ OpenRouter,dots-studio/dots-3-note-preview:free,512K,20 RPM / 50 RPD,openrouter.
 OpenRouter,recursive/flint-v1.0:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; 262K ctx
 OpenRouter,scaledown/summarize,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; abstractive text+image+file summarization; $0 completion; max 4K output
 OpenRouter,scaledown/extract,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; description-driven entity extraction; $0 completion; max 900K output
+OpenRouter,apodex/apodex-1.1-mini:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 1 release; reasoning-first research model; 262K ctx; live+free verified Oct 24 (36.8B prompt tokens activity)
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
 Google AI Studio,gemini-2.5-pro,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Best free reasoning; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
 Groq,openai/gpt-oss-120b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Ultra-fast LPU; verified aifree.dev Oct 2026
 Groq,openai/gpt-oss-20b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Ultra-fast; verified aifree.dev Oct 2026
-Groq,qwen/qwen3.8-27b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Replaced 3.6 Sept 2026; verified aifree.dev Oct 2026
+Groq,qwen/qwen3.8-27b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Replaced 3.6 Sept 2026; verified aifree.dev Oct 2026; Oct 23: added image input (Text→Text+Image)
 Groq,groq/compound,131K,"30 RPM / 250 RPD / 70K TPM",console.groq.com/keys,☠ DEAD Sept 21 2026 — decommissioned per Groq deprecations (console.groq.com/docs/deprecations); agentic w/ web search + code exec; no direct replacement
 Groq,groq/compound-mini,131K,"30 RPM / 250 RPD / 70K TPM",console.groq.com/keys,☠ DEAD Sept 21 2026 — decommissioned per Groq deprecations (console.groq.com/docs/deprecations); smaller agentic model; no direct replacement
 Groq,openai/gpt-oss-safeguard-20b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev
@@ -95,7 +96,9 @@ OVHcloud,Qwen3.6-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Qwen3.6 27B; no key
 Z AI,GLM-4.7-Flash,200K,1 concurrent,open.bigmodel.cn/usercenter/apikeys,Also api.z.ai intl endpoint
 Z AI,GLM-4.6V-Flash,varies,Not published,open.bigmodel.cn/usercenter/apikeys,NEW Oct 23; free vision model (aifree.dev verified Oct 12); GLM-4.5-Flash DEAD Oct 22 (stopped answering)
 Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit,huggingface.co/settings/tokens,router.huggingface.co/v1
-SiliconFlow,Qwen/Qwen3-8B,128K,1000 RPM / 50K TPM,cloud.siliconflow.cn/account/ak,Real-name verification required
+SiliconFlow,Qwen/Qwen3-8B,128K,—,1000 RPM / 50,000 TPM,cloud.siliconflow.cn/account/ak,Real-name verification required — REMOVED Oct 23 (replaced by Hunyuan-MT-7B + Xing4.0-29B)
+SiliconFlow,tencent/Hunyuan-MT-7B,—,—,—,cloud.siliconflow.cn/account/ak,NEW Oct 23; real-name verification required; doc-based pricing (cannot be tested from outside mainland China)
+SiliconFlow,XingChenAGI/Xing4.0-29B,—,—,—,cloud.siliconflow.cn/account/ak,NEW Oct 23; real-name verification required; doc-based pricing (cannot be tested from outside mainland China)
 Aion Labs,aion-3.0,128K,15 RPM / 20K TPD,aionlabs.ai/app/api-keys,Roleplay/story niche
 ModelScope,Qwen/Qwen3.5-35B-A3B,256K,~100 RPD (magic-grain 魔粹 metering; was 1800),modelscope.cn,Alibaba account + real-name; quota moved to 魔粹 Aug 2026 (~250 魔粹/day at ~2 魔粹 per request ≈ 125 req/day, capped 100 with margin)
 APInex,free/gemini-3.8-flash,1M,5 RPM / 10M tokens/day,apinex.bond/keys,NEW Oct 2026; Google sign-in+daily sign-in unlocks free allowance; Bearer sk-apx; base https://api.apinex.bond/v1

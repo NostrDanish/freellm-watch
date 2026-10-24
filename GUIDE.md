@@ -9,8 +9,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Get key:** https://openrouter.ai/keys (Google login, 30 sec)
 - **Limits:** 20 RPM, **50 req/day per free model** → jumps to **1,000/day** after a one-time $10 credit buy
 - **base_url:** `https://openrouter.ai/api/v1`
-- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0), `recursive/flint-v1.0:free` (262K ctx)
-- **Trick:** model = `openrouter/free` auto-routes across all 22 free models. Or pass a `models: [...]` array for built-in fallback.
+- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0), `recursive/flint-v1.0:free` (262K ctx), `apodex/apodex-1.1-mini:free` (262K ctx, reasoning)
+- **Trick:** model = `openrouter/free` auto-routes across all 23 free models. Or pass a `models: [...]` array for built-in fallback.
 
 ## 🚪 No-key options (zero signup)
 | Provider | base_url | Limit | Catch |
