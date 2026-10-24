@@ -119,7 +119,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - 🆕 APInex (apinex.bond) gateway: ~18 free/free models, ~10M tokens/day allowance, Google sign-in only (no card)
 - ☠️ qwen3.8-27b:free left OpenRouter Oct 20 (still free on Groq + OVH, NOT Kilo — priced on gateway)
 - 🆕 Z.ai GLM-5.3-Flash (320B params, 18B active, natively multimodal) now free on NVIDIA NIM Oct 2026
-- 🆕 NVIDIA NIM: `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) free endpoint — dual-confirmed build.nvidia.com free_endpoint + freellm.net Verified
+- ☠️ NVIDIA NIM: `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) DEAD Oct 28 2026 — deprecated 10/27/26 per build.nvidia.com; `z-ai/glm-5.3-flash` unaffected, migrate to it
 - 🆕 NVIDIA NIM: `diffusiongemma-26b-a4b-it` (26B diffusion text-gen, parallel token gen) + `paligemma` (vision-language) now on build.nvidia.com free_endpoint filter
 - 🔄 NVIDIA NIM: `deepseek-ai/deepseek-v4.1-flash` (552B MoE, 1M) added Oct 17; 40 RPM / no daily cap
 - 🆕 BlockRun.ai: verified keyless, no signup, no card; **9 free NVIDIA-hosted models** incl. nemotron-3-ultra-550b (1M ctx) + nano-omni-30b-a3b-reasoning (256K) + llama-3.2-11b-vision (128K) + **nemotron-3.5-lightning** (1M) + **cohere/north-mini-code** (256K) + **poolside/laguna-xs-2.1** (262K) + **muse-glimmer-30b** (1M) + **gpt-oss-20b** (128K, keyless by direct ID) + **nemotron-super-49b** (131K, ⚠️ returns 200 but remaps to nemotron-3-super-120b, not a distinct free model); auto-routes unlisted model names
@@ -145,6 +145,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 |- 🆕 **Oct 23**: **Reflection Beam on Ollama Cloud** (`beam:cloud`) — free limited-time with zero data retention (ZDR); 501B/23B MoE agentic coder; 1M ctx; Apache 2.0; access via `ollama run beam:cloud` or `ollama launch claude --model beam:cloud`; requires Ollama Cloud account (no card to get free tier key); tracked in models.csv + chain.json (Oct 23)
 |- ☠️ **Oct 23**: **LL Alpha Free** (`opencode/ll-alpha-free`) — DEAD; 262K ctx stealth model, was free Oct 16–20 on OpenCode Zen, removed Oct 20; never load-tested (freetokens timeline)
 |- ☠️ **Oct 23**: **Cat Jam** — DEAD; 1M ctx stealth model, was free Oct 16–20 on OpenCode Zen/Go/Vercel AI Gateway, removed Oct 20 (freetokens timeline)
+- ☠️ **Oct 26 cron**: NVIDIA NIM `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) DEAD Oct 28 2026 — deprecated 10/27/26 per build.nvidia.com; `z-ai/glm-5.3-flash` unaffected, migrate
+- 🔄 **Oct 26 cron**: `scaledown/summarize` + `scaledown/extract` (OpenRouter) prompt price ticked $0 → $0.00000004/token (completion still $0; still effectively free, NOT dead); corrects prior "$0" claim — live /v1/models verified
 
 ## 🔑 keyless-llm-api (nafigamer0) — deploy-your-own keyless proxy
 - **Get:** `npx wrangler deploy` from [nafigamer0/Keyless-LLM-API](https://github.com/nafigamer0/Keyless-LLM-API) (Cloudflare Worker, single file, NEW Oct 23)

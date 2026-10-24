@@ -160,7 +160,7 @@ LLMTR,openai/gpt-oss-safeguard-20b,128K,Free on zero balance,https://llmtr.com/v
 LLMTR,poolside/laguna-xs-2.1,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; via LLMTR gateway; 262144 ctx
 LLMTR,qwen/qwen3.8-27b-free,128K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Qwen sub-provider; 131042 ctx
 LLMTR,voltropy/vast-10m-flash-free,10M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Voltropy sub-provider; 10119296 ctx
-NVIDIA NIM,z-ai/glm-5.3,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3 non-flash; 753B text MoE; DeepSeek-style sparse attention; FP8 weights; 1M ctx; reasoning+tool-calling; free dev-program endpoint (no card)
+NVIDIA NIM,z-ai/glm-5.3,1M,40 RPM / no daily cap,build.nvidia.com,DEAD Oct 28 2026; Z.ai GLM-5.3 non-flash; 753B text MoE; DeepSeek-style sparse attention; FP8 weights; 1M ctx; reasoning+tool-calling; free dev-program endpoint (no card); DEPRECATED per build.nvidia.com 10/27/26 (unsupported after 10/28/26); migrate to z-ai/glm-5.3-flash (unaffected)
 NVIDIA NIM,diffusiongemma-26b-a4b-it,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; 26B diffusion-based text-gen LLM; parallel token generation; free dev-program endpoint (no card)
 NVIDIA NIM,paligemma,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; vision-language model; free dev-program endpoint on NIM (no card)
 Freebuff,mimo-v2.6-flash,1M,"6 1-hour sessions/day (default on CLI/desktop/web/cloud); ~30h/day regions / 5h outside / 4h VPN; daily reset local midnight; no card",freebuff.com/signup,"Ad-supported installable coding agent (CLI/desktop/web/cloud/chat); limited mode; data may train models"
