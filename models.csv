@@ -31,7 +31,7 @@ Groq,openai/gpt-oss-20b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.
 Groq,qwen/qwen3.8-27b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,Replaced 3.6 Sept 2026; verified aifree.dev Oct 2026; Oct 23: added image input (Text→Text+Image)
 Groq,groq/compound,131K,"30 RPM / 250 RPD / 70K TPM",console.groq.com/keys,☠ DEAD Sept 21 2026 — decommissioned per Groq deprecations (console.groq.com/docs/deprecations); agentic w/ web search + code exec; no direct replacement
 Groq,groq/compound-mini,131K,"30 RPM / 250 RPD / 70K TPM",console.groq.com/keys,☠ DEAD Sept 21 2026 — decommissioned per Groq deprecations (console.groq.com/docs/deprecations); smaller agentic model; no direct replacement
-Groq,openai/gpt-oss-safeguard-20b,131K,"30 RPM / 1K RPD / 8K TPM / 200K TPD",console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev
+Groq,openai/gpt-oss-safeguard-20b,131K,"3 RPM / 1K RPD / 2K TPM / 200K TPD",console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev; free limits cut 30→3 RPM & 8K→2K TPM Oct 6 2026 (console.groq.com/docs/rate-limits + IA 2026-10-06 capture)
 Groq,meta-llama/llama-prompt-guard-2-22m,—,"30 RPM / 14,400 RPD / 15K TPM / 500K TPD",console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev
 Groq,whisper-large-v3,—,"20 RPM / 2K RPD / 7.2K audio sec/hr / 28.8K audio sec/day",console.groq.com/keys,NEW Oct 22; speech-to-text; verified aifree.dev
 Groq,whisper-large-v3-turbo,—,"20 RPM / 2K RPD",console.groq.com/keys,NEW Oct 22; speech-to-text; verified aifree.dev
@@ -88,8 +88,8 @@ OVHcloud,Qwen3.5-397B-A17B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Biggest no-key m
 OVHcloud,Qwen3.8-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Flagship Qwen3 27B; no key
 OVHcloud,gpt-oss-20b,131K,2 RPM per IP,NO KEY / NO SIGNUP,Small fast GPT-OSS; no key
 OVHcloud,Meta-Llama-3_3-70B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Llama 3.3 70B; no key
-OVHcloud,Mistral-Small-3.2-24B-Instruct-2506,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Small 3.2 24B; no key
-OVHcloud,Mistral-Nemo-Instruct-2407,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Nemo 12B; no key
+OVHcloud,Mistral-Small-3.2-24B-Instruct-2506,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Small 3.2 24B; no key; EOL Nov 4 2026 (per docs.ovhcloud.com ai-endpoints-billing)
+OVHcloud,Mistral-Nemo-Instruct-2407,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Nemo 12B; no key; EOL Nov 4 2026 (per docs.ovhcloud.com ai-endpoints-billing)
 OVHcloud,Qwen2.5-VL-72B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Vision model 72B; no key
 OVHcloud,Qwen3.5-9B,128K,2 RPM per IP,NO KEY / NO SIGNUP,Small Qwen3 9B; no key
 OVHcloud,Qwen3.6-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Qwen3.6 27B; no key

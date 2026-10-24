@@ -39,7 +39,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 
 ## ⚡ Groq — fastest inference alive
 - **Get key:** https://console.groq.com/keys
-- **Limits:** 30 RPM / **1,000 RPD**
+- **Limits:** 30 RPM / **1,000 RPD** (8K TPM); `gpt-oss-safeguard-20b` cut to **3 RPM / 2K TPM** Oct 6 2026 (console.groq.com/docs/rate-limits); 11 free no-card models incl. whisper + prompt-guard + orpheus TTS
 - **base_url:** `https://api.groq.com/openai/v1`
 - **Best:** `openai/gpt-oss-120b`, `qwen/qwen3.8-27b`
 - **Free models (no card, 11 total):** `openai/gpt-oss-120b`, `openai/gpt-oss-20b`, `openai/gpt-oss-safeguard-20b` (safety), `qwen/qwen3.8-27b`, `whisper-large-v3` (STT), `whisper-large-v3-turbo` (STT), `meta-llama/llama-prompt-guard-2-22m` (safety), `canopylabs/orpheus-v1-english` (TTS), `canopylabs/orpheus-v1-arabic-saudi` (TTS)
