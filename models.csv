@@ -40,7 +40,7 @@ Groq,canopylabs/orpheus-v1-arabic-saudi,—,"10 RPM / 100 RPD / 1.2K TPM / 3.6K 
 Mistral,mistral-large-3,256K,"~1 RPS; Free mode; allowance unpublished (was $10/month free credits until removed Oct 7 2026); no card — SMS/verify required",console.mistral.ai/api-keys,Free mode default; prompts may train Mistral (opt-out)
 Mistral,codestral,128K,"~1 RPS; Free mode (Oct 7 2026 removed $10/mo free credits; allowance unpublished); no card — SMS/verify required",console.mistral.ai/api-keys,Code model
 Mistral,mistral-small-4,256K,"~1 RPS; Free mode (Oct 7 2026 removed $10/mo free credits; allowance unpublished); no card — SMS/verify required",console.mistral.ai/api-keys,Vision+code
-NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,Dev program (free); 83 models online
+NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,DEAD Oct 28 2026 — deprecated Oct 27 2026 per build.nvidia.com; still free on LLMTR gateway ($0/token); see GUIDE.md L93
 NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvidia.com,Highest free RPD anywhere
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
 NVIDIA NIM,z-ai/glm-5.3-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3-Flash; first natively multimodal GLM-5; 320B params/18B active; vision
@@ -56,6 +56,14 @@ NVIDIA NIM,stepfun-ai/step-3.5-flash,—,40 RPM / no daily cap,build.nvidia.com,
 NVIDIA NIM,nvidia/nemotron-3.5-embed-1b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 1B param text+image embedding; RAG retrieval
 NVIDIA NIM,nvidia/nemotron-3.5-embed-8b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 8B param text+image embedding; RAG retrieval
 NVIDIA NIM,nvidia/nemotron-3.5-rerank-8b,32K,40 RPM / no daily cap,build.nvidia.com,NEW Oct 20; 8B param reranking; cross-encoder
+Token Harbor,claude-haiku-5.5:free,200K,Free rolling 7-day allowance; $0/token; :free suffix never bills,tokenharbor.ai/signup,NEW Oct 26; unified aggregator gateway; base_url https://tokenharbor.ai/v1; bearer token; limited-time Oct 7 campaign
+Token Harbor,deepseek-v4.1-flash:free,1M,Free rolling 7-day allowance; $0/token; :free suffix never bills,tokenharbor.ai/signup,NEW Oct 26; same gateway terms as claude-haiku-5.5 entry
+Token Harbor,deepseek-v4-flash:free,1M,Free rolling 7-day allowance; $0/token,tokenharbor.ai/signup,NEW Oct 26; same gateway terms
+Token Harbor,mimo-v2.6-flash:free,1M,Free rolling 7-day allowance; $0/token,tokenharbor.ai/signup,NEW Oct 26; same gateway terms
+Token Harbor,mimo-v2.5:free,1M,Free rolling 7-day allowance; $0/token,tokenharbor.ai/signup,NEW Oct 26; same gateway terms
+InferAll,nvidia/nemotron-3-ultra-550b-a55b,1M,50 chat / 100 text per day shared pool; $0/token; $5 one-time starter → spendable balance; key prefix ifu_,api.inferall.ai/signup,NEW Oct 26; free NVIDIA NIM gateway; base_url https://api.inferall.ai/v1; 127 models; 3 free models confirmed live-probed
+InferAll,z-ai/glm-5.3-flash,1M,50 chat / 100 text per day shared pool; $0/token; $5 one-time starter → spendable balance; key prefix ifu_,api.inferall.ai/signup,NEW Oct 26; same gateway terms as nemotron-3-ultra entry
+InferAll,openai/gpt-oss-20b,128K,50 chat / 100 text per day shared pool; $0/token; $5 one-time starter → spendable balance; key prefix ifu_,api.inferall.ai/signup,NEW Oct 26; same gateway terms as nemotron-3-ultra entry
 Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.com/api-keys,Non-commercial only
 Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,cerebras.ai,$5/30-day trial credit (card required); FAQ 'no permanent free tier'; free trial models gpt-oss-120b + Qwen3-235B + Qwen3.8-27B; was ~30 RPM dev tier w/ llama-3.3-70b
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool

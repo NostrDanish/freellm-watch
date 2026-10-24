@@ -1,4 +1,4 @@
-# Free LLM API Guide — updated 2026-10-23
+# Free LLM API Guide — updated 2026-10-24
 
 Every provider below is OpenAI-SDK-compatible. Point any tool at `base_url` + key and go.
 Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-watch` cron agent.
@@ -58,6 +58,21 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Best:** `minimaxai/minimax-m3.1-flash` (NEW Oct 23; MiniMax M3.1 Flash, 265B dense, 1M ctx), `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `deepseek-ai/deepseek-v4.1-flash` (NEW Oct 17; 552B MoE, 1M ctx), `z-ai/glm-5.3-flash` (NEW Oct 21; first natively multimodal GLM-5, 320B params, 1M ctx), `nvidia/nemotron-3.5-super-vl-120b-a12b` (NEW Oct 22; vision, 1M ctx), `stepfun-ai/step-5-preview` (NEW Oct 22; multimodal reasoning, 1M ctx), `meta/llama-4-maverick-17b-128e-instruct` (NEW Oct 22; 128-expert MoE), `qwen/qwen3-coder-480b-a35b-instruct` (NEW Oct 22; 480B coding MoE), `moonshotai/kimi-k2.6` (NEW Oct 22; 262K ctx, ⚠️ Unavailable on free-model.com), `01-ai/yi-large` (NEW Oct 22; ctx unknown), `openai/gpt-oss-20b` (NEW Oct 22; 128K ctx)
 - **Free embedding/reranking:** `nvidia/nemotron-3.5-embed-1b` (1B, 32K ctx), `nvidia/nemotron-3.5-embed-8b` (8B, 32K ctx), `nvidia/nemotron-3.5-rerank-8b` (8B, 32K ctx) — NEW Oct 20; free on build.nvidia.com
 - ⚠️ Oct 3: they killed nemotron-3-nano, llama-3.3-70b, gpt-oss-120b… free list rotates — check build.nvidia.com/models.
+- ⚠️ Oct 28: `nvidia/nemotron-3-super-120b-a12b` DEAD on NVIDIA NIM (deprecated Oct 27); still free on LLMTR gateway — see chain.json fallback.
+
+## 🟢 Token Harbor — unified free LLM aggregator gateway
+- **Get key:** https://tokenharbor.ai/signup (free signup, bearer token)
+- **Limits:** Free rolling 7-day allowance per user; `:free` suffix models never bill
+- **base_url:** `https://tokenharbor.ai/v1`
+- **Best:** `claude-haiku-5.5:free` (200K ctx, free limited-time Oct 7 campaign), `deepseek-v4.1-flash:free` (1M ctx), `deepseek-v4-flash:free` (1M ctx), `mimo-v2.6-flash:free` (1M ctx), `mimo-v2.5:free` (1M ctx)
+- **Note:** NEW Oct 26; aggregates OpenRouter/Groq/DeepSeek/etc into single `$0/token` gateway
+
+## 🟢 InferAll — free NVIDIA NIM gateway
+- **Get key:** https://api.inferall.ai/signup (free signup; $5 one-time starter pack → spendable balance)
+- **Limits:** 50 chat / 100 text per day shared pool across 10 NIM models; $0/token; 127 models total
+- **base_url:** `https://api.inferall.ai/v1`
+- **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `z-ai/glm-5.3-flash` (1M ctx), `openai/gpt-oss-20b` (128K ctx)
+- **Note:** NEW Oct 26; OpenAI+Anthropic SDK compatible; key prefix `ifu_`
 
 ## Others worth a key (details in models.csv)
 - **Cerebras** https://cerebras.ai — $5/30-day trial credit (card required; FAQ "no permanent free tier"); 5 RPM / 30K uncached tok/min / 1M tok/day per model; free trial models: gpt-oss-120b, Qwen3-235B, Qwen3.8-27B
@@ -90,7 +105,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 ## 🏆 Recommended stack (coding/agent use)
 1. **OpenRouter `nvidia/nemotron-3-ultra-550b-a55b:free`** — biggest brain, 1M ctx
 2. → fallback `openrouter/free` (auto-router over 22 models, survives single-model outages)
-3. → fallback **NVIDIA NIM `nvidia/nemotron-3-super-120b-a12b`** (40 RPM, no daily cap)
+3. → fallback **LLMTR `nvidia/nemotron-3-super-120b-a12b`** (1000 req/day, no card; NVIDIA NIM version DEAD Oct 28)
 4. → fallback **Groq `openai/gpt-oss-120b`** (1,000 RPD, instant)
 5. → fallback **Gemini 3.8 Flash** (limits now console-gated / not published per-model since ~Oct 18)
 6. → fallback **APInex `free/deepseek-v4.1-flash`** (10M tokens/day, Google sign-in only; Oct 2026)
@@ -102,6 +117,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 ## 📰 Recent news (Oct 19–26, 2026)
 ||- 🆕 **Oct 26**: **Infron AI** (aifree.dev / api.infron.ai) — free OpenAI-compatible gateway; 6 `:free` models confirmed via live `/v1/models` probe; 1,000 req/day per account, $0/token, $5+ balance anti-abuse (never consumed); no credit card required; `qwen/qwen3.8-27b:free` (256K) was DEAD on xKiro Oct 22 — now ALIVE; `deepseek/deepseek-v4.1-flash:free` (1M ctx), `qwen/qwen3.8-27b-abliterated-cyber:free` (256K), `internlm/atria-dawn-preview:free` (256K), `inclusionai/ling-3.1-flash:free` (262K, REANIMATED — was DEAD on LLMTR L136 Oct 13), `apodex/apodex-1.1-mini:free` (262K, already tracked on OpenRouter L25) (Oct 26)
 ||- 🆕 **Oct 26**: **AIHubMix** (aihubmix.com / api.aihubmix.com/v1) — free OpenAI-compatible gateway; 64 free models at $0/M; 10 trial calls no card (never expire) + ~$100 req/day after $1 top-up; notable new free model IDs: `qwen3.8-max-free` (1M), `qwen3.8-flash-free` (1M), `wan3.0-video-free` + `wan3.0-video-prime-free` (first free video gen, 10/day 1/min), `coding-glm-5.3-free` + `coding-glm-5.3-flash-free` + `coding-glm-5.2-free` + `coding-glm-5-free` (GLM-5.x coding, 1M), `coding-kimi-k3-free` (1.05M), `laguna-s-2.1-free` + `laguna-xs-2.1-free` (1.05M); models list aihubmix.com/models/free (Oct 26)
+||- 🆕 **Oct 26**: **Token Harbor** (tokenharbor.ai) — unified free LLM aggregator gateway; `:free` suffix models never bill; free rolling 7-day allowance per user; 5 free models at $0/token: claude-haiku-5.5:free (200K ctx, free limited-time Oct 7 campaign), deepseek-v4.1-flash:free (1M), deepseek-v4-flash:free (1M), mimo-v2.6-flash:free (1M), mimo-v2.5:free (1M); OpenAI-compatible base https://tokenharbor.ai/v1; bearer token; signup at tokenharbor.ai (Oct 26)
+||- 🆕 **Oct 26**: **InferAll** (api.inferall.ai/v1) — free OpenAI+Anthropic compatible gateway; 10+ open-source NVIDIA NIM models at $0 in/out after $5 one-time starter pack; 50 chat / 100 text per day shared pool; 3 free models: nvidia/nemotron-3-ultra-550b-a55b (1M ctx), z-ai/glm-5.3-flash (1M ctx), openai/gpt-oss-20b (128K ctx); key prefix `ifu_`; 127 models total; signup at api.inferall.ai (Oct 26)
 |||
 ||- 🆕 **Oct 23**: **FreeRide** (api.free-ride.xyz) — v0.4.0a26 installable free-only LLM gateway; pip install freeride-gateway / curl -sSL https://api.free-ride.xyz/install.sh | sh / Docker; local proxy http://localhost:11343/v1; 290+ providers/90+ free tiers (~1.53B tok/mo pooled, up to 2.15B first month w/ credits); routes OpenRouter/Groq/Gemini/NVIDIA NIM/Cloudflare/HuggingFace/Z.ai/xKiro/Ollama Cloud/Kilo/OpenCode Zen/OVHcloud/BlockRun + 17 more; keyless start via Qoder (unlimited)/Pollinations/Kiro (~50 credits/mo)/OVHcloud anonymous (2 RPM)/BlockRun anonymous (30 req/min); no paid fallback; github Shaivpidadi/FreeRideV3 (Oct 23)
 ||- 🆕 **Oct 23**: **FreeAI** (free.ai) — OpenAI-compatible gateway https://api.free.ai/v1; EU-hosted; free tier 30K tok/day + 1000 req/month + 60 RPM, no card (free applies until payment method linked); 588 models via BYOK; keyless on 9 of 513 models verified Oct 2026; api key sk-free-… from free.ai/api (Oct 23)
@@ -191,3 +208,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Repo:** https://github.com/pacocartones/free-llm-api-hub (108+ stars, updated Oct 23)
 - **Hub:** https://freellmapihub.com (curated site with no-phone and commercial-use collections)
 - **Catch:** continuously-verified JSON dataset of free LLM APIs with no-phone/no-credit-card filters; commercial-use collection verified against provider ToS
+
+## 📰 News — Oct 24-28
+- **Qwen3 → Paid on OpenRouter (Oct 24):** Qwen3 8B, Qwen3 235B A22B, Qwen3 VL 8B Thinking, Qwen3 30B A3B Thinking 2507 all moved from free `:free` to paid tier on OpenRouter. Not tracked in this guide as free OpenRouter models (no update needed). Qwen3.8-27B remains the only Qwen3 on free lists (still free on Groq/OVH/Infron, dead on OpenRouter).
+- **DeepSeek V4.1-Flash-1017 (Oct 17):** model version update; API alias `deepseek-flash` unchanged. New Search & Fetch APIs at $0.75/1K calls (paid from Oct 31). Model already tracked on NVIDIA NIM + Token Harbor + OpenCode Zen + APINex + UnoRouter.
+- **Hermes Desktop on Omarchy:** installable via `omarchy pkg add hermes-desktop` (v2026.9.7-6, MIT). Free UI app (requires paid LLM provider); uses nemotron-3-ultra-550b-a55b backend.
