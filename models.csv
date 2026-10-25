@@ -69,8 +69,8 @@ Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.c
 Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,cerebras.ai,$5/30-day trial credit (card required); FAQ 'no permanent free tier'; free trial models gpt-oss-120b + Qwen3-235B + Qwen3.8-27B; was ~30 RPM dev tier w/ llama-3.3-70b
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
 Cloudflare Workers AI,@cf/openai/gpt-oss-120b,128K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,
-Ollama Cloud,gpt-oss:120b,128K,Credit-based $0 (no card); credit pool replaces session caps Oct 8,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
-Ollama Cloud,deepseek-v4-flash,1M,Credit-based $0 (no card); credit pool replaces session caps Oct 8,ollama.com/settings/keys,16 cloud families
+Ollama Cloud,gpt-oss:120b,128K,Free plan $0 no card: 1 concurrent request + monthly starter credits for smaller starter model set (resets from sign-up); credits unlock all models; credit pool replaced session caps Oct 8,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
+Ollama Cloud,deepseek-v4-flash,1M,Free plan $0 no card: 1 concurrent request + monthly starter credits for smaller starter model set (resets from sign-up); credits unlock all models; credit pool replaced session caps Oct 8,ollama.com/settings/keys,16 cloud families
 Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
 Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
