@@ -80,10 +80,8 @@ Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
 
 | Model | Shape | Context | Modalities | Free limit (per key) |
 |---|---|---|---|---|
-| `Kimi-K2.7-Code` | MoE 1T total / 32B active | 262K | text, image | 3M in / 60k out per 60s · 500M in / 5M out per 24h |
-| `Qwen/Qwen3.6-35B-A3B-FP8` | MoE 35B total / 3B active | 262K | text, image | same |
-| `DeepSeek-V4-Flash-0731` | MoE 304B total / 13B active | 512K | text | same |
-| `GLM-5.2-NVFP4` | MoE 744B total / 40B active | 512K | text | same |
+| `Qwen/Qwen3.6-35B-A3B-FP8` | Causal LM + Vision (MoE 35B total / 3B active) | 262K | text, image | 4M in / 100k out per 60s · 10 req/60s per key; no daily cap |
+| `Qwen3.8-27B` | Dense (27B) | 262K | text, image | same |
 
 **Key:** Obtain a free token at `experiments.hetzner.com` → Inference → Create API Token (no credit card). Base URL: `https://inference.hetzner.com/api/v1`.
 
@@ -238,4 +236,4 @@ Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
 - ⚠️ **Chutes.ai CORRECTION (Oct 24):** was incorrectly marked DEAD — API confirmed live (HTTP 200) at `llm.chutes.ai/v1` (`api.chutes.ai/v1` returns 404 = wrong endpoint probed); early-access 200 req/day free program ended Feb 2026; now requires $5 one-time top-up (not subscription, no card); some models remain free at $0–$0.30/MTok; status.chutes.ai confirms all systems operational Oct 17, 2026; 14 TEE models
 - ☠️ **Oct 25 probe:** OpenRouter `apodex/apodex-1.1-mini:free` — confirmed DEAD, absent from live `/v1/models` API (was verified free Oct 24 via model page, 36.8B prompt tokens). OpenRouter `:free` count now 17 (was 18), total 22 free models. `apinex/apodex-1.1-mini:free` on Kilo Code gateway already dead Oct 21.
 - 🆕 **Oct 25 probe:** BazaarLink 9 new ZDR (Zero Dollar Research) free-tier models discovered via `/v1/models` (`zdr=true`): `openai/gpt-6-luna` (1050K), `anthropic/claude-haiku-5.5` (1000K), `openai/gpt-5.6-luna` (1050K), `google/gemini-3.8-flash` (1048K), `openai/gpt-6.1-sol` (1050K), `anthropic/claude-sonnet-5.5` (1000K), `anthropic/claude-opus-5.5` (1000K), `openai/gpt-6-astra` (1050K), `x-ai/grok-4.7` (500K). Requires BAZARONLINK_API_KEY (bazaarlink.ai/keys); free tier 10 RPM/60 wu-day (no card), 20 RPM/120 wu-day (credit). ⚠ keyless quotas are per-IP.
-- 🆕 **Oct 25:** Hetzner Inference API (`inference.hetzner.com/api/v1`) — free while experimental, OpenAI-compatible, no credit card (free token from `experiments.hetzner.com`). Models: `Kimi-K2.7-Code` (1T MoE/32B active, 262K, text+image), `Qwen/Qwen3.6-35B-A3B-FP8` (35B MoE/3B, 262K, text+image, auxiliary), `DeepSeek-V4-Flash-0731` (304B MoE/13B, 512K, text), `GLM-5.2-NVFP4` (744B MoE/40B, 512K, text). Rate limits: 3M in / 60k out per 60s, 500M in / 5M out per 24h. Hermes plugin: `iamimmanuelraj/hermes-hetzner-provider`.
+- 🆕 **Oct 25:** Hetzner Inference API (`inference.hetzner.com/api/v1`) — free while experimental, OpenAI-compatible, no credit card (free token from `experiments.hetzner.com`). 2 models per official docs: `Qwen/Qwen3.6-35B-A3B-FP8` (MoE 35B/3B active, 262K, text+image), `Qwen3.8-27B` (dense 27B, 262K, text+image). Hetzner blog: taking a break from large models (Kimi/DeepSeek/GLM rows removed). Rate limits corrected: 4M in / 100k out per 60s, 10 req/60s per key; no daily cap. Hermes plugin: `iamimmanuelraj/hermes-hetzner-provider`.
