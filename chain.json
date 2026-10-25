@@ -233,7 +233,8 @@
     "Hetzner Inference (inference.hetzner.com): NEW Oct 25; corrected: official docs list 2 models only (Kimi/DeepSeek/GLM large models on break per Hetzner blog); OpenAI-compatible base https://inference.hetzner.com/api/v1; HETZNER_API_KEY from experiments.hetzner.com (no card); models: Qwen/Qwen3.6-35B-A3B-FP8 (MoE 35B total/3B active, 262K, text+image), Qwen3.8-27B (dense 27B, 262K, text+image); rate-limit 4M in/100k out per 60s, 10 req/60s per key; no daily cap; Hermes plugin: iamimmanuelraj/hermes-hetzner-provider",
     "Fish Audio (s2.1-pro-free): NEW Oct 25 free TTS model; $0/M UTF-8 bytes (fair-use, no hard cap); POST https://api.fish.audio/v1/tts; model s2.1-pro-free (83 langs, 2 voices); same quality as paid s2.1-pro; requires free Bearer API key from fish.audio (no card); free access guaranteed through Nov 30 2026",
     "smfworks/hermes-omarchy: NEW Oct 25; boot integration script for Hermes Desktop + Ollama on Omarchy; bin/hermes-omarchy-setup install (idempotent; --no-ollama/--no-autostart/--no-skills/--no-plugin opts); omarchy pkg add hermes-omarchy; MIT",
-    "ninepointlabs/omarchy-hermes-chat: NEW Oct 25; Omarchy shell plugin (Quickshell) bar icon + dropdown for quick Hermes agent chat without opening desktop app; talks to hermes CLI directly (no gateway needed); ./install.sh; MIT"
+    "ninepointlabs/omarchy-hermes-chat: NEW Oct 25; Omarchy shell plugin (Quickshell) bar icon + dropdown for quick Hermes agent chat without opening desktop app; talks to hermes CLI directly (no gateway needed); ./install.sh; MIT",
+    "mwhuss/omarchy-hermes-api: NEW Oct 25; native Omarchy menu-bar plugin + Quickshell flyout for Hermes Agent sessions via Hermes API server (port 8642); Node.js stdio bridge + QML; live SSE token streaming, session browse/switch/rename, tool-execution cards, auto-discovers ~/.hermes/.env creds; npm install && npm run install-plugin; MIT"
   ],
   "retired_recently": [
     "GitHub Models (Jul 2026)",
