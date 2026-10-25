@@ -6,9 +6,9 @@ OpenRouter,nvidia/nemotron-3.5-super-vl:free,1M,20 RPM / 50 RPD,openrouter.ai/ke
 OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19; DEAD Oct 23 (removed from OpenRouter free tier; confirmed by live probe)
 OpenRouter,xingchen-agi/xing4.0-29b-a4b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16; 262K ctx (prefix xingchen-agi)
 OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 22 free models
-OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
+OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized ⚠️ OpenRouter retires Oct 31 2026 (verified)
 OpenRouter,cohere/north-mini-code:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
-OpenRouter,poolside/laguna-xs-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Laguna code model
+OpenRouter,poolside/laguna-xs-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Laguna code model ⚠️ OpenRouter retires Oct 31 2026 (verified)
 OpenRouter,thinkingmachines/inkling:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; 1M ctx reasoning MoE
 OpenRouter,thinkingmachines/inkling-small:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Inkling
 OpenRouter,google/gemma-4-26b-a4b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4
@@ -241,3 +241,7 @@ AMD Radeon Cloud,glm-5.3-flash,262K,per-key rate limits + daily cap,rc- at devel
 SiliconFlow,qwen3-8b,128K,1000 RPM / 50K TPM,signup at siliconflow.cn (no card),NEW Oct 26; free Qwen3-8B tier; base https://api.siliconflow.cn/v1; OpenAI-compatible; API returns 401 without key
 AIHubMix,gpt-5.5-free,1.05M,100 req/day · 10/min,"$0/M token; signup free at aihubmix.com; base https://api.aihubmix.com/v1","NEW Oct 26; GPT-5.5 free model variant (1.05M ctx, text+vision, 100/day 10/min); on the 64-model free pool (10 trial no card + ~$100 req/day after $1 top-up); notable addition to AIHubMix free tier; base https://api.aihubmix.com/v1"
 AIHubMix,gpt-image-2-free,,100 req/day · 10/min,"$0/M token; signup free at aihubmix.com; base https://api.aihubmix.com/v1","NEW Oct 26; GPT-Image-2 free image-generation model (100/day 10/min, takes text+vision, returns text+vision); on the 64-model AIHubMix free pool (10 trial no card + ~$100 req/day after $1 top-up); base https://api.aihubmix.com/v1"
+Hetzner,Kimi-K2.7-Code,262K,3M in / 60k out per 60s; 500M in / 5M out per 24h,"HETZNER_API_KEY from experiments.hetzner.com (no card)","NEW Oct 25; free while experimental; OpenAI-compatible base https://inference.hetzner.com/api/v1; MoE 1T total / 32B active; text+image"
+Hetzner,Qwen/Qwen3.6-35B-A3B-FP8,262K,3M in / 60k out per 60s; 500M in / 5M out per 24h,"HETZNER_API_KEY from experiments.hetzner.com (no card)","NEW Oct 25; free while experimental; OpenAI-compatible; auxiliary model (compression, vision, side-tasks); MoE 35B total / 3B active; text+image"
+Hetzner,DeepSeek-V4-Flash-0731,512K,3M in / 60k out per 60s; 500M in / 5M out per 24h,"HETZNER_API_KEY from experiments.hetzner.com (no card)","NEW Oct 25; free while experimental; OpenAI-compatible; MoE 304B total / 13B active; text only"
+Hetzner,GLM-5.2-NVFP4,512K,3M in / 60k out per 60s; 500M in / 5M out per 24h,"HETZNER_API_KEY from experiments.hetzner.com (no card)","NEW Oct 25; free while experimental; OpenAI-compatible; MoE 744B total / 40B active; text only"
