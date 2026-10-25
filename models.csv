@@ -151,7 +151,7 @@ BazaarLink,openai/gpt-6-astra,1M,10 RPM / 60 wu-day (no card); 20 RPM / 120 wu-d
 BazaarLink,x-ai/grok-4.7,500K,10 RPM / 60 wu-day (no card); 20 RPM / 120 wu-day (credit); shared free tier,BAZARONLINK_API_KEY (bazaarlink.ai/keys),NEW Oct 25; Grok 4.7 reasoning model; 500K ctx; ZDR free tier (zdr=true); free via BAZARONLINK_API_KEY
 uncloseai,turboderp/Qwen3.8-27B-exl3,64K,No key / 429 per IP,No key needed,Verified keyless Oct 21; single vllm endpoint
 LLM Tech,qwen3.8-27b,131K,2M tok/day per IP,Shared trial key `lt-trial-ba1ef28c6d32ed6980678d8d` at api.llmtech.eu/v1,Probe-verified by awesome-free-ai-coding; EU; no signup, no card
-LLMTR,agnes/agnes-3.0-flash,512K,Free on zero balance,https://llmtr.com/v1,Turkish keyless gateway; 27 free models Oct 23 across agnes-evren-heabsy-ifm-internlm-liquid-minimax-nace-nvidia-openai-poolside-qwen-voltropy; motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13
+LLMTR,agnes/agnes-3.0-flash,512K,Free on zero balance,https://llmtr.com/v1,Turkish keyless gateway; 40 free models Oct 26 across agnes-evren-fastino-greenpt-heabsy-ifm-internlm-liquid-llmtr-minimax-nace-nvidia-openai-perplexity-poolside-qwen-together-typesafe-upstage-voltropy; motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13
 LLMTR,agnes/agnes-2.5-flash,512K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; agnes sub-provider; 524288 ctx
 LLMTR,evren/deepseek-v4-flash-tr,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 1000000 ctx
 LLMTR,evren/deepseek-v4.1-flash-tr,1M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Turkish evren sub-provider; 1048576 ctx
@@ -178,6 +178,19 @@ LLMTR,openai/gpt-oss-safeguard-20b,128K,Free on zero balance,https://llmtr.com/v
 LLMTR,poolside/laguna-xs-2.1,256K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; via LLMTR gateway; 262144 ctx
 LLMTR,qwen/qwen3.8-27b-free,128K,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Qwen sub-provider; 131042 ctx
 LLMTR,voltropy/vast-10m-flash-free,10M,Free on zero balance,https://llmtr.com/v1,NEW Oct 23; Voltropy sub-provider; 10119296 ctx
+LLMTR,fastino/glide,40K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; fastino sub-provider; 40000 ctx; System One (text→probability)
+LLMTR,fastino/gliner2.5-multi-v1,4K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; fastino sub-provider; 4096 ctx; EXTRACTION endpoint (entity/label extraction→JSON)
+LLMTR,greenpt/metis,32K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; greenpt sub-provider; 32768 ctx; System One (text→probability)
+LLMTR,liquid/d1-ultra,32K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; liquid sub-provider; 32768 ctx; System One (text+image→probability)
+LLMTR,llmtr/leyla,1K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; llmtr sub-provider (Turkish System One); 1024 ctx
+LLMTR,llmtr/leyla-english,512,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; llmtr sub-provider; 512 ctx
+LLMTR,llmtr/leyla-typed-decisions,1K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; llmtr sub-provider; 1024 ctx; billing/invoice/incident decisions
+LLMTR,nace/drex-v2.0,131K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; nace sub-provider; 131072 ctx; System One (text→probability)
+LLMTR,perplexity/pplx-decider-v1-27b,262K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; perplexity sub-provider; 262144 ctx; System One (text+image→probability)
+LLMTR,perplexity/pplx-decider-v1.1-27b,262K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; perplexity sub-provider; 262144 ctx; System One v1.1 (fixed integrations)
+LLMTR,together/tev1-4b-experimental,32K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; together sub-provider; 32768 ctx; CHAT_COMPLETIONS; 8-token max output
+LLMTR,typesafe/jev-1.14.0,32K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; typesafe sub-provider; 32000 ctx; System One (text+image→probability; Box localization)
+LLMTR,upstage/solar-decide,524K,Free on zero balance,https://llmtr.com/v1,NEW Oct 26; upstage sub-provider; 524288 ctx; System One (text→probability)
 NVIDIA NIM,z-ai/glm-5.3,1M,40 RPM / no daily cap,build.nvidia.com,DEAD Oct 28 2026; Z.ai GLM-5.3 non-flash; 753B text MoE; DeepSeek-style sparse attention; FP8 weights; 1M ctx; reasoning+tool-calling; free dev-program endpoint (no card); DEPRECATED per build.nvidia.com 10/27/26 (unsupported after 10/28/26); migrate to z-ai/glm-5.3-flash (unaffected)
 NVIDIA NIM,diffusiongemma-26b-a4b-it,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; 26B diffusion-based text-gen LLM; parallel token generation; free dev-program endpoint (no card)
 NVIDIA NIM,paligemma,—,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; vision-language model; free dev-program endpoint on NIM (no card)
