@@ -68,8 +68,8 @@ Cohere,command-a-reasoning,256K,20 RPM / 1000 calls per month,dashboard.cohere.c
 Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,cerebras.ai,$5/30-day trial credit (card required); FAQ 'no permanent free tier'; free trial models gpt-oss-120b + Qwen3-235B + Qwen3.8-27B; was ~30 RPM dev tier w/ llama-3.3-70b
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
 Cloudflare Workers AI,@cf/openai/gpt-oss-120b,128K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,
-Ollama Cloud,gpt-oss:120b,128K,Session (5h) + weekly caps,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
-Ollama Cloud,deepseek-v4-flash,1M,Session (5h) + weekly caps,ollama.com/settings/keys,16 cloud families
+Ollama Cloud,gpt-oss:120b,128K,Credit-based $0 (no card); credit pool replaces session caps Oct 8,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
+Ollama Cloud,deepseek-v4-flash,1M,Credit-based $0 (no card); credit pool replaces session caps Oct 8,ollama.com/settings/keys,16 cloud families
 Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
 Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
@@ -103,7 +103,7 @@ OVHcloud,Qwen3.5-9B,128K,2 RPM per IP,NO KEY / NO SIGNUP,Small Qwen3 9B; no key
 OVHcloud,Qwen3.6-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Qwen3.6 27B; no key
 Z AI,GLM-4.7-Flash,200K,1 concurrent,open.bigmodel.cn/usercenter/apikeys,Also api.z.ai intl endpoint
 Z AI,GLM-4.6V-Flash,varies,Not published,open.bigmodel.cn/usercenter/apikeys,NEW Oct 23; free vision model (aifree.dev verified Oct 12); GLM-4.5-Flash DEAD Oct 22 (stopped answering)
-Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit,huggingface.co/settings/tokens,router.huggingface.co/v1
+Hugging Face,router to many (Llama-3.1-8B etc),varies,$0.10/month credit removed Oct 7; no free tier without card,huggingface.co/settings/tokens,router.huggingface.co/v1
 SiliconFlow,Qwen/Qwen3-8B,128K,—,1000 RPM / 50,000 TPM,cloud.siliconflow.cn/account/ak,Real-name verification required — REMOVED Oct 23 (replaced by Hunyuan-MT-7B + Xing4.0-29B)
 SiliconFlow,tencent/Hunyuan-MT-7B,—,—,—,cloud.siliconflow.cn/account/ak,NEW Oct 23; real-name verification required; doc-based pricing (cannot be tested from outside mainland China)
 SiliconFlow,XingChenAGI/Xing4.0-29B,—,—,—,cloud.siliconflow.cn/account/ak,NEW Oct 23; real-name verification required; doc-based pricing (cannot be tested from outside mainland China)
@@ -243,3 +243,4 @@ AIHubMix,gpt-5.5-free,1.05M,100 req/day · 10/min,$0/M,DEAD Oct 25 (not in live 
 AIHubMix,gpt-image-2-free,,100 req/day · 10/min,$0/M,DEAD Oct 25 (not in live /v1/models probe — absent from 45 free-suffix list; was claimed Oct 26)
 Hetzner,Qwen/Qwen3.6-35B-A3B-FP8,262K,4M in / 100k out per 60s; 10 req per 60s per key; no daily cap,"HETZNER_API_KEY from experiments.hetzner.com (no card)","NEW Oct 25; corrected: official docs confirm 2 models only (Kimi/DeepSeek/GLM large models on break per Hetzner blog); OpenAI-compatible base https://inference.hetzner.com/api/v1; MoE 35B total / 3B active; text+image; free while experimental"
 Hetzner,Qwen3.8-27B,262K,4M in / 100k out per 60s; 10 req per 60s per key; no daily cap,"HETZNER_API_KEY from experiments.hetzner.com (no card)","NEW Oct 25; corrected: added per docs.hetzner.com; dense 27B; text+image; free while experimental"
+Fish Audio,s2.1-pro-free,N/A,fair-use (no hard cap),"Free Bearer API key from fish.audio (no card)","NEW Oct 25; $0/M UTF-8 bytes; 83 langs, 2 voices; POST https://api.fish.audio/v1/tts; same quality as paid s2.1-pro; free access guaranteed through Nov 30 2026"

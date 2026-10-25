@@ -1,6 +1,6 @@
 {
   "purpose": "Ordered fallback chain for free-LLM research/routing. Agent tracks availability and edits this file when tiers change.",
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-25",
   "chain": [
     {
       "provider": "stillworks (Dobby)",
@@ -219,7 +219,10 @@
     "OpenRouter: apodex/apodex-1.1-mini:free (Oct 24; LIVE + free verified via openrouter.ai model page - shows 'Price: Free' and 36.8B prompt tokens processed; 262K ctx, 20 RPM / 50 RPD, released Oct 1; reasoning-first research model; NOT the dead apinex/apodex-1.1-mini:free on Kilo Code gateway [404/priced Oct 21])",
     "Infron AI (aifree.dev / api.infron.ai): NEW Oct 26; 6 :free models live-probed on /v1/models; 1,000 req/day per account, $0/token, $5+ balance anti-abuse (never consumed), no card; qwen/qwen3.8-27b:free (256K) was DEAD on xKiro Oct 22 - now ALIVE; deepseek/deepseek-v4.1-flash:free (1M ctx), qwen/qwen3.8-27b-abliterated-cyber:free (256K), internlm/atria-dawn-preview:free (256K), inclusionai/ling-3.1-flash:free (262K, REANIMATED - was DEAD Oct 13), apodex/apodex-1.1-mini:free (262K, already tracked on OpenRouter L25); OpenAI-compatible base https://api.infron.ai/v1",
     "AIHubMix (aihubmix.com): NEW Oct 26; 64 free models at $0/M on https://api.aihubmix.com/v1; 10 trial calls no card (never expire) + ~$100 req/day after $1 top-up; 50 req/day free pool; notable new free model IDs: qwen3.8-max-free (1M ctx), qwen3.8-flash-free (1M), wan3.0-video-free + wan3.0-video-prime-free (10/day 1/min, video gen), coding-glm-5.3-free + coding-glm-5.3-flash-free + coding-glm-5.2-free + coding-glm-5-free (GLM-5.x coding, 1M), coding-kimi-k3-free (1.05M), laguna-s-2.1-free + laguna-xs-2.1-free (1.05M); updated Oct 22-23",
-    "Hetzner Inference (inference.hetzner.com): NEW Oct 25; corrected: official docs list 2 models only (Kimi/DeepSeek/GLM large models on break per Hetzner blog); OpenAI-compatible base https://inference.hetzner.com/api/v1; HETZNER_API_KEY from experiments.hetzner.com (no card); models: Qwen/Qwen3.6-35B-A3B-FP8 (MoE 35B total/3B active, 262K, text+image), Qwen3.8-27B (dense 27B, 262K, text+image); rate-limit 4M in/100k out per 60s, 10 req/60s per key; no daily cap; Hermes plugin: iamimmanuelraj/hermes-hetzner-provider"
+    "Hetzner Inference (inference.hetzner.com): NEW Oct 25; corrected: official docs list 2 models only (Kimi/DeepSeek/GLM large models on break per Hetzner blog); OpenAI-compatible base https://inference.hetzner.com/api/v1; HETZNER_API_KEY from experiments.hetzner.com (no card); models: Qwen/Qwen3.6-35B-A3B-FP8 (MoE 35B total/3B active, 262K, text+image), Qwen3.8-27B (dense 27B, 262K, text+image); rate-limit 4M in/100k out per 60s, 10 req/60s per key; no daily cap; Hermes plugin: iamimmanuelraj/hermes-hetzner-provider",
+    "Fish Audio (s2.1-pro-free): NEW Oct 25 free TTS model; $0/M UTF-8 bytes (fair-use, no hard cap); POST https://api.fish.audio/v1/tts; model s2.1-pro-free (83 langs, 2 voices); same quality as paid s2.1-pro; requires free Bearer API key from fish.audio (no card); free access guaranteed through Nov 30 2026",
+    "smfworks/hermes-omarchy: NEW Oct 25; boot integration script for Hermes Desktop + Ollama on Omarchy; bin/hermes-omarchy-setup install (idempotent; --no-ollama/--no-autostart/--no-skills/--no-plugin opts); omarchy pkg add hermes-omarchy; MIT",
+    "ninepointlabs/omarchy-hermes-chat: NEW Oct 25; Omarchy shell plugin (Quickshell) bar icon + dropdown for quick Hermes agent chat without opening desktop app; talks to hermes CLI directly (no gateway needed); ./install.sh; MIT"
   ],
   "retired_recently": [
     "GitHub Models (Jul 2026)",
@@ -255,6 +258,7 @@
     "https://freellmapihub.com",
     "https://gateway.vlm.run/v1/openai/models",
     "https://api.deepai.org/models",
-    "https://stillworks.supercapybara.com/api/llm/up"
+    "https://stillworks.supercapybara.com/api/llm/up",
+    "https://api.fish.audio/v1/tts"
   ]
 }
