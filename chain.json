@@ -151,6 +151,11 @@
       "provider": "main",
       "model": "whatever `hermes model` is set to",
       "notes": "last resort"
+    },
+    {
+      "provider": "beatapi",
+      "model": "glm-5.3-free",
+      "notes": "Free tier: 5 -free IDs at OpenAI-compatible https://api.beatapi.io/v1; $0/token no card; 1 RPM before first top-up / 10 RPM after; free IDs omit published context/output limits (https://docs.beatapi.io/free-models)."
     }
   ],
   "new_this_week": [
@@ -234,7 +239,9 @@
     "LLM7.io: gpt-oss:20b (turbo tier) + deepseek-v4-flash-0731 (pro tier) \u2014 both PAID, removed from free tracking (Oct 21)",
     "Z.ai direct API: GLM-4.5-Flash stopped answering Oct 22 — absent from /v1/models (freetokens timeline; was free per aifree.dev Oct 12)",
     "OpenCode Zen: ll-alpha-free (LL Alpha) ended Oct 20 — 262K ctx stealth model, was free Oct 16-20 (never load-tested), removed from /zen/v1/models",
-    "OpenCode Zen + OpenCode Go + Vercel AI Gateway: Cat Jam ended Oct 20 — 1M ctx stealth model, was free Oct 16-20, removed (freetokens timeline)"
+    "OpenCode Zen + OpenCode Go + Vercel AI Gateway: Cat Jam ended Oct 20 — 1M ctx stealth model, was free Oct 16-20, removed (freetokens timeline)",
+    "🆕 Oct 25 — Nous Portal free tier: 8 `:free` IDs (poolside/laguna-s-2.1, laguna-xs-2.1, upstage/solar-mini4, meituan/longcat-2.0, stepfun/step-3.7-flash, meituan/longcat-2.5-preview, reflection/beam-1.0-501b-a23b, ornith/ornith-1.5-122b) at OpenAI-compatible https://inference-api.nousresearch.com/v1; free signup portal.nousresearch.com (no card); 50 RPM / 500K TPM account-wide. Live `/v1/models` probe Oct 25: $0 pricing on all 8 (424 total, 8 `:free`; ctx 256K-1M). 7 IDs not previously tracked.",
+    "🆕 Oct 25 — BeatAPI free text models: 5 `-free` IDs (glm-5.3-free, glm-5.3-flash-free, deepseek-v4.1-flash-free, deepseek-v4-flash-0731-free, gemini-3.8-flash-free) at OpenAI-compatible https://api.beatapi.io/v1; default `auto` group, $0/token, no card; 1 RPM before first top-up / 10 RPM after. Docs confirm free IDs omit published context/output limits (docs.beatapi.io/free-models)."
   ],
   "openrouter_free_tips": [
     "18 :free suffix models + 5 $0 non-:free (scaledown/summarize, scaledown/extract, lyria-3-clip-preview, lyria-3-pro-preview, openrouter/free) = 23 total free; one-time $10 credit purchase raises to 1000 RPD",
