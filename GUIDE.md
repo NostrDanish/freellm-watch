@@ -21,7 +21,8 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 | **uncloseai** | `https://hermes.ai.unturf.com/v1` | 429 per IP; keyless | Verified Oct 21; single Qwen3.8-27B-exl3 (64K) vllm endpoint |
 | **LLM Tech** | `https://api.llmtech.eu/v1` | 2M tok/day; shared trial key | EU; no signup, no card; qwen3.8-27b (probe-verified) |
 || **LLMTR** | `https://llmtr.com/v1` | Free on zero balance | Turkish keyless gateway; 27 free models Oct 23 across agnes-evren-heabsy-ifm-internlm-liquid-minimax-nace-nvidia-openai-poolside-qwen-voltropy; motif DEAD (absent probe); ling-3.1-flash DEAD Oct 13 |
-|| **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | ☠️ DEAD Oct 22 2026 | ~~NEW Oct 21 v0.4.0;~~ DNS NXDOMAIN (Cloudflare DoH Status:3) + GitHub repo 404; aggregates Pollinations + ApiAirforce; `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
+|| **KeylessAI** | `https://keylessai.thryx.workers.dev/v1` | ⚠️ REVIVED Oct 26 2026 | ~~NEW Oct 21 v0.4.0;~~ DNS NXDOMAIN Oct 22 (Cloudflare DoH Status:3); GitHub repo `lordbasilaiassistant-sudo/keylessai` recovered (3 stars, `npm keylessai` v0.4.0); aggregates Pollinations + ApiAirforce w/ adaptive failover (endpoint unverified); `npm keylessai` / `npx keylessai serve`; works with Aider/Cline/Continue/Codex/Claude Code |
+|| **Animica** | `https://animica.dev/v1` | 30 req/min per IP (burst 12) keyless | ✨ NEW Oct 26; free keyless OpenAI-compatible endpoint; models: `kimi-k3` (DeepSeek R1 distill 32B, 1M ctx), `animica-chat`, `animica-chat-small`, `animica-knowledge` (180K ctx), `animica-embed`; no key/signup/card; CLI: `npm install -g animica` / `animica chat`; media endpoints (images/video/audio); CORS-enabled; live HTTP 200 on /v1/models + chat completion with `kimi-k3` confirmed Oct 26 |
 
 ## 🗺️ stillworks (Dobby) — live keyless endpoint selector (NEW Oct 23)
 
