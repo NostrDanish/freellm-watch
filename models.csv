@@ -24,7 +24,8 @@ OpenRouter,scaledown/summarize,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23;
 OpenRouter,scaledown/extract,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; description-driven entity extraction; $0 completion; max 900K output
 OpenRouter,apodex/apodex-1.1-mini:free,262K,DEAD,openrouter.ai/keys,DEAD Oct 25 — absent from live /v1/models API (was NEW Oct 1, verified Oct 24 via model page; API listing removed; OpenRouter 17 :free = 22 total free)
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
-Google AI Studio,gemini-2.5-pro,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Best free reasoning; per-model free limits no longer published (Oct 2026)
+Google AI Studio,gemini-2.5-pro,1M,REMOVED Oct 25,—,Removed from free tier (was "best free reasoning" at 5 RPM / 50 RPD); per-model free limits no longer published (Oct 2026); console-gated since ~Oct 18
+Google AI Studio,gemini-2.5-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Free replacement for Pro; 1M ctx; Text + Image + Audio + Video; 15 RPM / 1,500 RPD per awesome data.json; prompts may train Google; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
 Groq,openai/gpt-oss-120b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Ultra-fast LPU; verified aifree.dev Oct 2026
 Groq,openai/gpt-oss-20b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Ultra-fast; verified aifree.dev Oct 2026
