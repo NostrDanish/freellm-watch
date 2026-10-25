@@ -74,6 +74,13 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Best:** `nvidia/nemotron-3-ultra-550b-a55b` (1M ctx), `z-ai/glm-5.3-flash` (1M ctx), `openai/gpt-oss-20b` (128K ctx)
 - **Note:** NEW Oct 26; OpenAI+Anthropic SDK compatible; key prefix `ifu_`
 
+## 🟢 FHRouter — free no-card frontier gateway
+- **Get key:** https://fhrouter.com (free signup, no credit card)
+- **Limits:** 3 always-free frontier models; no credit card, no expiring trial, free for everyone (single account key); rate-limited per model (unpublished); no keyless access
+- **base_url:** `https://fhrouter.com/v1`
+- **Models:** `grok-4.6`, `deepseek-v4-flash`, `glm-5.3-flash`
+- **Note:** NEW Oct 25; OpenAI+Anthropic SDK compatible; live HTTP 200 + GitHub repo `fhrouter/fhrouter` verified Oct 25; `/v1/models` requires account key (no keyless); context + rate limits unpublished
+
 ## 🟢 Hetzner Inference (experimental)
 
 Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
@@ -235,6 +242,7 @@ Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
 **Notes:** s2.1-pro-free blog at fish.audio/blog/s2-1-pro-free-api (live); s2.2-pro-free blog post returned 404 (removed); confirmed via web search + docs.fish.audio. /v1/speech, /, /v1/models endpoints return 404 — only /v1/tts is live.
 
 ## 📰 News — Oct 24-28
+- 🆕 **Oct 25 — FHRouter (fhrouter.com):** free no-card OpenAI-compatible gateway (`https://fhrouter.com/v1`); 3 always-free frontier models — `grok-4.6`, `deepseek-v4-flash`, `glm-5.3-flash` — no credit card, no expiring trial, free for everyone (single account key); live HTTP 200 + GitHub repo `fhrouter/fhrouter` verified Oct 25; `/v1/models` requires account key (no keyless); context + rate limits unpublished. Added to chain.json fallback.
 - **Qwen3 → Paid on OpenRouter (Oct 24):** Qwen3 8B, Qwen3 235B A22B, Qwen3 VL 8B Thinking, Qwen3 30B A3B Thinking 2507 all moved from free `:free` to paid tier on OpenRouter. Not tracked in this guide as free OpenRouter models (no update needed). Qwen3.8-27B remains the only Qwen3 on free lists (still free on Groq/OVH/Infron, dead on OpenRouter).
 - **DeepSeek V4.1-Flash-1017 (Oct 17):** model version update; API alias `deepseek-flash` unchanged. New Search & Fetch APIs at $0.75/1K calls (paid from Oct 31). Model already tracked on NVIDIA NIM + Token Harbor + OpenCode Zen + APINex + UnoRouter.
 - **Hermes Desktop on Omarchy:** installable via `omarchy pkg add hermes-desktop` (v2026.9.7-6, MIT). Free UI app (requires paid LLM provider); uses nemotron-3-ultra-550b-a55b backend.
