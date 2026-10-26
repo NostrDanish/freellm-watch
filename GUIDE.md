@@ -80,7 +80,14 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Limits:** 3 always-free frontier models; no credit card, no expiring trial, free for everyone (single account key); rate-limited per model (unpublished); no keyless access
 - **base_url:** `https://fhrouter.com/v1`
 - **Models:** `grok-4.6`, `deepseek-v4-flash`, `glm-5.3-flash`
-- **Note:** NEW Oct 25; OpenAI+Anthropic SDK compatible; live HTTP 200 + GitHub repo `fhrouter/fhrouter` verified Oct 25; `/v1/models` requires account key (no keyless); context + rate limits unpublished
+|- **Note:** NEW Oct 25; OpenAI+Anthropic SDK compatible; live HTTP 200 + GitHub repo `fhrouter/fhrouter` verified Oct 25; `/v1/models` requires account key (no keyless); context + rate limits unpublished
+
+## 🟢 OrcaRouter — keyless free-model aggregator
+|- **Get key:** None — fully anonymous, no signup, no credit card
+|- **Limits:** 6 always-free models at $0.000000; global free tier 10 RPM / 50 RPD; orca/orcaverify-text1.0-free: 5 RPM / 50 RPD (override); tencent/hy4-preview-free: 50 RPM / 250 RPD (own tiers); keyless access
+|- **base_url:** `https://api.orcarouter.ai/v1`
+|- **Best:** `deepseek/deepseek-v4-flash-free` (1M ctx), `deepseek/deepseek-v4.1-flash-free` (1M ctx), `z-ai/glm-5.3-flash-free` (1M ctx), `tencent/hy4-preview-free` (1M ctx), `tencent/hy3-free` (256K ctx), `orca/orcaverify-text1.0-free` (ctx N/A)
+|- **Note:** NEW Oct 2026; OpenAI + Anthropic SDK compatible; `/v1/models` listable without Authorization header; free models identified by `-free` suffix + `pricing.request = "0.000000"`; each shadows real paid backend (same weights, $0); `orcarouter/free` named router auto-rotates across all 6; docs: docs.orcarouter.ai
 
 ## 🟢 Hetzner Inference (experimental)
 
