@@ -70,7 +70,7 @@ Cerebras,gpt-oss-120b,128K,5 RPM / 30K uncached tok/min / 1M tok/day per model,c
 Cloudflare Workers AI,@cf/meta/llama-3.3-70b-instruct-fp8-fast,24K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,60+ models; shared daily pool
 Cloudflare Workers AI,@cf/openai/gpt-oss-120b,128K,10K neurons/day,dash.cloudflare.com/profile/api-tokens,
 Ollama Cloud,gpt-oss:120b,128K,Free plan $0 no card: 1 concurrent request + monthly starter credits for smaller starter model set (resets from sign-up); credits unlock all models; credit pool replaced session caps Oct 8,ollama.com/settings/keys,Also via ollama.com/v1 OpenAI-compatible
-Ollama Cloud,deepseek-v4-flash,1M,Free plan $0 no card: 1 concurrent request + monthly starter credits for smaller starter model set (resets from sign-up); credits unlock all models; credit pool replaced session caps Oct 8,ollama.com/settings/keys,16 cloud families
+Ollama Cloud,deepseek-v4-flash,1M,Free plan $0 no card: 1 concurrent request + monthly starter credits for smaller starter model set (resets from sign-up); credits unlock all models; credit pool replaced session caps Oct 8,ollama.com/settings/keys,DEAD Oct 28 2026 — removed from Ollama Cloud free starter set (awesome diff 3122a9f..4e0bce4); still free via Groq/Infron/etc
 Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
 Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
@@ -85,7 +85,7 @@ Kilo Code,poolside/laguna-xs-2.1:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; 
 Kilo Code,cohere/north-mini-code:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,nvidia/nemotron-3.5-content-safety:free,128K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
-Kilo Code,nvidia/nemotron-3-super-120b-a12b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
+Kilo Code,nvidia/nemotron-3-super-120b-a12b:free,262K,200 req/hr,NO KEY NEEDED,DEAD Oct 28 2026 — removed from Kilo Code gateway model list (awesome diff 3122a9f..4e0bce4); was NEW Oct 22; keyless free; :free suffix
 Kilo Code,minimax/minimax-m3.1-flash:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
 Kilo Code,nvidia/nemotron-3.5-super-vl:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,google/lyria-3-pro-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (no :free suffix on Kilo)
