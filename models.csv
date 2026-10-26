@@ -11,8 +11,8 @@ OpenRouter,cohere/north-mini-code:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,C
 OpenRouter,poolside/laguna-xs-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Laguna code model ⚠️ OpenRouter retires Oct 31 2026 (verified)
 OpenRouter,thinkingmachines/inkling:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; 1M ctx reasoning MoE
 OpenRouter,thinkingmachines/inkling-small:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Inkling
-OpenRouter,google/gemma-4-26b-a4b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4
-OpenRouter,google/gemma-4-31b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4
+OpenRouter,google/gemma-4-26b-a4b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4; vision+video (text+image+video→text)
+OpenRouter,google/gemma-4-31b-it:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; Gemma 4; vision+video (text+image+video→text)
 OpenRouter,google/lyria-3-clip-preview,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; audio (pricing $0, no :free suffix)
 OpenRouter,google/lyria-3-pro-preview,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; audio (pricing $0, no :free suffix)
 OpenRouter,liquid/lfm-2.5-2.6b:free,66K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; MoE, 64K ctx
@@ -74,8 +74,8 @@ Ollama Cloud,deepseek-v4-flash,1M,Free plan $0 no card: 1 concurrent request + m
 Kilo Code,nvidia/nemotron-3-ultra-550b-a55b:free,1M,200 req/hr,NO KEY NEEDED,api.kilo.ai/api/gateway; logs prompts
 Kilo Code,kilo-auto/free,256K,200 req/hr,NO KEY NEEDED,Auto-router over free pool
 Kilo Code,poolside/laguna-s-2.1:free,262K,200 req/hr,NO KEY NEEDED,Code model no key
-Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
-Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
+Kilo Code,reflection/beam-free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific reasoning agent; 1M ctx; LIVE Oct 28 probe: confirmed on Kilo Code gateway
+Kilo Code,stealth/glyph-cluster,256K,200 req/hr,NO KEY NEEDED,NEW Oct 21; Kilo-specific clustering/embedding; 256K ctx; LIVE Oct 28 probe: confirmed on Kilo Code gateway
 Kilo Code,recursive/flint-v1.0:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free on Kilo gateway; :free suffix
 Kilo Code,xingchen-agi/xing4.0-29b-a4b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,dots-studio/dots-3-note-preview:free,512K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
@@ -85,8 +85,8 @@ Kilo Code,poolside/laguna-xs-2.1:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; 
 Kilo Code,cohere/north-mini-code:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,nvidia/nemotron-3.5-content-safety:free,128K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,256K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
-Kilo Code,nvidia/nemotron-3-super-120b-a12b:free,262K,200 req/hr,NO KEY NEEDED,DEAD Oct 28 2026 — removed from Kilo Code gateway model list (awesome diff 3122a9f..4e0bce4); was NEW Oct 22; keyless free; :free suffix
-Kilo Code,minimax/minimax-m3.1-flash:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix; DEAD Oct 23 (404 at api.kilo.ai/api/gateway)
+Kilo Code,nvidia/nemotron-3-super-120b-a12b:free,262K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix; LIVE Oct 28 probe: confirmed back on Kilo Code gateway (also FREE on OpenRouter, $0 pricing, 50 RPD)
+Kilo Code,minimax/minimax-m3.1-flash:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix; DEAD Oct 28 probe: :free suffix absent on Kilo Code gateway; model exists only as minimax/minimax-m3.1-flash (no :free variant)
 Kilo Code,nvidia/nemotron-3.5-super-vl:free,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free; :free suffix
 Kilo Code,google/lyria-3-pro-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (no :free suffix on Kilo)
 Kilo Code,google/lyria-3-clip-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (clip preview)

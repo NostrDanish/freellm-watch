@@ -1,4 +1,4 @@
-# Free LLM API Guide — updated 2026-10-26
+# Free LLM API Guide — updated 2026-10-28
 
 Every provider below is OpenAI-SDK-compatible. Point any tool at `base_url` + key and go.
 Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-watch` cron agent.
@@ -9,7 +9,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Get key:** https://openrouter.ai/keys (Google login, 30 sec)
 - **Limits:** 20 RPM, **50 req/day per free model** → jumps to **1,000/day** after a one-time $10 credit buy
 - **base_url:** `https://openrouter.ai/api/v1`
-- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free`, `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0), `recursive/flint-v1.0:free` (262K ctx)
+- **Best free models:** `nvidia/nemotron-3-ultra-550b-a55b:free` (1M ctx), `nvidia/nemotron-3-super-120b-a12b:free`, `nvidia/nemotron-3.5-lightning:free`, `poolside/laguna-s-2.1:free` (code), `google/gemma-4-31b-it:free` (vision+video), `thinkingmachines/inkling:free` (reasoning), `google/lyria-3-pro-preview` (audio, $0), `recursive/flint-v1.0:free` (262K ctx)
 - **Trick:** model = `openrouter/free` auto-routes across all 22 free models. Or pass a `models: [...]` array for built-in fallback.
 
 ## 🚪 No-key options (zero signup)
@@ -286,3 +286,4 @@ Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
 - 🆕 **Oct 26:** Gonka Broker (proxy.gonkabroker.com) — AUTHLESS keyless gateway; `curl https://proxy.gonkabroker.com/v1/models` returns 200 OK without any key; 4 live models: `zai-org/GLM-5.3-Flash` (400K ctx), `MiniMaxAI/MiniMax-M2.7` (204K), `deepseek-ai/DeepSeek-V4-Flash-0731` (400K), `BAAI/bge-m3` (embeddings); `$0.1/M tok`; docs at docs.gonkabroker.com; live curl probe confirmed Oct 26.
 - ☠️ **Oct 26 — Animica (animica.dev): DEAD:** keyless OpenAI-compatible endpoint at `https://animica.dev/v1` confirmed dead (DNS NXDOMAIN, HTTP_CODE:000); was ✨ NEW Oct 26 with 5 models (kimi-k3, animica-chat, animica-chat-small, animica-knowledge, animica-embed); DNS resolution fails, domain unreachable.
 - 🆕 **Oct 26:** BlockRunAI/ClawRouter-Hermes — Installable Hermes provider plugin (`curl -fsSL https://raw.githubusercontent.com/BlockRunAI/ClawRouter-Hermes/main/scripts/install.sh | bash` / `pip install hermes-plugin-clawrouter` / `npx @blockrun/clawrouter`); 88 chat models from 12 labs behind single local proxy (port 8402); 7 models free keyless (no signup, no card, no crypto) via `blockrun/free/...` model IDs in `/model` (e.g. `blockrun/free/nemotron-3.5-lightning`); smart routing via `blockrun/auto`; MIT. Also supports `api.blockrun.ai` with `brk_…` key.
+- 🔄 **Oct 28 probe:** `nvidia/nemotron-3-super-120b-a12b:free` confirmed back LIVE on OpenRouter (50 RPD, $0 pricing, 262K ctx, text+image+video) and Kilo Code gateway (200 req/hr, keyless); stealth/glyph-cluster + reflection/beam-free restored on Kilo Code (were DEAD Oct 23); `minimax/minimax-m3.1-flash:free` remains DEAD (`:free` suffix absent on gateway); `google/gemma-4-31b-it:free` + `google/gemma-4-26b-a4b-it:free` confirmed vision+video (text+image+video→text) on OpenRouter.

@@ -1,6 +1,6 @@
 {
   "purpose": "Ordered fallback chain for free-LLM research/routing. Agent tracks availability and edits this file when tiers change.",
-  "last_updated": "2026-10-25T18:16",
+  "last_updated": "2026-10-28",
   "chain": [
     {
       "provider": "stillworks (Dobby)",
@@ -15,7 +15,7 @@
     {
       "provider": "openrouter",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
-      "notes": "50 RPD"
+      "notes": "50 RPD; FREE Oct 28 probe: pricing $0 confirmed, 262K ctx, text+image+video"
     },
     {
       "provider": "openrouter",
@@ -95,7 +95,7 @@
     {
       "provider": "kilo",
       "model": "reflection/beam-free",
-      "notes": "NO KEY NEEDED, 200 req/hr, 1M ctx; NEW Oct 21; Kilo-specific reasoning agent; Oct 22 probe: free catalog 5→20 keyless models (mirrors full OpenRouter free pool), new ids use :free suffix"
+      "notes": "NO KEY NEEDED, 200 req/hr, 1M ctx; NEW Oct 21; Kilo-specific reasoning agent; Oct 22 probe: free catalog 5→20 keyless models (mirrors full OpenRouter free pool), new ids use :free suffix; LIVE Oct 28 probe: confirmed on Kilo Code gateway"
     },
     {
       "provider": "blockrun",
