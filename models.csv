@@ -25,11 +25,12 @@ OpenRouter,scaledown/extract,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; d
 OpenRouter,apodex/apodex-1.1-mini:free,262K,DEAD,openrouter.ai/keys,DEAD Oct 25 — absent from live /v1/models API (was NEW Oct 1, verified Oct 24 via model page; API listing removed; OpenRouter 17 :free = 22 total free)
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
 Google AI Studio,gemini-2.5-pro,1M,REMOVED Oct 25,—,Removed from free tier (was "best free reasoning" at 5 RPM / 50 RPD); per-model free limits no longer published (Oct 2026); console-gated since ~Oct 18
-Google AI Studio,gemini-2.5-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Free replacement for Pro; 1M ctx; Text + Image + Audio + Video; 15 RPM / 1,500 RPD per awesome data.json; prompts may train Google; per-model free limits no longer published (Oct 2026)
+Google AI Studio,gemini-2.5-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Free replacement for Pro; 1M ctx; Text + Image + Audio + Video; prompts may train Google; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
 Groq,openai/gpt-oss-120b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Ultra-fast LPU; verified aifree.dev Oct 2026
 Groq,openai/gpt-oss-20b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Ultra-fast; verified aifree.dev Oct 2026
 Groq,qwen/qwen3.8-27b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Replaced 3.6 Sept 2026; verified aifree.dev Oct 2026; Oct 23: added image input (Text→Text+Image)
+Groq,allam-2-7b,4K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,NEW Oct 26; 4K ctx; verified llmperks.com Oct 26
 Groq,groq/compound,131K,30 RPM / 250 RPD / 70K TPM,console.groq.com/keys,☠ DEAD Sept 21 2026 — decommissioned per Groq deprecations (console.groq.com/docs/deprecations); agentic w/ web search + code exec; no direct replacement
 Groq,groq/compound-mini,131K,30 RPM / 250 RPD / 70K TPM,console.groq.com/keys,☠ DEAD Sept 21 2026 — decommissioned per Groq deprecations (console.groq.com/docs/deprecations); smaller agentic model; no direct replacement
 Groq,openai/gpt-oss-safeguard-20b,131K,3 RPM / 1K RPD / 2K TPM / 200K TPD,console.groq.com/keys,NEW Oct 22; safety classifier; verified aifree.dev; free limits cut 30→3 RPM & 8K→2K TPM Oct 6 2026 (console.groq.com/docs/rate-limits + IA 2026-10-06 capture)
@@ -92,13 +93,13 @@ Kilo Code,google/lyria-3-pro-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; key
 Kilo Code,google/lyria-3-clip-preview,1M,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless free audio (clip preview)
 Kilo Code,openrouter/free,200K,200 req/hr,NO KEY NEEDED,NEW Oct 22; keyless auto-router over free pool (OpenRouter passthrough)
 SambaNova,various OSS (Llama/DeepSeek),varies,20 RPM / 20 RPD / 200K tok per day per model,sambanova.ai,"FREE tier active (Oct 21); NO card required — free applies until payment method linked; 20 RPM / 20 RPD / 200K tok/day per model; DeepSeek-V3.1 / Llama 3.3 70B / gpt-oss-120b (+ DeepSeek-V3.2, Gemma 4 31B preview); reverses Aug-14 paid claim"
-OVHcloud,gpt-oss-120b,128K,2 RPM per IP,NO KEY / NO SIGNUP,oai.endpoints.kepler.ai.cloud.ovh.net/v1; EU-hosted
+OVHcloud,gpt-oss-120b,131K,2 RPM per IP,NO KEY / NO SIGNUP,oai.endpoints.kepler.ai.cloud.ovh.net/v1; EU-hosted
 OVHcloud,Qwen3.5-397B-A17B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Biggest no-key model
 OVHcloud,Qwen3.8-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Flagship Qwen3 27B; no key
 OVHcloud,gpt-oss-20b,131K,2 RPM per IP,NO KEY / NO SIGNUP,Small fast GPT-OSS; no key
 OVHcloud,Meta-Llama-3_3-70B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Llama 3.3 70B; no key
 OVHcloud,Mistral-Small-3.2-24B-Instruct-2506,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Small 3.2 24B; no key; EOL Nov 4 2026 (per docs.ovhcloud.com ai-endpoints-billing)
-OVHcloud,Mistral-Nemo-Instruct-2407,128K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Nemo 12B; no key; EOL Nov 4 2026 (per docs.ovhcloud.com ai-endpoints-billing)
+OVHcloud,Mistral-Nemo-Instruct-2407,118K,2 RPM per IP,NO KEY / NO SIGNUP,Mistral Nemo 12B; no key; EOL Nov 4 2026 (per docs.ovhcloud.com ai-endpoints-billing)
 OVHcloud,Qwen2.5-VL-72B-Instruct,128K,2 RPM per IP,NO KEY / NO SIGNUP,Vision model 72B; no key
 OVHcloud,Qwen3.5-9B,128K,2 RPM per IP,NO KEY / NO SIGNUP,Small Qwen3 9B; no key
 OVHcloud,Qwen3.6-27B,262K,2 RPM per IP,NO KEY / NO SIGNUP,Qwen3.6 27B; no key
@@ -293,7 +294,7 @@ OrcaRouter,z-ai/glm-5.3-flash-free,1M,10 RPM / 50 RPD,None (keyless),Base URL: h
 Merkium,ganymede-1.1,1M,30 RPM; no daily cap; no card,https://chat.merkium.nl/key,1M ctx; text+image input; tool calling; streaming; reasoning always on; base https://chat.merkium.nl/api/v1; confirmed live via curl (key required); FREE Oct 26
 Mixlayer,qwen/qwen3.5-4b-free,128K,3 RPM; no card; zero data retention,https://mixlayer.ai/keys,OpenAI-compatible; text+vision; $0 pricing confirmed; base https://mixlayer.ai/v1; confirmed live via curl (key required); FREE Oct 26
 Gonka Broker,zai-org/GLM-5.3-Flash,400K,Keyless; $0.1/M tok; no card,https://docs.gonkabroker.com,base https://proxy.gonkabroker.com/v1; authless; text+image+video+reasoning; confirmed via live curl probe; FREE Oct 26
-Gonka Broker,MiniMaxAI/MiniMax-M2.7,204K,Keyless; $0.1/M tok; no card,https://docs.gonkabroker.com,base https://proxy.gonkabroker.com/v1; authless; text+image; confirmed via live curl probe; FREE Oct 26
+Gonka Broker,MiniMaxAI/MiniMax-M2.7,200K,Keyless; $0.1/M tok; no card,https://docs.gonkabroker.com,base https://proxy.gonkabroker.com/v1; authless; text+image; confirmed via live curl probe; FREE Oct 26
 Gonka Broker,deepseek-ai/DeepSeek-V4-Flash-0731,400K,Keyless; $0.1/M tok; no card,https://docs.gonkabroker.com,base https://proxy.gonkabroker.com/v1; authless; text+image+reasoning; confirmed via live curl probe; FREE Oct 26
 Gonka Broker,BAAI/bge-m3,8K,Keyless; $0.1/M tok; no card,https://docs.gonkabroker.com,base https://proxy.gonkabroker.com/v1; authless; embeddings; confirmed via live curl probe; FREE Oct 26
 BlockRunAI,blockrun/free,N/A,7 free models (e.g. blockrun/free/nemotron-3.5-lightning); no signup, no card, no crypto,https://github.com/BlockRunAI/ClawRouter-Hermes,Installable Hermes provider plugin; 88 chat models from 12 labs; single local proxy port 8402; free rail: blockrun/free/... model IDs in /model; smart routing via blockrun/auto; pip install hermes-plugin-clawrouter OR npx @blockrun/clawrouter; NEW Oct 26
