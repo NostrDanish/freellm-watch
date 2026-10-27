@@ -295,6 +295,6 @@ Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
 |- 🆕 **Oct 28 — YepAPI:** OpenAI-compatible API endpoint https://api.yepapi.com/v1; $5 signing credit (no card, no trial); 130+ LLM models (DeepSeek, Qwen, Gemma, GLM, MiniSTral); MCP server github.com/yepapi/mcp-server-yepapi; keyless /v1/models live HTTP 200 Oct 28 (returns model list with pricing); added to chain.json fallback
 | - 🆕 **Oct 28 — Y-API:** OpenAI-compatible API endpoint https://api.y-api.bestvirtualgoods.com/v1; $1 credit = $10 credit on signup (no card); 47 models; 4 truly $0 models: deepseek/deepseek-v4-flash (200K ctx), minimax/minimax-m2.7 (200K), tencent/hy3 (200K), xiaomi/mimo-v2.5 (16K); pay-per-token for rest; live HTTP 200 Oct 28; added to chain.json fallback
 - 🆕 **Oct 27:** `gemini-3.6-flash` (Google AI Studio) — NEW Oct 26; 1M ctx, multimodal sibling of gemini-3.8-flash; console-gated free tier
-- 🆕 **Oct 27:** `z-ai/glm-5.2` (NVIDIA NIM) — NEW Oct 26; 1M ctx reasoning; glm-5.3 non-flash DEAD Oct 28 — migrate to glm-5.2
+- 🆕 **Oct 27:** `z-ai/glm-5.2` (NVIDIA NIM) — NEW Oct 26; 1M ctx reasoning; z-ai/glm-5.3 non-flash DEAD Oct 28 — migrate to `z-ai/glm-5.3-flash` (per build.nvidia.com) or `z-ai/glm-5.2` (reasoning alt)
 - 🆕 **Oct 27:** `poolside/laguna-m-1:free` (OpenRouter) — NEW Oct 25; 26B, 512K ctx, $0; Nous Portal poolside; 20 RPM / 50 RPD
 - 🆕 **Oct 27:** Watched sources added: `open-free-llm-api/awesome-freellm-apis` + `ClawLabsAI/free-ai-models`
