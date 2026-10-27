@@ -200,7 +200,9 @@ Free while experimental • OpenAI-compatible • EU infrastructure • no SLA
 |- ☠️ **Oct 23**: **LL Alpha Free** (`opencode/ll-alpha-free`) — DEAD; 262K ctx stealth model, was free Oct 16–20 on OpenCode Zen, removed Oct 20; never load-tested (freetokens timeline)
 |- ☠️ **Oct 23**: **Cat Jam** — DEAD; 1M ctx stealth model, was free Oct 16–20 on OpenCode Zen/Go/Vercel AI Gateway, removed Oct 20 (freetokens timeline)
 - ☠️ **Oct 26 cron**: NVIDIA NIM `z-ai/glm-5.3` (non-flash, 753B text MoE, 1M ctx, FP8) DEAD Oct 28 2026 — deprecated 10/27/26 per build.nvidia.com; `z-ai/glm-5.3-flash` unaffected, migrate
-- 🔄 **Oct 26 cron**: `scaledown/summarize` + `scaledown/extract` (OpenRouter) prompt price ticked $0 → $0.00000004/token (completion still $0; still effectively free, NOT dead); corrects prior "$0" claim — live /v1/models verified
+| 🔄 **Oct 26 cron**: `scaledown/summarize` + `scaledown/extract` (OpenRouter) prompt price ticked $0 → $0.00000004/token (completion still $0; still effectively free, NOT dead); corrects prior "$0" claim — live /v1/models verified
+
+- 🆕 **Oct 27 stillworks keyless probe snapshot** (generated_at 2026-10-27T11:05; `https://stillworks.supercapybara.com/api/llm/up`): 3 NEW free keyless models verified keyless (auth=none, OpenAI-compatible) — **FreeAI `mistral`** (vision+tools+json verified, 14/15 answered, 16.7s latency), **FreeAI `qwen-coder`** (coding model, vision+tools+json verified, 13/15 answered, 1.5s latency), **Pollinations `openai-fast`** (fast route, json_object+json_schema verified, 168/168 answered, 307ms, tools+vivision unsupported); all added to models.csv + chain.json stillworks entry
 
 ## 🔑 keyless-llm-api (nafigamer0) — deploy-your-own keyless proxy
 - **Get:** `npx wrangler deploy` from [nafigamer0/Keyless-LLM-API](https://github.com/nafigamer0/Keyless-LLM-API) (Cloudflare Worker, single file, NEW Oct 23)
