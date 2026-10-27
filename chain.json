@@ -167,6 +167,12 @@
       "model": "qwen3-8-omni-flash:free / agnes-image-2-5-flash:free (22 free: 19 chat + 3 image pooled)",
       "base_url": "https://api.kenari.id/v1",
       "notes": "NEW Oct 2026; OpenAI-compatible free pool gateway; 50 req/day & 5 RPM shared, no top-up, API key from https://kenari.id; live-verified /v1/models 2026-10-26; routes agnes-2-5-flash:free, qwen3-8-omni-flash:free, nemotron-3-5-super-vl:free, glm-4-7-flash:free, hy3:free, plus image models; Voxtral transcription via FreeLLMAPI adapter (#1703)"
+    },
+    {
+      "provider": "dreamprompting",
+      "model": "27 live free models from 23 providers",
+      "base_url": "https://api.dreamprompting.com/v1",
+      "notes": "NEW Oct 2026; single Google OAuth free-tier gateway (no card); 100 RPM / 5,000 req/day / 500K tok/day shared; OpenAI+Anthropic compatible; key from dreamprompting.com/login; live-curl confirmed Oct 2026"
     }
   ],
   "new_this_week": [
@@ -239,7 +245,8 @@
     "Fish Audio (s2.1-pro-free): NEW Oct 25 free TTS model; $0/M UTF-8 bytes (fair-use, no hard cap); POST https://api.fish.audio/v1/tts; model s2.1-pro-free (83 langs, 2 voices); same quality as paid s2.1-pro; requires free Bearer API key from fish.audio (no card); free access guaranteed through Nov 30 2026",
     "smfworks/hermes-omarchy: NEW Oct 25; boot integration script for Hermes Desktop + Ollama on Omarchy; bin/hermes-omarchy-setup install (idempotent; --no-ollama/--no-autostart/--no-skills/--no-plugin opts); omarchy pkg add hermes-omarchy; MIT",
     "ninepointlabs/omarchy-hermes-chat: NEW Oct 25; Omarchy shell plugin (Quickshell) bar icon + dropdown for quick Hermes agent chat without opening desktop app; talks to hermes CLI directly (no gateway needed); ./install.sh; MIT",
-    "mwhuss/omarchy-hermes-api: NEW Oct 25; native Omarchy menu-bar plugin + Quickshell flyout for Hermes Agent sessions via Hermes API server (port 8642); Node.js stdio bridge + QML; live SSE token streaming, session browse/switch/rename, tool-execution cards, auto-discovers ~/.hermes/.env creds; npm install && npm run install-plugin; MIT"
+    "mwhuss/omarchy-hermes-api: NEW Oct 25; native Omarchy menu-bar plugin + Quickshell flyout for Hermes Agent sessions via Hermes API server (port 8642); Node.js stdio bridge + QML; live SSE token streaming, session browse/switch/rename, tool-execution cards, auto-discovers ~/.hermes/.env creds; npm install && npm run install-plugin; MIT",
+    "DreamPrompting (api.dreamprompting.com/v1) — NEW Oct 2026; single Google OAuth free-tier gateway aggregator (no credit card); $0 shared quota: 100 RPM / 5,000 req/day / 500K tok/day across 27 live free models from 23 providers; OpenAI + Anthropic SDK compatible; auto-router; keyless after one Google OAuth"
   ],
   "retired_recently": [
     "GitHub Models (Jul 2026)",
@@ -278,6 +285,7 @@
     "https://gateway.vlm.run/v1/openai/models",
     "https://api.deepai.org/models",
     "https://stillworks.supercapybara.com/api/llm/up",
-    "https://api.fish.audio/v1/tts"
+    "https://api.fish.audio/v1/tts",
+    "https://api.dreamprompting.com/v1/models"
   ]
 }
