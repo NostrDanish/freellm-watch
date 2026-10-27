@@ -171,7 +171,7 @@
     {
       "provider": "dreamprompting",
       "model": "27 live free models from 23 providers",
-      "base_url": "https://api.dreamprompting.com/v1",
+      "base_url": "https://dreamprompting.com/api/v1",
       "notes": "NEW Oct 2026; single Google OAuth free-tier gateway (no card); 100 RPM / 5,000 req/day / 500K tok/day shared; OpenAI+Anthropic compatible; key from dreamprompting.com/login; live-curl confirmed Oct 2026"
     }
   ],
@@ -246,7 +246,7 @@
     "smfworks/hermes-omarchy: NEW Oct 25; boot integration script for Hermes Desktop + Ollama on Omarchy; bin/hermes-omarchy-setup install (idempotent; --no-ollama/--no-autostart/--no-skills/--no-plugin opts); omarchy pkg add hermes-omarchy; MIT",
     "ninepointlabs/omarchy-hermes-chat: NEW Oct 25; Omarchy shell plugin (Quickshell) bar icon + dropdown for quick Hermes agent chat without opening desktop app; talks to hermes CLI directly (no gateway needed); ./install.sh; MIT",
     "mwhuss/omarchy-hermes-api: NEW Oct 25; native Omarchy menu-bar plugin + Quickshell flyout for Hermes Agent sessions via Hermes API server (port 8642); Node.js stdio bridge + QML; live SSE token streaming, session browse/switch/rename, tool-execution cards, auto-discovers ~/.hermes/.env creds; npm install && npm run install-plugin; MIT",
-    "DreamPrompting (api.dreamprompting.com/v1) — NEW Oct 2026; single Google OAuth free-tier gateway aggregator (no credit card); $0 shared quota: 100 RPM / 5,000 req/day / 500K tok/day across 27 live free models from 23 providers; OpenAI + Anthropic SDK compatible; auto-router; keyless after one Google OAuth"
+    "DreamPrompting (dreamprompting.com/api/v1) — NEW Oct 2026; single Google OAuth free-tier gateway aggregator (no credit card); $0 shared quota: 100 RPM / 5,000 req/day / 500K tok/day across 27 live free models from 23 providers; OpenAI + Anthropic SDK compatible; auto-router; keyless after one Google OAuth"
   ],
   "retired_recently": [
     "GitHub Models (Jul 2026)",
@@ -286,6 +286,6 @@
     "https://api.deepai.org/models",
     "https://stillworks.supercapybara.com/api/llm/up",
     "https://api.fish.audio/v1/tts",
-    "https://api.dreamprompting.com/v1/models"
+    "https://dreamprompting.com/api/v1/models"
   ]
 }
