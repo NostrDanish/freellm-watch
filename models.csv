@@ -22,8 +22,10 @@ OpenRouter,dots-studio/dots-3-note-preview:free,512K,20 RPM / 50 RPD,openrouter.
 OpenRouter,recursive/flint-v1.0:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 21; 262K ctx
 OpenRouter,scaledown/summarize,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; abstractive text+image+file summarization; $0 completion; max 4K output
 OpenRouter,scaledown/extract,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 23; description-driven entity extraction; $0 completion; max 900K output
+OpenRouter,poolside/laguna-m-1:free,512K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 25; 26B Nous Portal model (poolside); $0 completion; sibling of laguna-s-2.1/laguna-xs-2.1
 OpenRouter,apodex/apodex-1.1-mini:free,262K,DEAD,openrouter.ai/keys,DEAD Oct 25 — absent from live /v1/models API (was NEW Oct 1, verified Oct 24 via model page; API listing removed; OpenRouter 17 :free = 22 total free)
 Google AI Studio,gemini-3.8-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW flagship flash; multimodal; prompts may train Google; per-model free limits no longer published (Oct 2026) — confirm in AI Studio
+Google AI Studio,gemini-3.6-flash,1M,Not published (console-gated),aistudio.google.com/app/apikey,NEW Oct 26; 1M ctx; multimodal; sibling of gemini-3.8-flash; Google 3.6→3.8 flash naming
 Google AI Studio,gemini-2.5-pro,1M,REMOVED Oct 25,—,Removed from free tier (was "best free reasoning" at 5 RPM / 50 RPD); per-model free limits no longer published (Oct 2026); console-gated since ~Oct 18
 Google AI Studio,gemini-2.5-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Free replacement for Pro; 1M ctx; Text + Image + Audio + Video; prompts may train Google; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
@@ -46,6 +48,7 @@ NVIDIA NIM,nvidia/nemotron-3-super-120b-a12b,1M,40 RPM / no daily cap,build.nvid
 NVIDIA NIM,nvidia/nemotron-3-ultra-550b-a55b,1M,40 RPM / no daily cap,build.nvidia.com,Highest free RPD anywhere
 NVIDIA NIM,deepseek-ai/deepseek-v4.1-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 17; 552B MoE free NIM endpoint; phone verify, no card
 NVIDIA NIM,z-ai/glm-5.3-flash,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 21; Z.ai GLM-5.3-Flash; first natively multimodal GLM-5; 320B params/18B active; vision
+NVIDIA NIM,z-ai/glm-5.2,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 26; Z.ai GLM-5.2; 1M ctx reasoning; free dev-program endpoint; z-ai/glm-5.3 non-flash DEAD Oct 28
 NVIDIA NIM,nvidia/nemotron-3.5-super-vl-120b-a12b,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; vision 120B-VL; Free Endpoint badge on build.nvidia.com (Oct 15)
 NVIDIA NIM,stepfun-ai/step-5-preview,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; multimodal reasoning MoE; docs.api.nvidia.com reference (Oct 14)
 NVIDIA NIM,meta/llama-4-maverick-17b-128e-instruct,1M,40 RPM / no daily cap,build.nvidia.com,NEW Oct 22; 128-expert MoE vision/language; free per ASSERT-KTH/nvidia-free-endpoints list (absent from /v1 Oct 22)
