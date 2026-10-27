@@ -103,6 +103,11 @@
       "notes": "VERIFIED KEYLESS Oct 21; no signup, no card; NVIDIA-hosted OS models incl. 1M ctx ultra, reasoning, vision; 429 per IP"
     },
     {
+      "provider": "kiosapi",
+      "model": "meta/llama-3.1-8b",
+      "notes": "NEW Oct 27 via freellmapi v0.16.10; free signup key at kiosapi.id/dashboard/keys (no card; no trial); 50 req/day shared pool (5 Cloudflare Workers AI routes); base https://api.kiosapi.id/v1 (OpenAI-compatible); key validation OFF (key validity unknown); docs https://kiosapi.id/docs; key prefix kiosapi_id"
+    },
+    {
       "provider": "bazaarlink",
       "model": "reflection/beam",
       "notes": "NEW Oct 21; free no-card API key (bazaarlink.ai/keys); 10 RPM/60 wu-day shared (20/120 with credit); 20 RPM site cap; reflection/beam 501B MoE agentic coder; https://api.bazaarlink.ai/v1"
