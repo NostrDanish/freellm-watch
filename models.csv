@@ -1,11 +1,11 @@
 provider,model,context,free_limit,how_to_get_key,notes
 OpenRouter,nvidia/nemotron-3-ultra-550b-a55b:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Biggest free model; 1000 RPD after $10 lifetime credits
-OpenRouter,nvidia/nemotron-3-super-120b-a12b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Strong general/coding
+OpenRouter,nvidia/nemotron-3-super-120b-a12b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,DEAD Oct 27 (~17:06 UTC) - re-dead re-removed from /v1/models API + Kilo Code gateway; paid twin nvidia/nemotron-3-super-120b-a12b still $0.30/M tok on OpenRouter; migrate to LLMTR nvidia/nemotron-3-super-120b-a12b (free, zero-balance, no card) or OpenRouter nvidia/nemotron-3-ultra-550b-a55b:free (1M ctx). Was: Strong general/coding
 OpenRouter,nvidia/nemotron-3.5-lightning:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,Fast + huge context
 OpenRouter,nvidia/nemotron-3.5-super-vl:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 15; vision
 OpenRouter,minimax/minimax-m3.1-flash:free,1M,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 19; DEAD Oct 23 (removed from OpenRouter free tier; confirmed by live probe)
 OpenRouter,xingchen-agi/xing4.0-29b-a4b:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 16; 262K ctx (prefix xingchen-agi)
-OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 22 free models
+OpenRouter,openrouter/free,varies,20 RPM / 50 RPD,openrouter.ai/keys,Auto-router across all 21 free models
 OpenRouter,poolside/laguna-s-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized ⚠️ OpenRouter retires Oct 31 2026 (verified)
 OpenRouter,cohere/north-mini-code:free,256K,20 RPM / 50 RPD,openrouter.ai/keys,Code-specialized
 OpenRouter,poolside/laguna-xs-2.1:free,262K,20 RPM / 50 RPD,openrouter.ai/keys,NEW Oct 20; smaller Laguna code model ⚠️ OpenRouter retires Oct 31 2026 (verified)
