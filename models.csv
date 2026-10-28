@@ -30,6 +30,9 @@ Google AI Studio,gemini-3.6-flash,1M,Not published (console-gated),aistudio.goog
 Google AI Studio,gemini-2.5-pro,1M,REMOVED Oct 25,—,Removed from free tier (was "best free reasoning" at 5 RPM / 50 RPD); per-model free limits no longer published (Oct 2026); console-gated since ~Oct 18
 Google AI Studio,gemini-2.5-flash,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,Free replacement for Pro; 1M ctx; Text + Image + Audio + Video; prompts may train Google; per-model free limits no longer published (Oct 2026)
 Google AI Studio,gemini-2.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,High-volume cheap tasks; per-model free limits no longer published (Oct 2026)
+Google AI Studio,gemini-3.5-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW Oct 28; 1M ctx; multimodal; Free of charge ($0.30 input text/image/video, $2.50 output)
+Google AI Studio,gemini-3.1-flash-lite,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW Oct 28; 1M ctx; multimodal; Free of charge ($0.45 input, $2.70 output)
+Google AI Studio,gemini-3-flash-preview,1M,Not published (console-gated since ~Oct 18),aistudio.google.com/app/apikey,NEW Oct 28; 1M ctx; multimodal; Free of charge ($0.90 input, $5.40 output)
 Groq,openai/gpt-oss-120b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Ultra-fast LPU; verified aifree.dev Oct 2026
 Groq,openai/gpt-oss-20b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Ultra-fast; verified aifree.dev Oct 2026
 Groq,qwen/qwen3.8-27b,131K,30 RPM / 1K RPD / 8K TPM / 200K TPD,console.groq.com/keys,Replaced 3.6 Sept 2026; verified aifree.dev Oct 2026; Oct 23: added image input (Text→Text+Image)

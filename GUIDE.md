@@ -35,7 +35,7 @@ Full model table: `models.csv` (same folder). Auto-maintained by the `freellm-wa
 - **Get key:** https://aistudio.google.com/app/apikey
 - **Limits:** Per-model limits no longer published (moved to per-project, console-gated in AI Studio since ~Oct 18). Flash / Flash-Lite free; 1M context each. **Pro removed from free tier Oct 25** — use Gemini 2.5 Flash (15 RPM / 1,500 RPD) instead.
 - **base_url:** `https://generativelanguage.googleapis.com/v1beta`
-|- **Best:** `gemini-3.8-flash` (new), `gemini-3.6-flash` (NEW Oct 26; 1M ctx, multimodal sibling of 3.8-flash), `gemini-2.5-flash` (best free reasoning, replaces Pro removed Oct 25)
+-|- **Best:** `gemini-3.8-flash` (new), `gemini-3.6-flash` (NEW Oct 26; 1M ctx, multimodal sibling of 3.8-flash), `gemini-3.5-flash-lite` (NEW Oct 28; cost-efficient, 1M ctx), `gemini-2.5-flash` (best free reasoning, replaces Pro removed Oct 25)
 - **Catch:** prompts may be used for training (not in EU/UK/CH).
 
 ## ⚡ Groq — fastest inference alive
