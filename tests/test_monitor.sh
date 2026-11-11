@@ -59,5 +59,5 @@ grep -q 'awesome-free-llm-apis=' "$TMP/output"
 [[ "$(git -C "$TMP/gateway" rev-parse HEAD)" == "$(git -C "$TMP/gateway" rev-parse origin/main)" ]]
 [[ "$(git -C "$TMP/awesome" rev-parse HEAD)" == "$(git -C "$TMP/awesome" rev-parse origin/master)" ]]
 grep -q 'restart freellmapi.service' "$TMP/systemctl.log"
-! grep -q 'ci --omit=dev' "$TMP/npm.log"
+[[ ! -f "$TMP/npm.log" ]] || ! grep -q 'ci --omit=dev' "$TMP/npm.log"
 echo "monitor.sh integration test: PASS"
