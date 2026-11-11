@@ -1,0 +1,20 @@
+name: Watcher integration tests
+
+on:
+  push:
+    branches:
+      - "fix/idempotent-watch-and-branch-detection"
+  pull_request:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  monitor-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run default-branch integration test
+        run: bash tests/test_monitor.sh
